@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Ssebowa - Search Engine that plants trees and gives meals to the needy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/effect.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="preloader"><div class="spinner"></div></div>
+    <div class="page-wrapper">
+        <header class="header1">
+            <nav class="navbar nav-solid mb-0"> 
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                            <span></span> <span></span> <span></span>
+                        </button>
+                        <a class="navbar-brand" href="/" style="display:flex;align-items:center;justify-content:center">
+                            <img src="./img//logo/logo.png" alt="logo"
+                                style="width: 150px;height:auto">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <form class="navbar-left fl-d-c" id="search" method="{{ method or 'POST' }}"
+                            action="{{ url_for('search') }}" role="search" style="max-width:300px;width:100%;display:flex">
+                    <div style="display:flex;height:100%;width:100%;align-items:center;justify-content:center">
+                            <input type="text" class="form-control" id="q"
+                            style="font-size: 15px;font-weight:bold"
+                                name="q" placeholder="Search for..." autocomplete="off" autocapitalize="none"
+                                spellcheck="false" autocorrect="off" dir="auto" value="">
+                            <button type="submit"
+                                style="display:flex;align-items:center;justify-content:center;border:1px solid #ffffff;margin-left:1em;width:3.5em;height:3em;border-radius:100em;">
+                                <i class="fas fa-search"></i></button>
+                                    </div>
+                                    <!-- <div class="autoCompleteMainDiv-nav-bar"  >
+                                         <div class="lds-ripple" id="lds-ripple" >
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <span class="suggestion-buttons">sdssde61-1t00-g25</span>
+                                    </div> -->
+                                </form>
+    
+                        <ul class="nav navbar-nav f1 mainMenu text-capitalize">
+                            <li class="active"> <a href="/">Home</a>
+    
+                            </li>
+                            <li><a href="about.html">about</a>
+                            </li>
+                            <li> <a href="projects.html">projects</a>
+    
+                            </li>
+                            <li><a href="gallery.html">gallery</a>
+                            </li>
+    
+                            <li><a href="contact.html">contact</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav social-nav navbar-right">
+                            <li>
+                                <a href="https://twitter.com/ssebowaai"> <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Ssebowa-101838482690765/"> <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/showcase/ssebowa"> <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header end -->
+        <!-- main-slider start -->
+        <div class="main-slider ms1">
+            <div class="main-banner">
+                <button class="blogs">
+                    <a href="//www.blog.ssebowa.org" target="_blank" class="d-flex">
+                        <i class="fa-solid fa-blog "></i>
+                        <h3>READ BLOG</h3>
+                    </a>
+                </button>
+                <div class="main-cont" style="margin-top:-10em">
+                    <img src="./img//logo/logo.png" alt="logo"
+                        style="width:20em;height:auto;filter: drop-shadow(5px 5px 2px #000);">
+                    <form class="search-bar round-cornered" style="position: relative;" id="search"
+                        method="{{ method or 'POST' }}" action="{{ url_for('search') }}" role="search">
+                        <div style="display:flex;height:100%;width:100%;align-items:center;justify-content:center">
+                            <input id="q" name="q" type="text" placeholder="Search for..." autocomplete="off"
+                                autocapitalize="none" spellcheck="false" autocorrect="off" dir="auto" value=""
+                                style="font-weight:bold;padding-left:1em;background-color:white;border-radius:5px" class="search-input" oninput="inputChanged()" />
+                            <button type="submit" style="color:#118442;width:4em" class="search-bar-button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="autoCompleteMainDiv hidden">
+                            <div class="lds-ripple" id="lds-ripple" >
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </form>
+        
+                    <div class="wrap" id="wrap" style="margin-top:2em">
+                        <div
+                            style="width:90%;margin-bottom:20px;color:#fff;font-size:15px;margin-top:-15px;display:flex;align-items:center;justify-content:flex-end">
+                            <h4 style="text-align: left;width:100%">Bookmarks</h4>
+                            <button style="text-decoration:underline;" class="show" onclick="ToggleEdit()"
+                                id="edit-btn">EDIT</button>
+                            <button style="text-decoration:underline;margin-right:1em;color:red" onclick="removeBookMarks()"
+                                class="hidden" id="remove-btn">REMOVE</button>
+                            <button style="text-decoration:underline;margin-left:2em;margin-right:1em" class="hidden"
+                                id="cancel-btn" onclick="ToggleEdit()">CANCEL</button>
+                        </div>
+                        <button class="shortcut-add-button" id="shortcut-add-button" onclick="toggleAddbookmarkSys()">
+                            <i class="far fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addDiv-main hidden" id="addDiv-main">
+            <div class="add-div-card">
+                <button class="add-div-btn" onclick="toggleAddbookmarkSys()"><i class="fas fa-times"></i></button>
+                <h5>ADD BOOKMARK</h5>
+                <div class="add-to-bookmark-div">
+                    <div class="input-div">
+                        <label>Name</label>
+                        <input type="text" class="text-input text-input-name" id="bookmark-input" placeholder="Name of Webiste">
+                    </div>
+                    <div class="input-div">
+                        <label>Link</label>
+                        <input type="text" class="text-input text-input-link" id="bookmark-input" placeholder="Link of Website">
+                    </div>
+                    <div class="btn-div">
+                        <button class="cancel-btn btn-bm" onclick="toggleAddbookmarkSys()">CANCEL</button>
+                        <button class="save-btn btn-bm" onclick="addBookmark()">SAVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="add-div-backdrop" onclick="toggleAddbookmarkSys()"></div>
+        </div>
+        <!-- main-slider end -->
+        <!-- page-content start -->
+        <div class="page-content">
+            <div class="intro1 pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center mb-60">
+                            <h2 class="f2 c1">welcome to Ssebowa</h2>
+                            <h1 class="f1 fw-7 c4">Time to change the world</h1>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0 col-xs-offset-0 mb-sm-50">
+                            <div class="item">
+                                <div class="item-thumb">
+                                    <a href="#">
+                                        <img src="img/intro/support.jpg" alt="intro thumb">
+                                    </a>
+                                </div>
+                                <div class="item-txt text-center f1">
+                                    <h2 class="fw-6">Became Climate Active.</h2>
+                                    <p class="fw-4">Everytime you search with Ssebowa, you plant a needed tree in a needed place.</p>
+                                    <a href="#" class="rdm">    <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-xs-50">
+                            <div class="item">
+                                <div class="item-thumb">
+                                    <a href="#">
+                                        <img src="img/intro/img_6.jpg" alt="intro thumb">
+                                    </a>
+                                </div>
+                                <div class="item-txt text-center f1">
+                                    <h2 class="fw-6">Become Soil Active</h2>
+                                    <p class="fw-4">Your searches contributes to bring back the deforested land back to shade.</p>
+                                    <a href="#" class="rdm">    <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-xs-50">
+                            <div class="item">
+                                <div class="item-thumb">
+                                    <a href="#">
+                                        <img src="img/intro/img_5.jpg" alt="intro thumb">
+                                    </a>
+                                </div>
+                                <div class="item-txt text-center f1">
+                                    <h2 class="fw-6">Become Animal Active</h2>
+                                    <p class="fw-4">Animal protection is education to humanity. Let them test the sweetness of technology</p>
+                                    <a href="#" class="rdm">    <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotline">
+                <div class="txt-row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item">
+                                    <div class="section-header">
+                                        <h2 class="f2 c1">time to change</h2>
+                                        <h1 class="f1 fw-7 c4">Join the race of heeling this gorgous planet</h1>
+                                    </div>
+                                    <p class="f1 fw-4 mt-45">Together we can connect technology to humanity. By searching, 
+                                        you can join us in making each species test the greatness of technology
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contac-row mt-60">
+                    <div class="container">
+                        <div class="row pos-r">
+                            <div class="col-lg-6 pos-s col-lg-push-6">
+                                <div class="vdo">
+                                    <img src="img/vdo/shirt.jpg" alt="">
+                                    <a href="https://youtu.be/AjcEQ7cGVOc&amp;controls=0&amp;showinfo=0" class="play-button html5lightbox">  <i class="fa fa-play c4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-lg-pull-6">
+                                <div class="item clearfix">
+                                    <div class="icon-box">  <span>
+                                <i class="nivio-phone-call"></i>
+                            </span>
+                                    </div>
+                                    <div class="txt-box f1">
+                                        <h2 class="fw-6 cw">It is a call, lets do it together: <span><a href="https://ssebowa.com/" class="c3 fw-7">Search Now</a></span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facts-area text-center text-capitalize">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="fact-container mb-sm-50">
+                                <div class="single-fact">   <span class="nivio-recycle"></span>
+                                    <h3 class="fact-title c3 f2 fw-3 text-capitalize">Meals Served</h3>
+                                    <div class="numscroller fact-num cw f1" data-slno='15' data-min="0" data-max="5493" data-delay='30' data-increment="5">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="fact-container mb-sm-50">
+                                <div class="single-fact">   <span class="nivio-handshake"></span>
+                                    <h3 class="fact-title c3 f2 fw-3 text-capitalize">Trees Planted</h3>
+                                    <div class="numscroller fact-num cw f1" data-slno='15' data-min="0" data-max="1750" data-delay='30' data-increment="5">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="fact-container mb-xs-50">
+                                <div class="single-fact">   <span class="nivio-growth"></span>
+                                    <h3 class="fact-title c3 f2 fw-3 text-capitalize">Projects</h3>
+                                    <div class="numscroller fact-num cw f1" data-slno='15' data-min="0" data-max="2458" data-delay='30' data-increment="5">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="fact-container">
+                                <div class="single-fact">   <span class="nivio-key"></span>
+                                    <h3 class="fact-title c3 f2 fw-3 text-capitalize">Comunity</h3>
+                                    <div class="numscroller fact-num cw f1" data-slno='35' data-min="0" data-max="1670" data-delay='30' data-increment="5">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimony mt-md pt-md">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="f2 c1">testimonials</h2>
+                        <h1 class="f1 fw-7 c4">What customers says</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-offset-0 col-xs-offset-0">
+                            <div class="testimonial owl-carousel">
+                                <div class="pw-item f1 text-center">
+                                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Novio in my opinion deserves support for its projects.</p>
+                                    <!-- <img src="img/testimony/01.png" alt="">
+                                    <p class="name fw-7 c1">john smith</p> -->
+                                </div>
+                                <div class="pw-item f1 text-center">
+                                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Novio in my opinion deserves support for its projects.</p>
+                                    <!-- <img src="img/testimony/02.png" alt="">
+                                    <p class="name fw-7 c1">allen stwart</p> -->
+                                </div>
+                                <div class="pw-item f1 text-center">
+                                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Novio in my opinion deserves support for its projects.</p>
+                                    <!-- <img src="img/testimony/03.png" alt="">
+                                    <p class="name fw-7 c1">maria dove</p> -->
+                                </div>
+                                <div class="pw-item f1 text-center">
+                                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Novio in my opinion deserves support for its projects.</p>
+                                    <!-- <img src="img/testimony/03.png" alt="">
+                                    <p class="name fw-7 c1">maria dove</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- page-content end -->
+        <!-- footer start -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 mb-xs-30">
+                            <a href="#">
+                                <img src="img/logo/logo.png" alt="" style="height: 110px; width: 200px">
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-inline text-right">
+                                <li><a href="https://twitter.com/ssebowaai"><i class="c4 fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com/Ssebowa-101838482690765/"><i class="c4 fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="https://www.linkedin.com/showcase/ssebowa"><i class="c4 fa fa-linkedin"></i></a>
+                                </li>
+                                <!-- <li><a href="#"><i class="c4 fa fa-youtube-play"></i></a> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 clearfix mb-sm-50">
+                            <div class="fooler-col f1">
+                                <h2 class="footer-title">conmpany</h2>
+                                <ul>
+                                    <li>    <a href="#">about</a>
+                                    </li>
+                                    <li>    <a href="index.html">missions</a>
+                                    </li>
+                                    <li>    <a href="projects.html">our projects</a>
+                                    </li>
+                                    <li>    <a href="contact.html">contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fooler-col f1">
+                                <h2 class="footer-title">Other Products</h2>
+                                <ul>
+                                    <li><a href="https://ssebowa.ai/data_science.html">Data Science</a>
+                                    </li>
+                                    <li><a href="https://ssebowa.ai/visualisation.html">Data Visualisation</a>
+                                    </li>
+                                    <!--<li><a href="#">Organic</a>
+                                    </li>
+                                    <li><a href="#">Biology</a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                            <div class="fooler-col f1">
+                                <h2 class="footer-title">links</h2>
+                                <ul>
+                                    <li><a href="#">Help</a>
+                                    </li>
+                                    <li><a href="#">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-sm-50">
+                            <div class="footer-contact">
+                                <h2 class="footer-title">Contact</h2>
+                                <h3>30 N Gould St, Sheridan,
+                                    WY 82801, USA</h3>
+                                <ul>
+                                    <li><i class="fa fa-envelope"></i> supoort@ssebowa.ai</li>
+                                    <li><i class="fa fa-phone-square"></i> +32474171274</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-contact f1">
+                                <h2 class="footer-title">newslater</h2>
+                                <form>
+                                    <input type="email" placeholder="Email address">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom f1">
+                <div class="container">
+                    <p>Copyright @2022 Ssebowa com</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- page-wrapper end -->
+    <div class="back2Top bg1"> <i class="fa fa-angle-up fa-2x cw"></i>
+    </div>
+    <script>
+        function ReplaceInput(text){
+            console.log(text)
+        }
+    </script>
+    <script>
+        var formel = document.getElementsByClassName('search-bar')[0]
+        var inputel = document.getElementsByClassName('search-input')[0]
+        var rippleLoader = document.getElementById('lds-ripple')
+        var autoCompleteEl = document.getElementsByClassName('autoCompleteMainDiv')[0]
+        function RenderSuggestions(array){
+            autoCompleteEl.textContent = '';
+                if(array.length !==0){
+                    rippleLoader.classList.add('hidden')
+                autoCompleteEl.classList.remove('hidden')
+                array.map(function(item,i){
+                    let SuggestSpan = document.createElement('span');
+                    SuggestSpan.classList.add('suggestion-buttons')
+                    SuggestSpan.onclick = ReplaceInput(item)
+                    SuggestSpan.innerText = item
+                    autoCompleteEl.appendChild(SuggestSpan)
+                })
+                }else{
+                    rippleLoader.classList.remove('hidden')
+                    autoCompleteEl.innerHTML = '<p style="font-weight:bold;margin-bottom:1em" >No Results</p>';
+                }
+        }
+    </script>
+    <script>
+        var Link_to_fetch = '/autocomplete-ssebowa'
+        function fetchSuggestion(value) {
+            if(value.length <= 3){
+                autoCompleteEl.textContent = '';
+                return 0;
+            }
+            fetch(Link_to_fetch, {
+                method: 'GET',
+                headers: {
+                    query:value
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    var sugg = response[1]
+                    RenderSuggestions(sugg)
+                })
+                .catch(err => console.error(err));
+        }
+    </script>       
+    <script>
+        var formel = document.getElementsByClassName('search-bar')[0]
+        var autoCompleteEl = document.getElementsByClassName('autoCompleteMainDiv')[0]
+        var activeElement = document.activeElement;
+        var inputel = document.getElementsByClassName('search-input')[0]
+        function inputChanged() {
+            if (inputel.value !== '' && inputel.value !== ' ') {
+                formel.classList.add('top-corner-rounded')
+                formel.classList.remove('round-cornered')
+                autoCompleteEl.classList.remove('hidden')
+                console.log(inputel.value)
+                var suggestions = fetchSuggestion(inputel.value)
+            } else {
+                formel.classList.remove('top-corner-rounded')
+                formel.classList.add('round-cornered')
+                autoCompleteEl.classList.add('hidden')
+                autoCompleteEl.textContent = '';
+            }
+        }
+    </script>
+    <script>
+        function RerenderShortcuts() {
+            var bookmarksString = localStorage.getItem('ssebowa-bookmarks')
+            var bookmarks = JSON.parse(bookmarksString);
+            let addBtn = document.getElementById("shortcut-add-button")
+            bookmarks.map(function (j, i) {
+                var st_id = "sh_" + j.id
+                var ele = document.getElementsByClassName(st_id)
+                let cont = document.getElementById('wrap')
+                if (ele.length === 0) {
+                    let Shortcut = document.createElement('div');
+                    let Anchor = document.createElement('a');
+                    Anchor.href = j.link
+                    Anchor.target = "_blank"
+                    Anchor.ariaLabel = j.name
+                    Anchor.innerHTML = '<img src="' + j.image + '" class="shortcut-image" alt="Image" />'
+                    Shortcut.classList.add('shortcut')
+                    Shortcut.classList.add(st_id)
+                    Shortcut.id = 'shortcut_' + j.id
+                    let ShortcutHidden = document.createElement('div');
+                    ShortcutHidden.id = 'shortcut-menu'
+                    ShortcutHidden.classList.add('shortcut-menu')
+                    ShortcutHidden.classList.add('hidden')
+                    ShortcutHidden.innerHTML = '<input type="checkbox" onclick="SelectBookmarksToRemove(' + j.id + ')"  id="_checkbox">'
+                    Shortcut.appendChild(ShortcutHidden)
+                    Shortcut.appendChild(Anchor)
+                    cont.insertBefore(Shortcut, addBtn)
+                }
+            })
+        }
+    </script>
+    <script>
+        RerenderShortcuts()
+    </script>
+    <script>
+        var id_array = []
+        function SelectBookmarksToRemove(id) {
+            const index = id_array.indexOf(id);
+            if (index > -1) {
+                id_array.splice(index, 1);
+            }
+            else {
+                id_array.push(id)
+            }
+        }
+    </script>
+    <script>
+        function addBookmark() {
+            var inpName = document.getElementsByClassName('text-input-name')[0].value
+            var inpLink = document.getElementsByClassName('text-input-link')[0].value
+            if (!/^https?:\/\//i.test(inpLink)) {
+                inpLink = 'https://' + inpLink;
+            }
+            let x = Math.floor((Math.random() * 1000000) + 1000);
+            let link = 'https://api.statvoo.com/favicon/?url=' + inpLink
+            var info = {
+                id: x,
+                name: name,
+                link: inpLink,
+                image: link
+            }
+            var info_data = localStorage.getItem('ssebowa-bookmarks')
+            var data = JSON.parse(info_data)
+    
+            if (inpName === '' || inpLink === '') {
+                alert('Please Enter Appropriate Name and Link Both ')
+                return 0;
+            }
+    
+    
+            if (data === null) {
+                data = []
+                data.push(info)
+                localStorage.setItem('ssebowa-bookmarks', JSON.stringify(data))
+                RerenderShortcuts()
+                toggleAddbookmarkSys()
+            }
+            else {
+                data.push(info)
+                localStorage.setItem('ssebowa-bookmarks', JSON.stringify(data))
+                RerenderShortcuts()
+                toggleAddbookmarkSys()
+            }
+        }
+    </script>
+    <script>
+        function ToggleEdit() {
+            var d = document.getElementById("#_checkbox");
+            var removeBtn = document.getElementById('remove-btn').classList
+            var cancelBtn = document.getElementById('cancel-btn').classList
+            var editBtn = document.getElementById('edit-btn').classList
+            var menu = document.querySelectorAll('#shortcut-menu')
+            removeBtn.toggle('hidden')
+            cancelBtn.toggle('hidden')
+            editBtn.toggle('hidden')
+            for (var i = 0; i <= menu.length; i++) {
+                menu[i].classList.toggle('hidden')
+            }
+        }
+    </script>
+    <script>
+        function removeBookMarks() {
+            var info_data = localStorage.getItem('ssebowa-bookmarks')
+            var data = JSON.parse(info_data)
+            if (id_array.length == 0) {
+                alert('Please Select Bookmarks to Remove');
+                ToggleEdit()
+            }
+            else {
+                var i = 0
+                for (var i = 0; i <= id_array.length; i++) {
+                    var index = data.findIndex(item => item.id === id_array[i]);
+                    if (index !== -1) {
+                        var el = document.getElementById('shortcut_' + data[index].id)
+                        el.remove()
+                        data.splice(index, 1)
+                    }
+                }
+                localStorage.setItem('ssebowa-bookmarks', JSON.stringify(data))
+                ToggleEdit()
+                id_array = []
+            }
+    
+        }
+    </script>
+    <script>
+        function toggleAddbookmarkSys() {
+            var inp = document.querySelectorAll('#bookmark-input')
+            var el = document.getElementById("addDiv-main")
+            el.classList.toggle('hidden')
+            for (var i = 0; i <= inp.length; i++) {
+                inp[i].value = ''
+            }
+        }
+    </script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTPlX-43R1TpcQUyWjFgiSfL_BiGxslZU"></script>
+    <script src="js/html5lightbox/html5lightbox.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c0b74764e4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
