@@ -1,0 +1,22 @@
+[
+ {   
+        "id": 1,
+        "thumb": "./images/gallery/indo2.jpg"
+         },{
+            "id": 2,
+            "thumb": "./images/gallery/indo3.jpg"
+             },{
+                "id": 3,
+                "thumb": "./images/gallery/indo5.jpg"
+                 },{
+                    "id": 4,
+                    "thumb": "./images/gallery/uga6.jpeg"
+                     },{
+                        "id": 5,
+                        "thumb": "./images/gallery/uga7.jpeg"
+                         },{
+                            "id": 6,
+                            "thumb": "./images/gallery/uga4.jpeg"
+                             }
+    
+]

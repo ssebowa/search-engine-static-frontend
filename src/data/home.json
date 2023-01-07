@@ -1,0 +1,137 @@
+[
+    {
+        "slider": [
+            {
+                "id": 1,
+                "image": "./images/slider/slide2.png",
+                "image1": "./images/logo/logo",
+                "title": "Full Solution <br />for your <span class='text-decoration-underline'>Business</span><br />Development"
+            }
+        ]
+    },
+    {
+        "brand": [
+            {
+                "id": 1,
+                "image": "./images/brand-logo/1.png",
+                "title":"Meal Served",
+                "number":1000
+            },
+            {
+                "id": 2,
+                "image": "./images/brand-logo/2.png",
+                "title":"Trees Plant",
+                "number":750
+            },
+            {
+                "id": 3,
+                "image": "./images/brand-logo/3.png",
+                "title":"Projects",
+                "number":458
+            },
+            {
+                "id": 4,
+                "image": "./images/brand-logo/4.png",
+                "title":"Pads Seved",
+                "number":670
+            }
+        ]
+    },
+    {
+        "iconBox": [
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "./images/intro/support.jpg",
+                "title": "Become Climate Active",
+                "excerpt": "Everytime you search with Ssebowa, you plant a needed tree in a needed place."
+            },
+            {
+                "id": 2,
+                "className": "grid-item card-mt-75 mb-7",
+                "icon": "./images/intro/img_6.jpg",
+                "title": "Become Soil Active",
+                "excerpt": "Your searches contributes to bring back the deforested land back to shade."
+            },
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "./images/intro/img_5.jpg",
+                "title": "Become Animal Active",
+                "excerpt": "Animal protection is education to humanity. Let them test the sweetness of technology."
+            }
+        ]
+    },
+    {
+        "testimonial": [
+            {
+                "id": 1,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "David Loyed",
+                "designation": "CEO, Omex"
+            },
+            {
+                "id": 2,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/2.png",
+                "name": "John Loyed",
+                "designation": "CEO, Omex"
+            },
+            {
+                "id": 3,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "David Loyed",
+                "designation": "CEO, Omex"
+            }
+        ]
+    },
+    {
+        "funfact": [
+            {
+                "id": 1,
+                "number": 1000,
+                "title": "Meal Served"
+            },
+            {
+                "id": 2,
+                "number": 750,
+                "title": "Trees Plant"
+            },
+            {
+                "id": 3,
+                "number": 458,
+                "title": "Project"
+            },
+            {
+                "id": 4,
+                "number": 670,
+                "title": "Pads Served"
+            }
+        ]
+    },
+    {
+        "team": [
+            {
+                "id": 1,
+                "thumb": "./images/team/disan.jpg",
+                "name": "Disan Ssebowa",
+                "designation": "Founder and CEO"
+            },
+            {
+                "id": 2,
+                "thumb": "./images/team/sasanka.jpg",
+                
+                "name": "Kavindu Sasanka",
+                "designation": "COO and Developer"
+            },
+            {
+                "id": 3,
+                "thumb": "./images/team/sujal.jpg",
+                "name": "Sujal Bhakare",
+                "designation": "CTO and Developer"
+            }
+        ]
+    }
+]

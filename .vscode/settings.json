@@ -1,25 +1,18 @@
 {
-  // config related to code formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[javascript]": {
+    "files.exclude": {
+        ".git/": true,
+        "node_modules/": false,
+        "public/": false
+    },
+    "search.exclude": {
+        "**/.cache": true,
+        "**/node_modules": true,
+        "**/public": true
+    },
+    "editor.rulers": [80],
+    "editor.tabSize": 4,
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
-  },
-  "javascript.validate.enable": false, //disable all built-in syntax checking
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
-  "eslint.alwaysShowStatus": true,
-  // emmet
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  }
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+    "eslint.validate": ["react", "html", "javascript"],
+    "debug.node.autoAttach": "on"
 }

@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "thumb": "./images/team/disan.jpg",
+        "name": "Disan Ssebowa Basalidde",
+        "designation": "Founder and CEO"
+    },
+    {
+        "id": 2,
+        "thumb": "./images/team/sasanka.jpg",
+        "name": "Kavindu Sasanka",
+        "designation": "COO and Developer"
+    },
+    {
+        "id": 3,
+        "thumb": "./images/team/sujal.jpg",
+        "name": "Sujal Bhakare",
+        "designation": "CTO and Developer"
+    },
+    {
+        "id": 4,
+        "thumb": "./images/team/sanjida.jpg",
+        "name": "Sanjida Jahan",
+        "designation": "CMO and Social Media Manager"
+    },
+    {
+        "id": 5,
+        "thumb": "./images/team/violah.jpg",
+        "name": "Violah Audray",
+        "designation": "Content and Digital Marketer"
+    },
+    {
+        "id": 6,
+        "thumb": "./images/team/Aoun.jpg",
+        "name": "Syed Aoon Hussain",
+        "designation": "CIO"
+    },
+    {
+        "id": 7,
+        "thumb": "./images/team/bilal.jpg",
+        "name": "Billal Rasheed",
+        "designation": "Graphics Designer"
+    },
+    {
+        "id": 8,
+        "thumb": "./images/team/prejon.jpg",
+        "name": "Rajib Hossain Prejon",
+        "designation": "Full Stack Developer"
+    }
+    ,
+    {
+        "id": 9,
+        "thumb": "./images/team/Iqbal.jpeg",
+        "name": "Iqbal Isnaeni Herlambang",
+        "designation": "Developer"
+    }
+    ,
+    {
+        "id": 10,
+        "thumb": "./images/team/Priya.jpeg",
+        "name": "Priya Sutradhar",
+        "designation": "Digital Marketer"
+    }
+    ,
+    {
+        "id": 11,
+        "thumb": "./images/team/Arafath.jpeg",
+        "name": "Hussain Mohamed Arafath",
+        "designation": "AI Engineer"
+    }
+]
