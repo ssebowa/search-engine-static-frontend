@@ -14,13 +14,13 @@
             {
                 "id": 1,
                 "image": "./images/brand-logo/1.png",
-                "title":"Meal Served",
+                "title":"Meals Served",
                 "number":1000
             },
             {
                 "id": 2,
                 "image": "./images/brand-logo/2.png",
-                "title":"Trees Plant",
+                "title":"Trees Planted",
                 "number":750
             },
             {
@@ -32,7 +32,7 @@
             {
                 "id": 4,
                 "image": "./images/brand-logo/4.png",
-                "title":"Pads Seved",
+                "title":"Pads Give Out",
                 "number":670
             }
         ]
