@@ -7,16 +7,37 @@
             "thumb": "./images/gallery/indo3.jpg"
              },{
                 "id": 3,
-                "thumb": "./images/gallery/indo5.jpg"
+                "thumb": "./images/gallery/indo4.jpg"
                  },{
                     "id": 4,
-                    "thumb": "./images/gallery/uga6.jpeg"
+                    "thumb": "./images/gallery/indo1.jpg"
                      },{
                         "id": 5,
-                        "thumb": "./images/gallery/uga7.jpeg"
+                        "thumb": "./images/gallery/uga1.jpeg"
                          },{
                             "id": 6,
-                            "thumb": "./images/gallery/uga4.jpeg"
+                            "thumb": "./images/gallery/uga2.jpeg"
                              }
-    
+                             ,{
+                              "id": 7,
+                              "thumb": "./images/gallery/uga3.jpeg"
+                               },{
+                                 "id": 8,
+                                 "thumb": "./images/gallery/uga4.jpeg"
+                                  },{
+                                    "id": 9,
+                                    "thumb": "./images/gallery/uga5.jpeg"
+                                     },{
+                                       "id": 10,
+                                       "thumb": "./images/gallery/uga6.jpeg"
+                                        }  ,{
+                                          "id": 11,
+                                          "thumb": "./images/gallery/uga7.jpeg"
+                                           }  ,{
+                                             "id": 12,
+                                             "thumb": "./images/gallery/uga8.jpeg"
+                                              }  ,{
+                                                "id": 13,
+                                                "thumb": "./images/gallery/indo5.jpg"
+                                                 }    
 ]

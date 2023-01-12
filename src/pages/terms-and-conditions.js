@@ -5,13 +5,24 @@ import CausesData from "../data/causes.json";
 
 import { Container } from "react-bootstrap";
 import SEO from "../components/seo";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import PageBanner from "../containers/global/page-banner";
+import Footer from "../layouts/footer";
 
 function TermsAndConditions(props) {
     return (
-        <Container className="my-3 py-3">
+        <>
             <SEO title="Ssebowa - Terms and Conditions" />
-            <div>
-                <h4 className="h3">TERMS OF SERVICE OUTLINE</h4>
+            <NavBarUpdated></NavBarUpdated>
+            <PageBanner
+                className="text-center"
+                title="Terms & Conditions"
+                excerpt="Our Terms and Conditions"
+                image="./images/service/terms.png"
+            />
+
+            <div className="mt-10 pt-10 m-3 p-3">
+                <h4 className="h3 text-center">TERMS OF SERVICE OUTLINE</h4>
                 <p className="mx-1">
                     We understand that it is tempting to skip the terms of
                     service but you must ascertain your expectations from us as
@@ -33,7 +44,7 @@ function TermsAndConditions(props) {
                 </p>
             </div>
             <div>
-                <ul className="list-unstyled my-3 px-3">
+                <ul className="list-unstyled my-3 px-3 m-8 p-8">
                     {CausesData &&
                         CausesData.map((cause) => {
                             return (
@@ -47,7 +58,8 @@ function TermsAndConditions(props) {
                         })}
                 </ul>
             </div>
-        </Container>
+            <Footer></Footer>
+        </>
     );
 }
 

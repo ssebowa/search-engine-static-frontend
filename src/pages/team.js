@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import NewsletterArea from "../containers/global/newsletter";
@@ -14,7 +15,7 @@ const TeamPage = () => {
             <Layout>
                 <SEO title="Ssebowa – Team" />
                 <div className="wrapper">
-                    <Header />
+                    <NavBarUpdated></NavBarUpdated>
                     <PageBanner
                         title="Our Team"
                         excerpt="Pleasure rationally encounter consequences <br />

@@ -8,12 +8,15 @@ import IconBoxContainer from "../containers/global/icon-box";
 import NewsletterArea from "../containers/global/newsletter";
 import PageBanner from "../containers/global/page-banner";
 import TestimonialReverse from "../containers/global/testimonial-reverse";
+import TeamContainer from "../containers/global/team";
 import ServiceListContainer from "../containers/service/service-list";
 import VideoContainer from "../components/testimonials-video-container";
+import MissionAndVision from "../components/mission-and-vision";
 
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 import Layout from "../layouts/index";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 
 const AboutPage = () => {
     return (
@@ -21,20 +24,23 @@ const AboutPage = () => {
             <Layout>
                 <SEO title="Ssebowa – About" />
                 <div className="wrapper text-center">
-                    <Header />
+                    <NavBarUpdated></NavBarUpdated>
                     <PageBanner
                         className="text-center"
                         title="About us"
                         excerpt="Get to know us"
                         image="./images/banner/1.png"
                     />
+
+                    <MissionAndVision></MissionAndVision>
+
                     <IconBoxContainer classOption="section-pt" />
                     <FunFactContainer classOption="mt-0 mt-lg-0" />
                     {/* <BrandContainer /> */}
-                    <AboutContainer />
+
                     {/* <ServiceListContainer /> */}
                     {/* <TestimonialReverse /> */}
-                    <VideoContainer></VideoContainer>
+                    <TeamContainer classOption="section-pb" />
                     {/* <NewsletterArea /> */}
                     <Footer />
                     <ScrollToTop />

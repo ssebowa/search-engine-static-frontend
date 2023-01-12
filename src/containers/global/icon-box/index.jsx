@@ -8,10 +8,11 @@ import HomeData from "../../../data/home.json";
 const IconBoxContainer = ({ classOption }) => {
     return (
         <div className={`feature-section position-relative ${classOption}`}>
-            <img
-                className="path-img"
-                src={`${process.env.PUBLIC_URL}/images/feature/shape.png`}
-                alt="images_not_found"
+            <SectionTitle
+                classOption="title-section mt-10 p-3 text-center"
+                title="<span class='text-primary'>What Your Searches </br> <span class='text-dark' >Does</span> </span> "
+                excerptClassOption="null"
+                excerpt="Lets Have a Look"
             />
             <div className="container custom-container">
                 <div className="row g-0 align-items-center">

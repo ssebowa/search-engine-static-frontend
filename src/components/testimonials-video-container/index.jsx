@@ -2,11 +2,14 @@ import React from "react";
 
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import Carousel from "react-bootstrap/Carousel";
 
 import VideoCard from "../testimonials-video-card";
 import VideoData from "../../data/vIdeos.json";
 import PageBanner from "../../containers/global/page-banner";
 import SectionTitle from "../section-title";
+import { Grid } from "@mui/material";
+import { Box } from "@mui/system";
 
 function index() {
     return (
@@ -20,14 +23,29 @@ function index() {
                 />
             </div>
 
-            <Row>
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                    p: 1,
+                    m: 1,
+                    bgcolor: "background.paper",
+                    borderRadius: 1,
+                }}
+            >
                 {VideoData &&
                     VideoData.map((video) => {
                         return (
-                            <VideoCard key={video.key} data={video}></VideoCard>
+                            <>
+                                <Box xs={12}>
+                                    <VideoCard key={video.key} data={video}>
+                                        {" "}
+                                    </VideoCard>
+                                </Box>
+                            </>
                         );
                     })}
-            </Row>
+            </Box>
         </Container>
     );
 }
