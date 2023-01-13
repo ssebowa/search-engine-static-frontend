@@ -37,14 +37,14 @@ const CardMui = ({ data }) => {
 
     return (
         <Card sx={{ maxWidth: 345 }}>
-            <CardHeader title={data.title} />
-            <CardMedia
+            <CardHeader sx={{ color: "info.main" }} title={data.title} />
+            {/* <CardMedia
                 component="img"
                 height="194"
                 image={data.img}
                 alt={data.title}
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
-            />
+            /> */}
             <CardContent>
                 <Typography
                     variant="body2"

@@ -67,7 +67,8 @@ function SearchBarHome() {
                         size="lg"
                         style={{
                             color: "#59e3a7",
-                            paddingLeft: 10,
+                            marginRight: "auto",
+                            marginLeft: 10,
                         }}
                     />
                     <input

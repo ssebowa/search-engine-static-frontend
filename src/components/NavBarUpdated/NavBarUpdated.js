@@ -85,7 +85,7 @@ const NavBarUpdated = () => {
                         </>
                     ) : (
                         <Grid sx={{ placeItems: "center" }} container>
-                            <Grid item xs={2} sx={{ px: 8 }}>
+                            <Grid item xs={1.5} sx={{ px: 8 }}>
                                 <Link to="/">
                                     <img
                                         src={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
@@ -98,7 +98,28 @@ const NavBarUpdated = () => {
 
                             {location.pathname != "/" ? (
                                 <>
+                                    <Grid item xs={7}>
+                                        <Box
+                                            style={{ width: "500px" }}
+                                            sx={{
+                                                display: "flex",
+
+                                                mx: "auto",
+                                            }}
+                                        >
+                                            <SearchBarHome></SearchBarHome>
+                                        </Box>
+                                    </Grid>
                                     <Grid
+                                        item
+                                        sx={{ ml: "auto", pr: 2 }}
+                                        xs={1}
+                                    >
+                                        <NavbarDrawer
+                                            linksArray={linksArray}
+                                        ></NavbarDrawer>
+                                    </Grid>
+                                    {/* <Grid
                                         item
                                         xs={6}
                                         sx={{
@@ -131,21 +152,7 @@ const NavBarUpdated = () => {
                                                 ></Tab>
                                             ))}
                                         </Tabs>
-                                    </Grid>
-
-                                    <Grid item xs={3}>
-                                        <Box
-                                            style={{ width: "240px" }}
-                                            sx={{
-                                                display: "flex",
-
-                                                marginLeft: "auto",
-                                                marginRight: "0",
-                                            }}
-                                        >
-                                            <SearchBarHome></SearchBarHome>
-                                        </Box>
-                                    </Grid>
+                                    </Grid> */}
                                 </>
                             ) : (
                                 <>

@@ -24,10 +24,6 @@ const index = () => {
                     MissionAndVisionData.map((data) => {
                         return (
                             <>
-                                {/* <VideoCard key={video.key} data={video}>
-                                        {" "}
-                                    </VideoCard> */}
-
                                 <Grid2
                                     sx={{ mx: "auto", p: 1 }}
                                     xs={8}

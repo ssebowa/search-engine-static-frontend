@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InfoBoxes from "./InfoBoxes";
 import ResultMain, { SearchSuggestions } from "./ResultMain";
 import PropTypes from "prop-types";
-import { useEffect } from "react";
+
 import { ColorRing } from "react-loader-spinner";
 import { BASEURL } from "../../connection/BaseUrl";
 
@@ -49,9 +49,9 @@ function SearchResults({ query }) {
         return (
             <div className="SearchResultsMain">
                 <div className="SearchResultsInnerLeft ">
-                    <p className="text-dark mt-2">
+                    {/* <p className="text-dark mt-2">
                         About {search_results?.number_of_results} results
-                    </p>
+                    </p> */}
                     {search_results?.results?.map((item, i) => {
                         return <ResultMain key={i} data={item} />;
                     })}
