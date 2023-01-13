@@ -1,59 +1,46 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-import { AppBar, Toolbar, withStyles, IconButton } from "@mui/material";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+const linksArray = [
+    { id: 0, navName: "Home", navLink: "/" },
+    { id: 1, navName: "About", navLink: "/about" },
+    { id: 2, navName: "Gallery", navLink: "/gallery" },
+    { id: 3, navName: "Projects", navLink: "/projects" },
+    { id: 4, navName: "Contact", navLink: "/contact" },
+];
 
-const styles = {
-    appBar: {
-        top: "auto",
-        bottom: 0,
-    },
-    menuButton: {
-        marginLeft: -12,
-        marginRight: -12,
-    },
-    actionButtons: {
-        marginLeft: "auto",
-    },
-};
-
-const NavBarUpdated = () => {
+const NavBarFooter = () => {
     return (
-        <React.Fragment>
-            <AppBar
-                position="fixed"
-                color="secondary"
-                className={classes.appBar}
-            >
-                <Toolbar>
-                    <IconButton
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="Menu"
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <div className={classes.actionButtons}>
-                        <IconButton color="inherit" aria-label="Search">
-                            <SearchIcon />
-                        </IconButton>
-                        <IconButton
-                            className={classes.menuButton}
-                            color="inherit"
-                            aria-label="Menu"
-                        >
-                            <MoreVertIcon />
-                        </IconButton>
-                    </div>
-                </Toolbar>
-            </AppBar>
-            <Toolbar key="spacer" />
-        </React.Fragment>
+        <Navbar bg="light" expand="lg" style={{ height: "100px" }}>
+            <Container>
+                <Nav className="ml-4  w-75 d-flex justify-content-around">
+                    {linksArray &&
+                        linksArray.map((link) => {
+                            return (
+                                <>
+                                    <Nav.Link>
+                                        <Link
+                                            style={{
+                                                color: "#343fd1",
+                                                fontSize: "0.9rem",
+                                            }}
+                                            to={link.navLink}
+                                        >
+                                            {link.navName}
+                                        </Link>
+                                    </Nav.Link>
+                                </>
+                            );
+                        })}
+                </Nav>
+            </Container>
+        </Navbar>
     );
 };
 
-export default NavBarUpdated;
+export default NavBarFooter;
