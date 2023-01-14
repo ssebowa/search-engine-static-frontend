@@ -16,7 +16,6 @@ const IntroContainer = () => {
                     alt="shape"
                 />
             </div>
-
             <Intro />
         </div>
     );

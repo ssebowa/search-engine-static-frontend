@@ -32,6 +32,7 @@ import "./assets/css/vendor/material-design-iconic.min.css";
 import "./assets/css/plugins/animate.min.css";
 import "./assets/scss/style.scss";
 import SearchPage from "./pages/search";
+import SearchBotPage from "./pages/search-bot";
 
 const App = () => {
     return (
@@ -44,9 +45,14 @@ const App = () => {
                         component={HomePage}
                     />
                     <Route
+                        path={`${process.env.PUBLIC_URL + "/bot"}`}
+                        component={SearchBotPage}
+                    />
+                    <Route
                         path={`${process.env.PUBLIC_URL + "/search"}`}
                         component={SearchPage}
                     />
+
                     <Route
                         path={`${process.env.PUBLIC_URL + "/about"}`}
                         component={AboutPage}
@@ -55,20 +61,20 @@ const App = () => {
                         path={`${process.env.PUBLIC_URL + "/gallery"}`}
                         component={GalleryPage}
                     />
-                    {/* <Route
+                    <Route
                         path={`${
                             process.env.PUBLIC_URL + "/service-details/:id"
                         }`}
                         component={ServiceDetails}
-                    /> */}
+                    />
                     <Route
                         path={`${process.env.PUBLIC_URL + "/team"}`}
                         component={TeamPage}
                     />
-                    {/* <Route
+                    <Route
                         path={`${process.env.PUBLIC_URL + "/faq"}`}
                         component={FaqPage}
-                    /> */}
+                    />
                     <Route
                         path={`${process.env.PUBLIC_URL + "/contact"}`}
                         component={ContactPage}
@@ -93,12 +99,10 @@ const App = () => {
                         }`}
                         component={BlogLeftSidebarPage}
                     /> */}
-                    {/* <Route
-                        path={`${
-                            process.env.PUBLIC_URL + "/blog-right-sidebar"
-                        }`}
+                    <Route
+                        path={`${process.env.PUBLIC_URL + "/blog/:_page?"}`}
                         component={BlogRightSidebarPage}
-                    /> */}
+                    />
                     <Route
                         path={`${
                             process.env.PUBLIC_URL + "/project-details/:id"

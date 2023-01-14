@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BlogGrid from "../../../components/blog";
 import SidebarCategories from "../../../components/sidebar/categories";
 import SidebarSearch from "../../../components/sidebar/search";
 import SidebarTag from "../../../components/sidebar/sidbar-tag";
@@ -8,6 +7,7 @@ import SidebarArchive from "../../../components/sidebar/sidebar-archive";
 import SidebarPost from "../../../components/sidebar/sidebar-post";
 import SidebarTitle from "../../../components/sidebar/sidebar-title";
 import BlogData from "../../../data/blog.json";
+import BlogMainCard from "../../../components/blog/blogmain";
 
 const BlogItemRightContainer = ({ data }) => {
     return (
@@ -20,7 +20,7 @@ const BlogItemRightContainer = ({ data }) => {
                                 data.slice(3, 11).map((single, key) => {
                                     return (
                                         <div key={key} className="col mb-7">
-                                            <BlogGrid
+                                            <BlogMainCard
                                                 classOption="p-0"
                                                 key={key}
                                                 data={single}

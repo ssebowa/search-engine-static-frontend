@@ -32,7 +32,8 @@
     "react-visibility-sensor": "^5.1.1",
     "reactstrap": "^8.9.0",
     "sass": "^1.34.0",
-    "swiper": "^6.6.2"
+    "swiper": "^6.6.2",
+    "typewriter-effect": "^2.19.0"
   },
   "scripts": {
     "start": "react-scripts start",

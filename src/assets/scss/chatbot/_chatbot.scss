@@ -1,0 +1,134 @@
+.ChatBotContainer {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ChatBotMain {
+    margin: 1em;
+    width: 100%;
+    max-width: 750px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.ChatBotNav {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    align-items: center;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ChatBotResponceDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    padding: 0.5em;
+}
+
+  .ChatBotResponceDiv {
+    scrollbar-width: auto;
+    scrollbar-color: #181c51 #ffffff;
+  }
+
+  .ChatBotResponceDiv::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .ChatBotResponceDiv::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .ChatBotResponceDiv::-webkit-scrollbar-thumb {
+    background-color: #181c51;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
+.ChatBotFormDiv {
+    height: 5em;
+    width: 100%;
+}
+.ChatBotForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ChatBotInput {
+    width: 80%;
+    height: 3em;
+    padding: 1em;
+    border-radius: 100px;
+    color: #000;
+    font-weight: bolder;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.ChatBotButton {
+    width: 3em !important;
+    height: 3em !important;
+    background-color: #59e3a7;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.MessageSentMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .MessageSentInner {
+        background-color: whitesmoke;
+        padding: 10px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        font-size: 14px;
+        color: #000;
+        max-width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
+.MessageRecievdedMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .MessageRecievdedInner {
+        background: #181c51;
+        padding: 10px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        font-size: 14px;
+        color: #fff;
+    }
+}

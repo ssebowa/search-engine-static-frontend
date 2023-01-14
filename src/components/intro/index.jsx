@@ -5,6 +5,7 @@ import Parallax from "parallax-js";
 import Logo from "../logo";
 import SearchBarHome from "../searchbarhome/SearchBarHome";
 import Bookmarks from "../Bookmarks/Bookmarks";
+import { Link } from "react-router-dom";
 
 const Intro = ({ data }) => {
     return (
@@ -19,6 +20,20 @@ const Intro = ({ data }) => {
                     </div>
 
                     <SearchBarHome />
+                    <div className="w-75 mt-2  p-2 d-flex justify-content-center align-items-center">
+                        <Link
+                            to={"/bot?q=I%20am%20your%20assistant"}
+                            className="bg-success p-2 d-flex justify-content-center align-items-center"
+                            style={{
+                                minWidth: "200px",
+                                borderRadius: 100,
+                                color: "#fff",
+                                paddingHorizontal: 4,
+                            }}
+                        >
+                            Search with our ChatBot
+                        </Link>
+                    </div>
                     <Bookmarks />
                 </div>
             </div>
