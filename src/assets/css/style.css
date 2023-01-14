@@ -18019,6 +18019,66 @@ textarea.form-control {
     height: 50%;
   }
 }
+/*   Search Bar
+----------------------------------------*/
+
+.searchbar-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.searchbar-input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: #1b0760;
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.searchbar-input-group {
+  border: 1px solid #ccc;
+  border-radius:30px;
+  display: flex;
+}
+
+.searchbar-input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  width: 0;
+}
+
+.searchbar-input-group .btn {
+  margin: 4px;
+}
+
+
+.searchbar-btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+
+.searchbar-btn--accent {
+  background: #ff3400;
+  color: #fff;
+}
+
 
 /*   [ The End ] 
 ----------------------------------------*/

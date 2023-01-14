@@ -65,7 +65,7 @@ const CardMui = ({ data }) => {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography
-                        sx={{ color: "info.main", fontWeight: "bold" }}
+                        sx={{ color: "success.main", fontWeight: "bold" }}
                         paragraph
                     >
                         {data.collapse_title}

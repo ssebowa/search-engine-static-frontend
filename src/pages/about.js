@@ -29,7 +29,7 @@ const AboutPage = () => {
                         className="text-center"
                         title="About us"
                         excerpt="Get to know us"
-                        image="./images/banner/1.png"
+                        image="./images/banner/about_banner.jpeg"
                     />
 
                     <MissionAndVision></MissionAndVision>
