@@ -19,7 +19,7 @@ function ChatBot() {
     const [inputVal, SetinputVal] = useState("");
 
     useEffect(() => {
-        fetch(BASEURL_Chat_Bot)
+        fetch(BASEURL_Chat_Bot + "Checking")
             .then((r) => r.json())
             .then((r) => {
                 SetActive(true);
