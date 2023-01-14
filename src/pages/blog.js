@@ -8,6 +8,7 @@ import Layout from "../layouts/index";
 import BlogData from "../data/blog.json";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 
 const BlogPage = () => {
     return (
@@ -15,7 +16,8 @@ const BlogPage = () => {
             <Layout>
                 <SEO title="Ssebowa – Projects" />
                 <div className="wrapper">
-                    <Header />
+                    <NavBarUpdated></NavBarUpdated>
+
                     <PageBanner
                         title="Current Campaings"
                         excerpt="Projects around the world"

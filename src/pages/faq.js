@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import AccordionContainer from "../containers/accordion";
@@ -14,7 +15,7 @@ const FaqPage = () => {
             <Layout>
                 <SEO title="Buznex – Faq" />
                 <div className="wrapper">
-                    <Header />
+                    <NavBarUpdated></NavBarUpdated>
                     <PageBanner
                         title="FAQ"
                         excerpt="Pleasure rationally encounter consequences <br />

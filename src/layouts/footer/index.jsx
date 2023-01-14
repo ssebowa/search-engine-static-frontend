@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../components/logo";
@@ -21,36 +22,37 @@ const Footer = () => {
                                     image={`${process.env.PUBLIC_URL}/images/logo/logo-footer.png`}
                                 />
                                 <p>
-                                    Pleasure rationally encounter consequences
-                                    that extremely painful. Nor again is there
+                                    Make your daily searches with Ssebowa and
+                                    see how you will make this 21st century not
+                                    look like this 21th century
                                 </p>
                                 <ul className="footer-social-links">
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
-                                            path="https://www.facebook.com/"
-                                            icon="icofont-facebook"
+                                            path="https://www.facebook.com/profile.php?id=100086051799350"
+                                            icon="fa-brands fa-square-facebook"
                                         />
                                     </li>
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
-                                            path="https://www.instagram.com/"
-                                            icon="icofont-instagram"
+                                            path="https://www.instagram.com/ssebowa_official/"
+                                            icon=" fa-brands fa-instagram"
                                         />
                                     </li>
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
-                                            path="https://twitter.com/"
-                                            icon="icofont-twitter"
+                                            path="https://www.linkedin.com/showcase/ssebowa/"
+                                            icon="fa-brands fa-linkedin"
                                         />
                                     </li>
                                     <li>
                                         <SocialIcon
                                             classOption="footer-social-link"
-                                            path="https://www.whatsapp.com/"
-                                            icon="icofont-whatsapp"
+                                            path="https://www.tiktok.com/@disanssebowabasal"
+                                            icon="fa-brands fa-tiktok"
                                         />
                                     </li>
                                 </ul>
@@ -65,22 +67,10 @@ const Footer = () => {
                                             className="footer-link"
                                             to={
                                                 process.env.PUBLIC_URL +
-                                                "/about"
-                                            }
-                                        >
-                                            About us
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
                                                 "/terms-and-conditions"
                                             }
                                         >
-                                            Conditions
+                                            Terms & Conditions
                                         </Link>
                                     </li>
                                     <li>
@@ -88,10 +78,10 @@ const Footer = () => {
                                             className="footer-link"
                                             to={
                                                 process.env.PUBLIC_URL +
-                                                "/gallery"
+                                                "/privacy-policy"
                                             }
                                         >
-                                            Gallery
+                                            Privacy Policy
                                         </Link>
                                     </li>
                                     <li>
@@ -113,6 +103,17 @@ const Footer = () => {
                                             }
                                         >
                                             Contact us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="footer-link"
+                                            to={
+                                                process.env.PUBLIC_URL +
+                                                "/about"
+                                            }
+                                        >
+                                            About us
                                         </Link>
                                     </li>
                                 </ul>
@@ -165,9 +166,9 @@ const Footer = () => {
                                     <li>
                                         <a
                                             className="address-link"
-                                            href="mailto:supoort@ssebowa.ai"
+                                            href="mailto:info@ssebowa.ai"
                                         >
-                                            supoort@ssebowa.ai
+                                            info@ssebowa.ai
                                         </a>
                                     </li>
                                 </ul>

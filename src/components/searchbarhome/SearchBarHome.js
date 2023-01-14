@@ -54,7 +54,7 @@ function SearchBarHome() {
         }
     };
     return (
-        <div className="w-90 d-flex flex-column align-items-center">
+        <div className="w-75 d-flex flex-column align-items-center">
             <div className="mainSearchBarMainDiv ">
                 <form
                     method="NONE"
@@ -67,14 +67,15 @@ function SearchBarHome() {
                         size="lg"
                         style={{
                             color: "#59e3a7",
-                            paddingLeft: 10,
+                            marginRight: "auto",
+                            marginLeft: 10,
                         }}
                     />
                     <input
                         type="text"
                         className="mainSearchBar"
                         value={inputVal}
-                        placeholder="Search here..."
+                        placeholder="Search the web to plant trees..."
                         onChange={(e) => onChangeInput(e)}
                     />
                 </form>

@@ -3,6 +3,7 @@ import NavScrollTop from "./components/nav-scroll-top";
 import HomePage from "./pages/index";
 import AboutPage from "./pages/about";
 import ServicePage from "./pages/service";
+import GalleryPage from "./pages/gallery";
 import ServiceDetails from "./templates/service-details";
 import TeamPage from "./pages/team";
 import FaqPage from "./pages/faq";
@@ -16,6 +17,11 @@ import BlogTag from "./templates/blog-tag";
 import BlogCategory from "./templates/blog-category";
 import ContactPage from "./pages/contact";
 import TermsAndConditions from "./pages/terms-and-conditions";
+import PrivacyPolicy from "./pages/privacy-policy";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
@@ -53,7 +59,7 @@ const App = () => {
                     />
                     <Route
                         path={`${process.env.PUBLIC_URL + "/gallery"}`}
-                        component={ServicePage}
+                        component={GalleryPage}
                     />
                     <Route
                         path={`${
@@ -82,6 +88,10 @@ const App = () => {
                             process.env.PUBLIC_URL + "/terms-and-conditions"
                         }`}
                         component={TermsAndConditions}
+                    />
+                    <Route
+                        path={`${process.env.PUBLIC_URL + "/privacy-policy"}`}
+                        component={PrivacyPolicy}
                     />
                     {/* <Route
                         path={`${
@@ -122,3 +132,5 @@ const App = () => {
 };
 
 export default App;
+
+library.add(fab, faBars);

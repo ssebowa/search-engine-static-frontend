@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import ContactContainer from "../containers/contact";
@@ -14,7 +15,7 @@ const ContactPage = () => {
             <Layout>
                 <SEO title="Ssebowa – Contact" />
                 <div className="wrapper">
-                    <Header />
+                    <NavBarUpdated></NavBarUpdated>
                     <PageBanner
                         title="Contact us"
                         excerpt="Pleasure rationally encounter consequences <br />

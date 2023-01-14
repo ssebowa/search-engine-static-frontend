@@ -6,6 +6,7 @@ import SearchHeader from "../layouts/SearchHeader";
 import SearchResults from "../components/SearchResults/SearchResults";
 import Footer from "../layouts/footer";
 import SearchTypeHeader from "../components/SearchResults/SearchTypeHeader";
+import NavBarFooter from "../components/NavBarFooter/NavBarFooter";
 
 const SearchPage = () => {
     const [query, SetQuery] = React.useState("");
@@ -41,7 +42,7 @@ const SearchPage = () => {
                     <SearchHeader query={query} InputChanged={InputChanged} />
                     <SearchTypeHeader />
                     <SearchResults query={query} />
-                    <Footer />
+                    <NavBarFooter></NavBarFooter>
                     <ScrollToTop />
                 </div>
             </Layout>

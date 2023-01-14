@@ -12,6 +12,7 @@ const TeamCard = ({ data }) => {
                     alt="img"
                     style={{
                         height: "300px",
+                        objectFit: "contain",
                     }}
                     className="rounded-circle p-3"
                 />
