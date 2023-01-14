@@ -2,14 +2,18 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types"; // ES6
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
+import { Button, Form } from "react-bootstrap";
 
 function SearchBarHome() {
     const history = useHistory();
     const [inputVal, SetInputVal] = React.useState("");
     const [SuggestionReady, SetSuggestionReady] = React.useState(false);
     const [Suggestions, SetSuggestions] = React.useState([]);
+
+    const location = useLocation();
+    console.log(location.pathname);
 
     var fetchUrl = BASEURL + "autocomplete-ssebowa/";
     const FetchSuggestions = (value) => {
@@ -55,8 +59,8 @@ function SearchBarHome() {
     };
     return (
         <div className="w-75 d-flex flex-column align-items-center">
-            <div className="mainSearchBarMainDiv ">
-                <form
+            <div className="mainSearchBarMainDiv100 ">
+                {/* <form
                     method="NONE"
                     className="mainSearchBarForm"
                     onSubmit={(e) => SubmitSearchRequest(e)}
@@ -78,7 +82,107 @@ function SearchBarHome() {
                         placeholder="Search the web to plant trees..."
                         onChange={(e) => onChangeInput(e)}
                     />
-                </form>
+                    <button
+                        style={{
+                            backgroundColor: "green",
+                            height: "100%",
+                        }}
+                    >
+                        Sub
+                    </button>
+                </form> */}
+                {location.pathname != "/" ? (
+                    <>
+                        <Form
+                            method="NONE"
+                            className="d-flex m-5 py-1"
+                            style={{
+                                width: "50vw",
+                                maxWidth: "300px",
+                                minWidth: "100px",
+                                height: "80%",
+                                maxHeight: "50px",
+                            }}
+                            onSubmit={(e) => SubmitSearchRequest(e)}
+                        >
+                            <Form.Control
+                                type="text"
+                                className="me-1"
+                                aria-label="Search"
+                                style={{
+                                    width: "80%",
+                                    maxWidth: "300px",
+                                    minWidth: "130px",
+                                    borderRadius: "20px 10px 10px 20px",
+                                }}
+                                value={inputVal}
+                                placeholder="Search the web to plant trees..."
+                                onChange={(e) => onChangeInput(e)}
+                            />
+
+                            <Button
+                                variant="success "
+                                className=" d-flex justify-content-center align-items-center"
+                                style={{
+                                    width: "10%",
+                                    minWidth: "6px",
+
+                                    borderRadius: "10px 18px 18px 10px",
+                                }}
+                            >
+                                <FontAwesomeIcon
+                                    icon={faMagnifyingGlass}
+                                    className="text-light me-1"
+                                    size="md"
+                                />
+                            </Button>
+                        </Form>
+                    </>
+                ) : (
+                    <>
+                        <Form
+                            className="d-flex m-5 py-1"
+                            style={{
+                                width: "30em",
+                                height: "100%",
+                                maxHeight: "60px",
+                            }}
+                            onSubmit={(e) => SubmitSearchRequest(e)}
+                        >
+                            <Form.Control
+                                type="text"
+                                className="me-1"
+                                aria-label="Search"
+                                style={{
+                                    width: "100%",
+                                    maxWidth: "400px",
+                                    minWidth: "110px",
+                                    borderRadius: "100px 10px 10px 100px",
+                                }}
+                                value={inputVal}
+                                placeholder="Search the web to plant trees..."
+                                onChange={(e) => onChangeInput(e)}
+                            />
+                            <Button
+                                variant="success "
+                                className=" d-flex justify-content-center align-items-center"
+                                style={{
+                                    width: "5px",
+                                    borderRadius: "10px 100px 100px 10px",
+                                }}
+                            >
+                                <div>
+                                    <FontAwesomeIcon
+                                        icon={faMagnifyingGlass}
+                                        className="text-light me-2"
+                                        size="lg"
+                                    />
+                                </div>
+                            </Button>
+                        </Form>
+                    </>
+                )}
+
                 {SuggestionReady ? (
                     <div className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">
                         {Suggestions.length !== 0 ? (

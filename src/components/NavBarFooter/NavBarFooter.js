@@ -12,22 +12,24 @@ const linksArray = [
     { id: 2, navName: "Gallery", navLink: "/gallery" },
     { id: 3, navName: "Projects", navLink: "/projects" },
     { id: 4, navName: "Contact", navLink: "/contact" },
+    { id: 5, navName: "Privacy Policy", navLink: "/contact" },
+    { id: 6, navName: "Terms and Conditions", navLink: "/contact" },
 ];
 
 const NavBarFooter = () => {
     return (
         <Navbar bg="light" expand="lg" style={{ height: "100px" }}>
             <Container>
-                <Nav className="ml-4  w-75 d-flex justify-content-around">
+                <Nav className="ml-4  w-100 d-flex justify-content-around">
                     {linksArray &&
                         linksArray.map((link) => {
                             return (
                                 <>
-                                    <Nav.Link>
+                                    <Nav.Link key={link.id}>
                                         <Link
                                             style={{
                                                 color: "#343fd1",
-                                                fontSize: "0.9rem",
+                                                fontSize: "0.8rem",
                                             }}
                                             to={link.navLink}
                                         >
