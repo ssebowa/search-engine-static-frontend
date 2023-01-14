@@ -85,7 +85,7 @@ const NavBarUpdated = () => {
                         </>
                     ) : (
                         <Grid sx={{ placeItems: "center" }} container>
-                            <Grid item xs={1.5} sx={{ px: 8 }}>
+                            <Grid item xs={1.5} sx={{ px: 4 }}>
                                 <Link to="/">
                                     <img
                                         src={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
