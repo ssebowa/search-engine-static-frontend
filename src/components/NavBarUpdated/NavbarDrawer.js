@@ -6,6 +6,7 @@ import {
     ListItem,
     ListItemButton,
     ListItemText,
+    Typography,
 } from "@mui/material";
 import { MenuRounded } from "@mui/icons-material";
 
@@ -21,10 +22,9 @@ const NavbarDrawer = ({ linksArray }) => {
             <Drawer
                 PaperProps={{
                     sx: {
-                        background: "rgb(82, 210, 131)",
+                        background: "rgb(240,255,244)",
                         background:
-                            "radial-gradient(circle, rgba(82,210,131,1) 0%, rgba(82,210,131,1) 35%, rgba(82,210,131,1) 100%)",
-
+                            "linear-gradient(90deg, rgba(240,255,244,1) 0%, rgba(240,255,244,1) 35%, rgba(240,255,244,1) 100%)",
                         width: "40%",
                     },
                 }}
@@ -41,15 +41,20 @@ const NavbarDrawer = ({ linksArray }) => {
                             to={linkInfo.navLink}
                             divider
                         >
-                            <ListItemText
-                                sx={{
-                                    color: "white",
-                                    fontWeight: "bold",
-                                    fontSize: 16,
-                                    fontFamily: "monospace",
-                                }}
-                            >
-                                {linkInfo.navName}
+                            <ListItemText variant="h1">
+                                <Typography
+                                    sx={{
+                                        color: "#181C51 ",
+                                        fontWeight: "bold",
+                                        fontSize: "1.2rem",
+                                        fontFamily: "Raleway",
+                                        ":hover": {
+                                            color: "coral",
+                                        },
+                                    }}
+                                >
+                                    {linkInfo.navName}
+                                </Typography>
                             </ListItemText>
                         </ListItem>
                     ))}
@@ -66,7 +71,7 @@ const NavbarDrawer = ({ linksArray }) => {
                     borderColor: "greenyellow",
                 }}
             >
-                <MenuRounded />
+                <MenuRounded sx={{ fontSize: 40 }} />
             </IconButton>
         </>
     );

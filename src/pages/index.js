@@ -28,6 +28,7 @@ const HomePage = () => {
         { id: 2, navName: "Gallery", navLink: "/gallery" },
         { id: 3, navName: "Projects", navLink: "/projects" },
         { id: 4, navName: "Contact", navLink: "/contact" },
+        { id: 5, navName: "Team", navLink: "/team" },
     ];
     return (
         <React.Fragment>
@@ -41,7 +42,10 @@ const HomePage = () => {
                         className="d-flex justify-content-end"
                         style={{ background: "transparent" }}
                     >
-                        <div className="m-1 p-2" style={{ width: "5rem" }}>
+                        <div
+                            className="m-1 p-2 "
+                            style={{ width: "6rem", height: "5rem" }}
+                        >
                             <NavbarDrawer
                                 linksArray={linksArray}
                             ></NavbarDrawer>

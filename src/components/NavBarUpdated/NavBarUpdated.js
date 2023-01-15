@@ -35,6 +35,7 @@ const NavBarUpdated = () => {
         { id: 2, navName: "Gallery", navLink: "/gallery" },
         { id: 3, navName: "Projects", navLink: "/projects" },
         { id: 4, navName: "Contact", navLink: "/contact" },
+        { id: 5, navName: "Team", navLink: "/team" },
     ];
     return (
         <>
