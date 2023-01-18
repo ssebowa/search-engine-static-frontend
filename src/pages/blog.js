@@ -18,11 +18,7 @@ const BlogPage = () => {
                 <div className="wrapper">
                     <NavBarUpdated></NavBarUpdated>
 
-                    <PageBanner
-                        title="Current Campaings"
-                        excerpt="Projects around the world"
-                        image="./images/blog/banner.png"
-                    />
+                    <PageBanner title="Current Campaings" excerpt="Projects around the world" image="./images/blog/banner.png" />
                     <BlogItemContainer data={BlogData} />
                     {/* <NewsletterArea /> */}
                     <Footer />

@@ -15,11 +15,7 @@ function gallary(props) {
             <Box>
                 <SEO title="Ssebowa – Gallery" />
                 <NavBarUpdated></NavBarUpdated>
-                <PageBanner
-                    title="Our Gallery"
-                    excerpt="With Ssebowa, you can push the human race forward"
-                    image="./images/service/2.png"
-                />
+                <PageBanner title="Our Gallery" excerpt="With Ssebowa, you can push the human race forward" image="./images/service/2.png" />
                 <GallaryImageList></GallaryImageList>
                 <Footer></Footer>
                 <ScrollToTop></ScrollToTop>
@@ -40,8 +36,7 @@ function gallary(props) {
                     <NewsletterArea /> */}
                 {/* <GallaryImagesContainer></GallaryImagesContainer>
             <Footer />
-            <ScrollToTop /> */}{" "}
-                {/* */}
+            <ScrollToTop /> */} {/* */}
             </Box>
         </>
     );

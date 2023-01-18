@@ -1,18 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    AppBar,
-    Button,
-    Grid,
-    Tab,
-    Tabs,
-    Toolbar,
-    Typography,
-    Box,
-    Item,
-    useTheme,
-    useMediaQuery,
-    Drawer,
-} from "@mui/material";
+import { AppBar, Button, Grid, Tab, Tabs, Toolbar, Typography, Box, Item, useTheme, useMediaQuery, Drawer } from "@mui/material";
 import { flexbox } from "@mui/system";
 
 import React, { useState } from "react";
@@ -55,10 +42,7 @@ const NavBarUpdated = () => {
                                 <Grid item xs={2}>
                                     {location.pathname != "/" && (
                                         <Link to="/">
-                                            <img
-                                                src={`${process.env.PUBLIC_URL}/images/logo/logo.png    `}
-                                                alt=""
-                                            />
+                                            <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png    `} alt="" />
                                         </Link>
                                     )}
                                 </Grid>
@@ -72,15 +56,11 @@ const NavBarUpdated = () => {
                                             mx: "auto",
                                         }}
                                     >
-                                        {location.pathname != "/" && (
-                                            <SearchBarHome></SearchBarHome>
-                                        )}
+                                        {location.pathname != "/" && <SearchBarHome></SearchBarHome>}
                                     </Box>
                                 </Grid>
                                 <Grid item xs={1.5}>
-                                    <NavbarDrawer
-                                        linksArray={linksArray}
-                                    ></NavbarDrawer>
+                                    <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
                                 </Grid>
                             </Grid>
                         </>
@@ -88,10 +68,7 @@ const NavBarUpdated = () => {
                         <Grid sx={{ placeItems: "center" }} container>
                             <Grid item xs={1.5} sx={{ px: 4 }}>
                                 <Link to="/">
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
-                                        alt=""
-                                    />
+                                    <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
                                 </Link>
                             </Grid>
 
@@ -111,14 +88,8 @@ const NavBarUpdated = () => {
                                             <SearchBarHome></SearchBarHome>
                                         </Box>
                                     </Grid>
-                                    <Grid
-                                        item
-                                        sx={{ ml: "auto", pr: 2 }}
-                                        xs={1}
-                                    >
-                                        <NavbarDrawer
-                                            linksArray={linksArray}
-                                        ></NavbarDrawer>
+                                    <Grid item sx={{ ml: "auto", pr: 2 }} xs={1}>
+                                        <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
                                     </Grid>
                                     {/* <Grid
                                         item

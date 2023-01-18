@@ -16,10 +16,7 @@ const SearchBotPage = () => {
                 <SEO title="Ssebowa Search" />
                 <div className="wrapper">
                     <div className="hero-shape1 navbar fixed-top">
-                        <img
-                            src={`${process.env.PUBLIC_URL}/images/slider/shape/shape1.png`}
-                            alt="shape"
-                        />
+                        <img src={`${process.env.PUBLIC_URL}/images/slider/shape/shape1.png`} alt="shape" />
                     </div>
                     <SearchBotHeader />
                     <ChatBot />

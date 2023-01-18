@@ -21,6 +21,9 @@ import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
 import NavbarDrawer from "../components/NavBarUpdated/NavbarDrawer";
 import { Box } from "@mui/material";
 
+import TodosSlideAnimation from "../components/ToDos/index";
+import CardFlipBook from "../components/CardWithAnimations/CardFlipBook";
+
 const HomePage = () => {
     const linksArray = [
         { id: 0, navName: "Home", navLink: "/" },
@@ -38,17 +41,9 @@ const HomePage = () => {
                     {/* <Header /> */}
                     {/* <NavBarUpdated></NavBarUpdated> */}
 
-                    <div
-                        className="d-flex justify-content-end"
-                        style={{ background: "transparent" }}
-                    >
-                        <div
-                            className="m-1 p-2 "
-                            style={{ width: "6rem", height: "5rem" }}
-                        >
-                            <NavbarDrawer
-                                linksArray={linksArray}
-                            ></NavbarDrawer>
+                    <div className="d-flex justify-content-end" style={{ background: "transparent" }}>
+                        <div className="m-1 p-2 " style={{ width: "6rem", height: "5rem" }}>
+                            <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
                         </div>
                     </div>
                     <IntroContainer />
@@ -57,6 +52,9 @@ const HomePage = () => {
                     {/* <HomeAboutContainer /> */}
                     {/* <ServiceListContainer />
                     <TestimonialContainer /> */}
+
+                    <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation>
+                    <CardFlipBook></CardFlipBook>
                     <FunFactContainer classOption="mt-10 mt-lg-0" />
                     <AboutContainer></AboutContainer>
                     <VideoCaorusel></VideoCaorusel>

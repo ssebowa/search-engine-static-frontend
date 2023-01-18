@@ -14,12 +14,7 @@ const PrivacyPolicy = () => {
         <>
             <SEO title="Ssebowa - Terms and Conditions" />
             <NavBarUpdated></NavBarUpdated>
-            <PageBanner
-                className="text-center"
-                title="Privacy Policies"
-                excerpt="Our privacy policies"
-                image="./images/service/privacy.png"
-            />
+            <PageBanner className="text-center" title="Privacy Policies" excerpt="Our privacy policies" image="./images/service/privacy.png" />
 
             <div className="mt-10 pt-10 ">
                 <h4 className="h3 text-center">PRIVACY POLICY</h4>
@@ -31,10 +26,7 @@ const PrivacyPolicy = () => {
                         PrivacyPolicyData.map((policy) => {
                             return (
                                 <li key={policy.key} className="py-3">
-                                    <CausesPage
-                                        key={policy.key}
-                                        data={policy}
-                                    ></CausesPage>
+                                    <CausesPage key={policy.key} data={policy}></CausesPage>
                                 </li>
                             );
                         })}

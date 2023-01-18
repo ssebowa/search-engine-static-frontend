@@ -25,12 +25,7 @@ const AboutPage = () => {
                 <SEO title="Ssebowa – About" />
                 <div className="wrapper text-center">
                     <NavBarUpdated></NavBarUpdated>
-                    <PageBanner
-                        className="text-center"
-                        title="About us"
-                        excerpt="Get to know us"
-                        image="./images/banner/about_banner.jpeg"
-                    />
+                    <PageBanner className="text-center" title="About us" excerpt="Get to know us" image="./images/banner/about_banner.jpeg" />
 
                     <MissionAndVision></MissionAndVision>
 
