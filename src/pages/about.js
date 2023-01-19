@@ -16,7 +16,7 @@ import MissionAndVision from "../components/mission-and-vision";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 import Layout from "../layouts/index";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 
 const AboutPage = () => {
     return (
@@ -24,8 +24,14 @@ const AboutPage = () => {
             <Layout>
                 <SEO title="Ssebowa – About" />
                 <div className="wrapper text-center">
-                    <NavBarUpdated></NavBarUpdated>
-                    <PageBanner className="text-center" title="About us" excerpt="Get to know us" image="./images/banner/about_banner.jpeg" />
+                    <NavBarUpdated2></NavBarUpdated2>
+
+                    <PageBanner
+                        className="text-center"
+                        title="About us"
+                        excerpt="Ssebowa changes your searches in to meals for starving children, plants trees where needed most and give sanitary pads to young women"
+                        image="./images/banner/about_banner.jpeg"
+                    />
 
                     <MissionAndVision></MissionAndVision>
 

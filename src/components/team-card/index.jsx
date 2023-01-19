@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 const TeamCard = ({ data }) => {
     return (
         <Col>
-            <Card>
+            <Card border='info' >
                 <Card.Img
                     variant="top"
                     src={process.env.PUBLIC_URL + data.thumb}

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import NewsletterArea from "../containers/global/newsletter";
@@ -15,11 +15,10 @@ const TeamPage = () => {
             <Layout>
                 <SEO title="Ssebowa – Team" />
                 <div className="wrapper">
-                    <NavBarUpdated></NavBarUpdated>
+                    <NavBarUpdated2></NavBarUpdated2>
                     <PageBanner
                         title="Our Team"
-                        excerpt="Pleasure rationally encounter consequences <br />
-                        are extremely painful great oppurtunity"
+                        excerpt="Our team is composed of talented, dedicated professionals who strive to bring the best possible experience to our customers. We believe in collaboration, creativity, and commitment to excellence. We take pride in our work, and are passionate about delivering outstanding user experience to our customers as we support soil, climate, starving children and also support the girl child"
                         image="./images/team/5.png"
                     />
                     <TeampPageContainer />

@@ -5,7 +5,7 @@ import CausesData from "../data/causes.json";
 
 import { Container } from "react-bootstrap";
 import SEO from "../components/seo";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import PageBanner from "../containers/global/page-banner";
 import Footer from "../layouts/footer";
 
@@ -13,7 +13,7 @@ function TermsAndConditions(props) {
     return (
         <>
             <SEO title="Ssebowa - Terms and Conditions" />
-            <NavBarUpdated></NavBarUpdated>
+            <NavBarUpdated2></NavBarUpdated2>
             <PageBanner className="text-center" title="Terms & Conditions" excerpt="Our Terms and Conditions" image="./images/service/terms.png" />
 
             <div className="mt-10 pt-10 m-3 p-3">

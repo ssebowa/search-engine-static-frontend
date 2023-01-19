@@ -12,8 +12,8 @@ const linksArray = [
     { id: 2, navName: "Gallery", navLink: "/gallery" },
     { id: 3, navName: "Projects", navLink: "/projects" },
     { id: 4, navName: "Contact", navLink: "/contact" },
-    { id: 5, navName: "Privacy Policy", navLink: "/contact" },
-    { id: 6, navName: "Terms and Conditions", navLink: "/contact" },
+    { id: 5, navName: "Privacy Policy", navLink: "/privacy-policy" },
+    { id: 6, navName: "Terms and Conditions", navLink: "/terms-and-conditions" },
 ];
 
 const NavBarFooter = () => {

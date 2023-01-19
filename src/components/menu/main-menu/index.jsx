@@ -162,7 +162,7 @@ export const MenuForSearch = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/service"}>
+                    <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon
                             icon={faImages}
                             className="pt-1 "
@@ -171,7 +171,7 @@ export const MenuForSearch = () => {
                                 color: "#181c51",
                             }}
                         />
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/blog"}>

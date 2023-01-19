@@ -1,18 +1,18 @@
 .d-flex {
     display: flex;
 }
-.card {
-    border: 2px solid #000000 !important;
+.card-animation {
+    border: 0.2px solid #008000 !important;
 
     color: "yellow" !important;
 }
-.card-body {
+.card-animation-body {
     position: relative;
     right: -100%;
     overflow: hidden;
     transition: 1s;
 }
-.card:hover .card-body {
+.card-animation:hover .card-animation-body {
     position: relative;
     right: 0;
 }

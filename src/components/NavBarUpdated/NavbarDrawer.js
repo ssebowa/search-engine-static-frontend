@@ -28,7 +28,7 @@ const NavbarDrawer = ({ linksArray }) => {
                         width: "40%",
                     },
                 }}
-                anchor="right"
+                anchor="left"
                 open={open}
                 onClose={() => setOpen(false)}
             >

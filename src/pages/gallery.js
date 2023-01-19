@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import GallaryImageList from "../components/GallaryImageList/GallaryImageList";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import PageBanner from "../containers/global/page-banner";
@@ -14,8 +14,18 @@ function gallary(props) {
         <>
             <Box>
                 <SEO title="Ssebowa – Gallery" />
-                <NavBarUpdated></NavBarUpdated>
-                <PageBanner title="Our Gallery" excerpt="With Ssebowa, you can push the human race forward" image="./images/service/2.png" />
+                <NavBarUpdated2></NavBarUpdated2>
+                <PageBanner
+                    title="Our Gallery"
+                    excerpt="
+                    Welcome to Our Gallery! </br>
+                    We are so proud of the work our Ssebowa community has done to make our world a better place. Our gallery showcases the greatest moments of our journey, the people and organizations we'have helped, the incredible stories we've told, and the impact our work has had.
+</br>
+We invite you to explore our gallery and see how we've made a difference. Together, we can continue transforming our world and empower individuals to create a brighter future.
+
+Thank you for your support!"
+                    image="./images/service/2.png"
+                />
                 <GallaryImageList></GallaryImageList>
                 <Footer></Footer>
                 <ScrollToTop></ScrollToTop>

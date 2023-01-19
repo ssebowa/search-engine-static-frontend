@@ -9,6 +9,7 @@ import BlogDetailsContainer from "../containers/blog/blog-details";
 import BlogData from "../data/blog.json";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 
 const BlogDetailsPage = ({
     match: {
@@ -22,7 +23,7 @@ const BlogDetailsPage = ({
             <Layout>
                 <SEO title="Ssebowa – Project Details" />
                 <div className="wrapper">
-                    <Header />
+                    <NavBarUpdated2></NavBarUpdated2>
                     <PageBanner
                         title="Preject Details"
                         excerpt="Pleasure rationally encounter consequences <br />

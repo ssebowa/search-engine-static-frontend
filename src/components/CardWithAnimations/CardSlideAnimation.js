@@ -7,22 +7,50 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./cardWithAnimations.css";
 
+import { makeStyles } from "@material-ui/styles";
+import { ClassNames } from "@emotion/react";
+
+const useStyles = makeStyles(() => ({
+   
+ card: {
+    position: 'relative',
+  },
+  background: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+      //You can add your background color or image here
+    transition: 'filter 0.2s',
+    '&:hover': {
+      filter: 'blur(2px)',
+    },}
+
+}));
+
 function CardSlideAnimation({ data }) {
+
+    const classes = useStyles();
+
     return (
         <React.Fragment>
             <Card
+                elevation={4}
                 variant="outlined"
                 sx={{ width: 300, height: 350, backgroundImage: `url(${data.icon})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
-                className="card mx-5 p-3"
+                className="card-animation mx-5 p-3"
+              
             >
-                <CardContent sx={{ p: 4 }} className="card-body">
-                    <Typography variant="h4" component="div">
-                        {data.title}
-                    </Typography>
-                    <Typography sx={{ mb: 3 }}>lorem</Typography>
-                    <Typography variant="body2">{data.excerpt}</Typography>
-                    <CardActions sx={{ mt: 2 }}>
-                        {/* <Button
+                
+                    <CardContent sx={{ p: 4 }} className="card-animation-body">
+                        <Typography variant="h4" component="div">
+                            {data.title}
+                        </Typography>
+                        <Typography sx={{ mb: 3 }}>lorem</Typography>
+                        <Typography variant="body2">{data.excerpt}</Typography>
+                        <CardActions sx={{ mt: 2 }}>
+                            {/* <Button
                             size="medium"
                             sx={{
                                 padding: "10px 20px",
@@ -50,8 +78,9 @@ function CardSlideAnimation({ data }) {
                         >
                             Button
                         </Button> */}
-                    </CardActions>
-                </CardContent>
+                        </CardActions>
+                    </CardContent>
+                
             </Card>
         </React.Fragment>
     );

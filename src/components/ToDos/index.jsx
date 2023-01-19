@@ -9,12 +9,12 @@ import SectionTitle from "../section-title";
 function todos({ classOption }) {
     return (
         <>
-            <Container>
+            <Container sx={{ my: 8 }}>
                 <Grid alignItems="center" justifyContent="center" spacing={{ xs: 2, md: 3 }} container>
                     {HomeData[2].iconBox &&
                         HomeData[2].iconBox.map((data, key) => {
                             return (
-                                <Grid xs={4} sx={{ py: 4 }} className="bg-danger" key={key} item>
+                                <Grid xs={4} sx={{ py: 4 }} key={key} item>
                                     <CardSlideAnimation data={data}></CardSlideAnimation>
                                 </Grid>
                             );
