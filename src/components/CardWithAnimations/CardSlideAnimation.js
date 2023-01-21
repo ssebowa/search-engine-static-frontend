@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
       //You can add your background color or image here
     transition: 'filter 0.2s',
     '&:hover': {
-      filter: 'blur(2px)',
+      filter: 'blur(20px)',
     },}
 
 }));

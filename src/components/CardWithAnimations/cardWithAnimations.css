@@ -14,7 +14,19 @@
 }
 .card-animation:hover .card-animation-body {
     position: relative;
+    
     right: 0;
+}
+
+.card-animation:hover::after .card-animation-body {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(10px);
 }
 
 /* FLIP */

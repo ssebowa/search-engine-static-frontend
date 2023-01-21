@@ -24,6 +24,7 @@ import VideoBackgroundSection from "../components/VideoBackgroundSection/VideoBa
 
 import TodosSlideAnimation from "../components/ToDos/index";
 import CardFlipBook from "../components/CardWithAnimations/CardFlipBook";
+import BookCard1 from "../components/CardWithAnimations/BookCard1";
 
 const HomePage = () => {
     const linksArray = [
@@ -57,8 +58,11 @@ const HomePage = () => {
                     <TestimonialContainer /> */}
 
                     <IconBoxContainer classOption="section-pb"></IconBoxContainer>
+                    {/* <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation>  */}
 
-                    {/* <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation> */}
+                    {/* <CardFlipBook></CardFlipBook> */}
+
+                    {/* <BookCard1></BookCard1> */}
 
                     <FunFactContainer classOption="mt-10 mt-lg-0" />
                     <AboutContainer></AboutContainer>

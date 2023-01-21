@@ -19,7 +19,7 @@ import NavbarDrawer from "./NavbarDrawer";
 
 const style = {
     position: "absolute",
-    top: "18%",
+    top: "20%",
     left: "85%",
     transform: "translate(-50%, -50%)",
     width: 400,
@@ -50,7 +50,7 @@ const NavBarUpdated = () => {
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     const location = useLocation();
-    console.log(location.pathname);
+    
 
     const [value, setValue] = useState();
 
@@ -62,6 +62,15 @@ const NavBarUpdated = () => {
         { id: 4, navName: "Contact", navLink: "/contact" },
         { id: 5, navName: "Team", navLink: "/team" },
     ];
+
+     const linksArrayForDrawer = [
+         { id: 0,icon: "fa-solid fa-house" , navName: "Home", navLink: "/" },
+         { id: 1, icon: "fa-solid fa-circle-info" ,navName: "About", navLink: "/about" },
+         { id: 2, icon:"fa-solid fa-image" ,navName: "Gallery", navLink: "/gallery" },
+         { id: 3, icon:"fa-solid fa-history"  ,navName: "Projects", navLink: "/projects" },
+         { id: 4, icon:"fa-solid fa-phone" ,navName: "Contact", navLink: "/contact" },
+         { id: 5, icon:"fa-solid fa-people-group" ,navName: "Team", navLink: "/team" },
+     ];
 
 
     
@@ -80,14 +89,14 @@ const NavBarUpdated = () => {
             >
                 <Toolbar
                     sx={{
-                        height: "13vh",
+                        height: "16vh",
                     }}
                 >
                     {isMatch ? (
                         <>
                             <Grid sx={{ placeItems: "center" }} container>
                                 <Grid item xs={2}>
-                                    <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
+                                    <NavbarDrawer linksArray={linksArrayForDrawer}></NavbarDrawer>
                                 </Grid>
                                 <Grid item xs={1} />
                                 <Grid item xs={5} sx={{ p: 4, overflow: 'hidden' }}>

@@ -21,7 +21,7 @@ import PrivacyPolicy from "./pages/privacy-policy";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faHouse, faCircleInfo, faHistory, faListCheck, faPhone, faPeopleGroup, faImage, faUser } from "@fortawesome/free-solid-svg-icons";
 
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
@@ -95,4 +95,4 @@ const App = () => {
 
 export default App;
 
-library.add(fab, faBars);
+library.add(fab, faBars, faHouse, faCircleInfo, faHistory, faListCheck, faPhone, faPeopleGroup, faImage, faUser);

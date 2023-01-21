@@ -5,6 +5,7 @@ import React from "react";
 import MissionAndVisionData from "../../data/missionAndVision.json";
 
 import CardMui from "../cardsMui/CardMui";
+import BookCard1 from "../CardWithAnimations/BookCard1";
 import SectionTitle from "../section-title";
 
 const index = () => {
@@ -31,7 +32,8 @@ const index = () => {
                                     lg={3}
                                     item
                                 >
-                                    <CardMui data={data}></CardMui>
+                                    {/* <CardMui data={data}></CardMui> */}
+                                    <BookCard1 data={data} ></BookCard1>
                                 </Grid2>
                             </>
                         );
