@@ -64,12 +64,14 @@ const NavBarUpdated = () => {
     ];
 
      const linksArrayForDrawer = [
-         { id: 0,icon: "fa-solid fa-house" , navName: "Home", navLink: "/" },
-         { id: 1, icon: "fa-solid fa-circle-info" ,navName: "About", navLink: "/about" },
-         { id: 2, icon:"fa-solid fa-image" ,navName: "Gallery", navLink: "/gallery" },
-         { id: 3, icon:"fa-solid fa-history"  ,navName: "Projects", navLink: "/projects" },
-         { id: 4, icon:"fa-solid fa-phone" ,navName: "Contact", navLink: "/contact" },
-         { id: 5, icon:"fa-solid fa-people-group" ,navName: "Team", navLink: "/team" },
+         { id: 0, icon: "fa-solid fa-house", navName: "Home", navLink: "/" },
+         { id: 1, icon: "fa-solid fa-circle-info", navName: "About", navLink: "/about" },
+         { id: 2, icon: "fa-solid fa-image", navName: "Gallery", navLink: "/gallery" },
+         { id: 3, icon: "fa-solid fa-history", navName: "Projects", navLink: "/projects" },
+         { id: 4, icon: "fa-solid fa-phone", navName: "Contact", navLink: "/contact" },
+         { id: 5, icon: "fa-solid fa-people-group", navName: "Team", navLink: "/team" },
+         { id: 6, icon: "fa-solid fa-comment", navName: "Faq", navLink: "/faq" },
+        
      ];
 
 

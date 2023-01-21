@@ -8,7 +8,7 @@ import IconBox from "../../../components/icon-box";
 import SectionTitle from "../../../components/section-title";
 import HomeData from "../../../data/home.json";
 
-import '../../../assets/css/flotingAnimations.css'
+import '../../../assets/css/floatingAnimations.css'
 
 const IconBoxContainer = ({ classOption }) => {
     return (

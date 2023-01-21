@@ -27,7 +27,8 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     drawerBackground: {
-        backgroundImage: "url(./images/backgrounds/drawerBG.jpg)",
+        backgroundImage: "url(./images/backgrounds/drawerBGGreen.jpg)",
+        backgroundSize: 'cover',
         
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         width: "48%",
@@ -42,14 +43,15 @@ const NavbarDrawer = ({ linksArray }) => {
      
     const [open, setOpen] = useState(false);
 
+    let componentName = 'Link'
+
     return (
         <>
             <Box>
                 <Drawer
                     PaperProps={{
-                        className: classes.drawerBackground, 
+                        className: classes.drawerBackground,
                     }}
-                    
                     anchor="left"
                     open={open}
                     onClose={() => setOpen(false)}
@@ -73,30 +75,87 @@ const NavbarDrawer = ({ linksArray }) => {
 
                     <List>
                         {linksArray.map((linkInfo) => (
-                            <ListItem onClick={() => setOpen(false)} key={linkInfo.id} component={Link} to={linkInfo.navLink} divider>
-                                <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
-                                    <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
-                                        <FontAwesomeIcon icon={linkInfo.icon} color="royalblue"></FontAwesomeIcon>
+                            <>
+                                <ListItem onClick={() => setOpen(false)} key={linkInfo.id} component={Link} to={linkInfo.navLink} divider>
+                                    <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
+                                        <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
+                                            <FontAwesomeIcon icon={linkInfo.icon} color="royalblue"></FontAwesomeIcon>
 
-                                        <Typography
-                                            sx={{
-                                                color: "#181C51 ",
-                                                fontWeight: "bold",
-                                                fontSize: "1.2rem",
-                                                fontFamily: "Raleway",
+                                            <Typography
+                                                sx={{
+                                                    color: "#181C51 ",
+                                                    fontWeight: "bold",
+                                                    fontSize: "1.2rem",
+                                                    fontFamily: "Raleway",
 
-                                                ":hover": {
-                                                    color: "coral",
-                                                },
-                                                mx: 3,
-                                            }}
-                                        >
-                                            {linkInfo.navName}
-                                        </Typography>
-                                    </Box>
-                                </ListItemText>
-                            </ListItem>
+                                                    ":hover": {
+                                                        color: "coral",
+                                                    },
+                                                    mx: 3,
+                                                }}
+                                            >
+                                                {linkInfo.navName}
+                                            </Typography>
+                                        </Box>
+                                    </ListItemText>
+                                </ListItem>
+                            </>
                         ))}
+                        <>
+                            <ListItem onClick={() => setOpen(false)} divider>
+                                <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                    <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
+                                        <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
+                                            <FontAwesomeIcon icon="fa-solid fa-blog" color="royalblue"></FontAwesomeIcon>
+
+                                            <Typography
+                                                sx={{
+                                                    color: "#181C51 ",
+                                                    fontWeight: "bold",
+                                                    fontSize: "1.2rem",
+                                                    fontFamily: "Raleway",
+
+                                                    ":hover": {
+                                                        color: "coral",
+                                                    },
+                                                    mx: 3,
+                                                }}
+                                            >
+                                                Blog
+                                            </Typography>
+                                        </Box>
+                                    </ListItemText>
+                                </a>
+                            </ListItem>
+                        </>
+
+                        <>
+                            <ListItem onClick={() => setOpen(false)} divider>
+                                <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                    <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
+                                        <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
+                                            <FontAwesomeIcon icon="fa-solid fa-store" color="royalblue"></FontAwesomeIcon>
+
+                                            <Typography
+                                                sx={{
+                                                    color: "#181C51 ",
+                                                    fontWeight: "bold",
+                                                    fontSize: "1.2rem",
+                                                    fontFamily: "Raleway",
+
+                                                    ":hover": {
+                                                        color: "coral",
+                                                    },
+                                                    mx: 3,
+                                                }}
+                                            >
+                                                Store
+                                            </Typography>
+                                        </Box>
+                                    </ListItemText>
+                                </a>
+                            </ListItem>
+                        </>
                     </List>
                 </Drawer>
 
