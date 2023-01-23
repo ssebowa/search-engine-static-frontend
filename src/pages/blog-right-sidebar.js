@@ -48,11 +48,7 @@ const BlogRightSidebarPage = () => {
                 <SEO title="Buznex – Blog Right Sidebar" />
                 <div className="wrapper">
                     <Header />
-                    <PageBanner
-                        title="Ssebowa Blogs"
-                        excerpt="Read exclusive blog posts only at ssebowa blogs."
-                        image="./images/blog/banner.png"
-                    />
+                    <PageBanner title="Ssebowa Blogs" excerpt="Read exclusive blog posts only at ssebowa blogs." image="./images/blog/banner.png" />
                     <BlogMainContainer data={blogData} />
                     <Footer />
                     <ScrollToTop />

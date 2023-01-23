@@ -5,6 +5,8 @@ import VideoData from "../../data/vIdeos.json";
 
 import ReactPlayer from "react-player/youtube";
 import SectionTitle from "../section-title";
+import { Row } from "react-bootstrap";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const index = () => {
     return (
@@ -17,26 +19,19 @@ const index = () => {
                     excerpt="What our user says"
                 />
             </div>
-            <Carousel variant="dark">
-                <Carousel.Item interval={500}>
-                    <ReactPlayer
-                        className="w-50  mx-auto"
-                        url="https://youtu.be/5Zyc_fqsLqc"
-                    />
+        <Carousel variant="dark">
+            
+
+                <Carousel.Item  interval={500}>
+                    <ReactPlayer  className="mx-auto w-75" url="https://youtu.be/5Zyc_fqsLqc"/>
+                </Carousel.Item>
+                <Carousel.Item  interval={1000}>
+                    <ReactPlayer className=" mx-auto w-75"  url="https://youtu.be/Ag6Cn0lT_ys"/>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
-                    <ReactPlayer
-                        className="w-50  mx-auto"
-                        url="https://youtu.be/Ag6Cn0lT_ys"
-                    />
+                    <ReactPlayer  className="mx-auto w-75" url="https://youtu.be/5J-wCwuLJuU"/>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
-                    <ReactPlayer
-                        className="w-50  mx-auto"
-                        url="https://youtu.be/5J-wCwuLJuU"
-                    />
-                </Carousel.Item>
-            </Carousel>
+        </Carousel>
         </div>
     );
 };

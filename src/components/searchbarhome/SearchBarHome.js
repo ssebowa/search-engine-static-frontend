@@ -126,26 +126,21 @@ function SearchBarHome() {
                                 style={{
                                     width: "10%",
                                     minWidth: "6px",
-
                                     borderRadius: "10px 18px 18px 10px",
                                 }}
                             >
-                                <FontAwesomeIcon
-                                    icon={faMagnifyingGlass}
-                                    className="text-light me-1"
-                                    size="md"
-                                />
+                                <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-1" size="md" />
                             </Button>
                         </Form>
                     </>
                 ) : (
                     <>
                         <Form
-                            className="d-flex m-5 py-1"
+                            className="d-flex m-3 p-1  align-items-center justify-content-center"
                             style={{
-                                width: "30em",
+                                width: "60vw",
                                 height: "100%",
-                                maxHeight: "60px",
+                                maxHeight: "200px",
                             }}
                             onSubmit={(e) => SubmitSearchRequest(e)}
                         >
@@ -155,7 +150,7 @@ function SearchBarHome() {
                                 aria-label="Search"
                                 style={{
                                     width: "100%",
-                                    maxWidth: "400px",
+                                    maxWidth: "450px",
                                     minWidth: "110px",
                                     borderRadius: "100px 10px 10px 100px",
                                 }}
@@ -163,20 +158,18 @@ function SearchBarHome() {
                                 placeholder="Search the web to plant trees..."
                                 onChange={(e) => onChangeInput(e)}
                             />
+
                             <Button
                                 variant="success "
-                                className=" d-flex justify-content-center align-items-center"
+                                className="  d-flex justify-content-center align-items-center"
                                 style={{
-                                    width: "5px",
+                                    width: "2px",
+                                    height: "70%",
                                     borderRadius: "10px 100px 100px 10px",
                                 }}
                             >
                                 <div>
-                                    <FontAwesomeIcon
-                                        icon={faMagnifyingGlass}
-                                        className="text-light me-2"
-                                        size="lg"
-                                    />
+                                    <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" />
                                 </div>
                             </Button>
                         </Form>
@@ -192,10 +185,7 @@ function SearchBarHome() {
                                 })}
                             </>
                         ) : (
-                            <div
-                                className="d-flex w-100 align-items-center justify-content-center"
-                                style={{ height: "100%" }}
-                            >
+                            <div className="d-flex w-100 align-items-center justify-content-center" style={{ height: "100%" }}>
                                 <p className="text-danger">No results Found</p>
                             </div>
                         )}

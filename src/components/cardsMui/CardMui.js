@@ -46,28 +46,16 @@ const CardMui = ({ data }) => {
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
             /> */}
             <CardContent>
-                <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    dangerouslySetInnerHTML={{ __html: data.description }}
-                ></Typography>
+                <Typography variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: data.description }}></Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                >
+                <ExpandMore expand={expanded} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more">
                     <ExpandMoreIcon />
                 </ExpandMore>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography
-                        sx={{ color: "success.main", fontWeight: "bold" }}
-                        paragraph
-                    >
+                    <Typography sx={{ color: "success.main", fontWeight: "bold" }} paragraph>
                         {data.collapse_title}
                     </Typography>
                     <Typography

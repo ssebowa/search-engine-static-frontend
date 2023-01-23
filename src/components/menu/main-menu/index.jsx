@@ -6,6 +6,8 @@ import {
     faInfoCircle,
     faImages,
     faEnvelope,
+    faBlog,
+    faStore
 } from "@fortawesome/free-solid-svg-icons";
 import SearchBarHome from "../../searchbarhome/SearchBarHome";
 
@@ -162,28 +164,28 @@ export const MenuForSearch = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/service"}>
+                    <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon
-                            icon={faImages}
+                            icon={faBlog}
                             className="pt-1 "
                             size="xl"
                             style={{
                                 color: "#181c51",
                             }}
                         />
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/blog"}>
+                    <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon
-                            icon={faEnvelope}
+                            icon={faStore}
                             className="pt-1 "
                             size="xl"
                             style={{
                                 color: "#181c51",
                             }}
                         />
-                    </NavLink>
+                    </a>
                 </li>
             </ul>
         </nav>

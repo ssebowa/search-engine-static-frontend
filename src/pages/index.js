@@ -17,9 +17,14 @@ import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 import Layout from "../layouts/index";
 import VideoCaorusel from "../components/video-carousel";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
-import NavbarDrawer from "../components/NavBarUpdated/NavbarDrawer";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
+
 import { Box } from "@mui/material";
+import VideoBackgroundSection from "../components/VideoBackgroundSection/VideoBackgroundSection";
+
+import TodosSlideAnimation from "../components/ToDos/index";
+import CardFlipBook from "../components/CardWithAnimations/CardFlipBook";
+import BookCard1 from "../components/CardWithAnimations/BookCard1";
 
 const HomePage = () => {
     const linksArray = [
@@ -36,27 +41,29 @@ const HomePage = () => {
                 <SEO title="Ssebowa Home" />
                 <div className="wrapper">
                     {/* <Header /> */}
-                    {/* <NavBarUpdated></NavBarUpdated> */}
+                    {/* <NavBarUpdated></NavBarUpdated>  */}
+                    <NavBarUpdated2></NavBarUpdated2>
 
-                    <div
-                        className="d-flex justify-content-end"
-                        style={{ background: "transparent" }}
-                    >
-                        <div
-                            className="m-1 p-2 "
-                            style={{ width: "6rem", height: "5rem" }}
-                        >
-                            <NavbarDrawer
-                                linksArray={linksArray}
-                            ></NavbarDrawer>
+                    {/* <div className="d-flex justify-content-end" style={{ background: "transparent" }}>
+                        <div className="m-1 p-2 " style={{ width: "6rem", height: "5rem" }}>
+                            <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
                         </div>
-                    </div>
+                    </div> */}
+
                     <IntroContainer />
                     {/* <BrandContainer /> */}
-                    <IconBoxContainer classOption="section-pb" />
+
                     {/* <HomeAboutContainer /> */}
                     {/* <ServiceListContainer />
                     <TestimonialContainer /> */}
+
+                    <IconBoxContainer classOption="section-pb"></IconBoxContainer>
+                    {/* <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation>  */}
+
+                    {/* <CardFlipBook></CardFlipBook> */}
+
+                    {/* <BookCard1></BookCard1> */}
+
                     <FunFactContainer classOption="mt-10 mt-lg-0" />
                     <AboutContainer></AboutContainer>
                     <VideoCaorusel></VideoCaorusel>

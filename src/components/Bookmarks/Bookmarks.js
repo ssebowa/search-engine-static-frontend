@@ -7,6 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types"; // ES6
+import { Box, Button } from "@mui/material";
+
+import AddIcon from "@mui/icons-material/Add";
+import ClearIcon from "@mui/icons-material/Clear";
 
 const GetBookmarks = () => {
     try {
@@ -40,6 +44,7 @@ const AddBookmark = (element) => {
         } catch (e) {
             console.log(e);
         }
+        
     }
 };
 
@@ -72,65 +77,64 @@ const Bookmarks = () => {
     return (
         <div style={{ width: "100%", maxWidth: "700px", marginTop: 20 }}>
             <div className="d-flex  justify-content-between p-5 align-items-center w-100">
-                <p className="text-dark fw-bold">Bookmarks</p>
-                <button
-                    onClick={() => closeAddNewBookmark()}
-                    className="d-flex justify-content-center align-items-center p-1"
-                >
+                <Box sx={{ backgroundColor: "white", padding: 2, borderRadius: "20px" }}>Bookmarks</Box>
+                <button onClick={() => closeAddNewBookmark()} className="d-flex justify-content-center align-items-center p-1">
                     {addNew ? (
                         <>
-                            <FontAwesomeIcon
-                                icon={faXmark}
-                                className="p-1 text-danger"
-                                size="lg"
-                                style={{
-                                    paddingHorizontal: 5,
+                            <Button
+                                variant="contained"
+                                sx={{
+                                    fontWeight: "bold",
+                                    color: "#d9534f",
+                                    backgroundColor: "white",
+                                    ":hover": {
+                                        backgroundColor: "lightgrey",
+                                    },
                                 }}
-                            />
-                            <p className="fw-bolder text-danger">CANCEL</p>
+                                size="large"
+                            >
+                                <ClearIcon></ClearIcon>
+                                Cancle
+                            </Button>
                         </>
                     ) : (
-                        <>
-                            <FontAwesomeIcon
-                                icon={faPlus}
-                                className="p-1 text-success"
-                                size="lg"
-                                style={{
-                                    paddingHorizontal: 5,
-                                }}
-                            />
-                            <p className="fw-bolder text-success">ADD</p>
-                        </>
+                        <Button
+                            variant="contained"
+                            sx={{
+                                fontWeight: "bold",
+                                color: "#198754",
+                                backgroundColor: "white",
+                                ":hover": {
+                                    backgroundColor: "lightgrey",
+                                },
+                            }}
+                            size="large"
+                        >
+                            <AddIcon></AddIcon>
+                            ADD
+                        </Button>
                     )}
                 </button>
             </div>
             {addNew ? (
                 <div className="d-flex align-items-center justify-content-center w-100">
-                    <AddNewBookmark
-                        cancelFxn={closeAddNewBookmark}
-                        rerenderFxn={RenderBookmarks}
-                    />
+                    <AddNewBookmark cancelFxn={closeAddNewBookmark} rerenderFxn={RenderBookmarks} />
                 </div>
             ) : (
                 <div className="d-flex align-items-center justify-content-center flex-wrap">
                     {BookmarkLoaded ? (
                         BookmarksArray.map((item, index) => {
                             return (
-                                <BookamarkButton
-                                    key={index}
-                                    name={item.name}
-                                    image={item.image}
-                                    link={item.link}
-                                    id={item.id}
-                                    rerenderFxn={RenderBookmarks}
-                                />
+                                <BookamarkButton key={index} name={item.name} image={item.image} link={item.link} id={item.id} rerenderFxn={RenderBookmarks} />
                             );
                         })
                     ) : (
-                        <p className="text-success text-center">
-                            Add Bookmarks by pressing
-                            <span className="fw-bold"> + ADD </span> Button
-                        </p>
+                        <Box sx={{ backgroundColor: "white", padding: 2, borderRadius: "20px" }}>
+                            <p className="text-success text-center">
+                                Add Bookmarks by pressing
+                                <span className="fw-bold"> + ADD </span> Button
+                            </p>
+                        </Box>
                     )}
                 </div>
             )}

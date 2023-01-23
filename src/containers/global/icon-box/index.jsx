@@ -1,13 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+// import shape10 from "../../assets/images/shape/shape-10.png";
+
 import Button from "../../../components/button";
 import IconBox from "../../../components/icon-box";
 import SectionTitle from "../../../components/section-title";
 import HomeData from "../../../data/home.json";
 
+import '../../../assets/css/floatingAnimations.css'
+
 const IconBoxContainer = ({ classOption }) => {
     return (
-        <div className={`feature-section position-relative ${classOption}`}>
+        <div className={`icon-area feature-section position-relative ${classOption}`}>
             <SectionTitle
                 classOption="title-section mt-10 p-3 text-center"
                 title="<span class='text-primary'>What Your Searches </br> <span class='text-dark' >Does</span> </span> "
@@ -42,6 +47,22 @@ const IconBoxContainer = ({ classOption }) => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="moving-element-1">
+                <img src="images/shape/shape-3.png" alt="" />
+            </div>
+            <div className="moving-element-2">
+                <img src="images/shape/shape-4.png" alt="" />
+            </div>
+            <div className="moving-element-3">
+                <img src="images/shape/shape-14.png" alt="" />
+            </div>
+            <div className="moving-element-4">
+                <img src="images/shape/shape-6.png" alt="" />
+            </div>
+            <div className="moving-element-5">
+                <img src="images/shape/shape-8.png" alt="" />
             </div>
         </div>
     );

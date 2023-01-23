@@ -1,5 +1,5 @@
 import React from "react";
-import NavBarUpdated from "../components/NavBarUpdated/NavBarUpdated";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import AccordionContainer from "../containers/accordion";
@@ -15,7 +15,7 @@ const FaqPage = () => {
             <Layout>
                 <SEO title="Buznex – Faq" />
                 <div className="wrapper">
-                    <NavBarUpdated></NavBarUpdated>
+                    <NavBarUpdated2></NavBarUpdated2>
                     <PageBanner
                         title="FAQ"
                         excerpt="Pleasure rationally encounter consequences <br />
@@ -23,7 +23,7 @@ const FaqPage = () => {
                         image="./images/faq/1.png"
                     />
                     <AccordionContainer />
-                    <NewsletterArea />
+                    {/* <NewsletterArea /> */}
                     <Footer />
                     <ScrollToTop />
                 </div>

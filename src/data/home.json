@@ -14,26 +14,26 @@
             {
                 "id": 1,
                 "image": "./images/brand-logo/1.png",
-                "title":"Meals Served",
-                "number":1000
+                "title": "Meals Served",
+                "number": 1000
             },
             {
                 "id": 2,
                 "image": "./images/brand-logo/2.png",
-                "title":"Trees Planted",
-                "number":750
+                "title": "Trees Planted",
+                "number": 750
             },
             {
                 "id": 3,
                 "image": "./images/brand-logo/3.png",
-                "title":"Projects",
-                "number":458
+                "title": "Projects",
+                "number": 458
             },
             {
                 "id": 4,
                 "image": "./images/brand-logo/4.png",
-                "title":"Pads Give Out",
-                "number":670
+                "title": "Pads Give Out",
+                "number": 670
             }
         ]
     },
@@ -42,7 +42,7 @@
             {
                 "id": 1,
                 "className": "grid-item mb-7",
-                "icon": "./images/intro/indoo.jpg",
+                "icon": "./images/intro/support.jpg",
                 "title": "Become Climate Active",
                 "excerpt": "Everytime you search with Ssebowa, you plant a needed tree in a needed place."
             },
@@ -122,7 +122,7 @@
             {
                 "id": 2,
                 "thumb": "./images/team/sasanka.jpg",
-                
+
                 "name": "Kavindu Sasanka",
                 "designation": "COO and Developer"
             },
