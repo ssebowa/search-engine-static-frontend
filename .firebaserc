@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ssebowa-org"
-  }
+    "default": "ssebowa-org",
+    "staging": "ssebowa-org"
+  },
+  "targets": {},
+  "etags": {}
 }

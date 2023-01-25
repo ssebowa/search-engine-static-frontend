@@ -101,19 +101,24 @@ const NavBarUpdated = () => {
                                     <NavbarDrawer linksArray={linksArrayForDrawer}></NavbarDrawer>
                                 </Grid>
                                 <Grid item xs={1} />
-                                <Grid item xs={5} sx={{ p: 4, overflow: 'hidden' }}>
+                                <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
                                     <Link to="/">
-                                        <img   src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
+                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
                                     </Link>
                                 </Grid>
                                 <Grid item x={2} />
-                                <Grid item xs={2} sx={{ml: 'auto'}} >
+                                <Grid item xs={2} sx={{ ml: "auto" }}>
                                     <IconButton onClick={handleSearchBarOpen} aria-label="search">
                                         <SearchIcon />
                                     </IconButton>
-                                    <Modal open={searchBarOpen} onClose={handleSearchBarClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                                    <Modal
+                                        open={searchBarOpen}
+                                        onClose={handleSearchBarClose}
+                                        aria-labelledby="modal-modal-title"
+                                        aria-describedby="modal-modal-description"
+                                    >
                                         <Box sx={style}>
-                                        <SearchBarForNavbar></SearchBarForNavbar>
+                                            <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
                                     </Modal>
                                 </Grid>
@@ -174,10 +179,26 @@ const NavBarUpdated = () => {
 
                                     <Menu id="tab-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
                                         {moreNavs.map((linksInfo) => (
-                                            <MenuItem key={linksInfo.key} component={Link} to={linksInfo.navLink} onClick={handleClose}>
+                                            <MenuItem
+                                                sx={{ color: "#59E3A7" }}
+                                                key={linksInfo.key}
+                                                component={Link}
+                                                to={linksInfo.navLink}
+                                                onClick={handleClose}
+                                            >
                                                 {linksInfo.navName}
                                             </MenuItem>
                                         ))}
+                                        <MenuItem onClick={handleClose}>
+                                            <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                                Blog
+                                            </a>
+                                        </MenuItem>
+                                        <MenuItem onClick={handleClose}>
+                                            <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                                Sotre
+                                            </a>
+                                        </MenuItem>
                                     </Menu>
                                 </Grid>
 

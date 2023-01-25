@@ -128,6 +128,7 @@ function SearchBarHome() {
                                     minWidth: "6px",
                                     borderRadius: "10px 18px 18px 10px",
                                 }}
+                                type="submit"
                             >
                                 <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-1" size="md" />
                             </Button>
@@ -167,6 +168,7 @@ function SearchBarHome() {
                                     height: "70%",
                                     borderRadius: "10px 100px 100px 10px",
                                 }}
+                                type="submit"
                             >
                                 <div>
                                     <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" />

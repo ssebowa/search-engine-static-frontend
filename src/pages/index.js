@@ -26,7 +26,14 @@ import TodosSlideAnimation from "../components/ToDos/index";
 import CardFlipBook from "../components/CardWithAnimations/CardFlipBook";
 import BookCard1 from "../components/CardWithAnimations/BookCard1";
 
+// Import the Cloudinary classes. 
+import {fill} from "@cloudinary/url-gen/actions/resize";
+import {CloudinaryImage} from '@cloudinary/url-gen';
+
 const HomePage = () => {
+
+    
+
     const linksArray = [
         { id: 0, navName: "Home", navLink: "/" },
         { id: 1, navName: "About", navLink: "/about" },
@@ -56,6 +63,8 @@ const HomePage = () => {
                     {/* <HomeAboutContainer /> */}
                     {/* <ServiceListContainer />
                     <TestimonialContainer /> */}
+
+                 
 
                     <IconBoxContainer classOption="section-pb"></IconBoxContainer>
                     {/* <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation>  */}

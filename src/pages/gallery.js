@@ -1,5 +1,5 @@
-import { Container } from "@mui/material";
-import { Box } from "@mui/system";
+import { Container, Box } from "@mui/material";
+
 import React from "react";
 import GallaryImageList from "../components/GallaryImageList/GallaryImageList";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
