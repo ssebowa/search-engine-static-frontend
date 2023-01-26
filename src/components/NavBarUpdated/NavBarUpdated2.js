@@ -103,7 +103,10 @@ const NavBarUpdated = () => {
                                 <Grid item xs={1} />
                                 <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
                                     <Link to="/">
-                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
+                                        <img
+                                            src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
+                                            alt=""
+                                        />
                                     </Link>
                                 </Grid>
                                 <Grid item x={2} />
@@ -204,7 +207,10 @@ const NavBarUpdated = () => {
 
                                 <Grid item xs={2} sx={{ px: 4 }}>
                                     <Link to="/">
-                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
+                                        <img
+                                            src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
+                                            alt=""
+                                        />
                                     </Link>
                                 </Grid>
 

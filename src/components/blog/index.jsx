@@ -11,7 +11,7 @@ const BlogGrid = ({ data, classOption }) => {
                     to={process.env.PUBLIC_URL + `/project-details/${data.id}`}
                 >
                     <img
-                        src={`${process.env.PUBLIC_URL}/${data.media.gridImage}`}
+                        src={data.media.gridImage}
                         alt="img"
                         style={{ height: "400px" }}
                     />

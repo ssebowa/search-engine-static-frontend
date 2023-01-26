@@ -10,7 +10,10 @@ const Footer = () => {
             <div className="footer-top position-relative">
                 <img
                     className="footer-shape"
-                    src={process.env.PUBLIC_URL + "/images/footer/1.png"}
+                    src={
+                        process.env.PUBLIC_URL +
+                        "https://res.cloudinary.com/dicgvondb/image/upload/v1674668359/ssebowa/ssebowa.org/search-engine-static-frontend/images/footer/1_g8ohpc.png"
+                    }
                     alt="shape"
                 />
                 <div className="container">
@@ -19,13 +22,9 @@ const Footer = () => {
                             <div className="footer-widget">
                                 <Logo
                                     classOption="footer-logo mb-9 sm"
-                                    image={`${process.env.PUBLIC_URL}/images/logo/logo-footer.png`}
+                                    image="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo-footer_c5axiu.png"
                                 />
-                                <p>
-                                    Make your daily searches with Ssebowa and
-                                    see how you will make this 21st century not
-                                    look like this 21th century
-                                </p>
+                                <p>Make your daily searches with Ssebowa and see how you will make this 21st century not look like this 21th century</p>
                                 <ul className="footer-social-links">
                                     <li>
                                         <SocialIcon
@@ -63,56 +62,27 @@ const Footer = () => {
                                 <h4 className="title">Quick Link</h4>
                                 <ul className="footer-menu">
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                "/terms-and-conditions"
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + "/terms-and-conditions"}>
                                             Terms & Conditions
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                "/privacy-policy"
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + "/privacy-policy"}>
                                             Privacy Policy
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL + "/team"
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + "/team"}>
                                             Our team
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                "/contact"
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + "/contact"}>
                                             Contact us
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                "/about"
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + "/about"}>
                                             About us
                                         </Link>
                                     </li>
@@ -124,24 +94,12 @@ const Footer = () => {
                                 <h4 className="title">Services</h4>
                                 <ul className="footer-menu">
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                `/service-details/2`
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + `/service-details/2`}>
                                             Planting Trees
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link
-                                            className="footer-link"
-                                            to={
-                                                process.env.PUBLIC_URL +
-                                                `/service-details/3`
-                                            }
-                                        >
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + `/service-details/3`}>
                                             Serving Meals
                                         </Link>
                                     </li>
@@ -154,20 +112,14 @@ const Footer = () => {
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>
                                 <ul className="address">
                                     <li>
-                                        <a
-                                            className="address-link"
-                                            href="tel:+32474171274"
-                                        >
+                                        <a className="address-link" href="tel:+32474171274">
                                             {" "}
                                             +32474171274
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="address-link"
-                                            href="mailto:info@ssebowa.ai"
-                                        >
+                                        <a className="address-link" href="mailto:info@ssebowa.ai">
                                             info@ssebowa.ai
                                         </a>
                                     </li>
@@ -183,13 +135,8 @@ const Footer = () => {
                         <div className="col-12">
                             <div className="copyright-info text-center">
                                 <p>
-                                    Copyright &copy; 2023 Made with{" "}
-                                    <i className="icofont-heart-alt"></i> By{" "}
-                                    <a
-                                        href="https://themeforest.net/user/codecarnival/portfolio"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                    Copyright &copy; 2023 Made with <i className="icofont-heart-alt"></i> By{" "}
+                                    <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank" rel="noreferrer">
                                         Ssebowa
                                     </a>
                                     , All Rights Reserved
