@@ -5,6 +5,7 @@ import PropTypes from "prop-types"; // ES6
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
 import { Button, Form } from "react-bootstrap";
+import Badge from "@mui/material/Badge";
 
 function SearchBarForNavbar() {
     const history = useHistory();
@@ -13,7 +14,7 @@ function SearchBarForNavbar() {
     const [Suggestions, SetSuggestions] = React.useState([]);
 
     const location = useLocation();
-    console.log(location.pathname);
+    
 
     var fetchUrl = BASEURL + "autocomplete-ssebowa/";
     const FetchSuggestions = (value) => {
@@ -130,6 +131,7 @@ function SearchBarForNavbar() {
                             type="submit"
                         >
                             <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-1" size="md" />
+                            
                         </Button>
                     </Form>
                 }

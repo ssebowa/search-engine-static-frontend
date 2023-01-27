@@ -7,13 +7,12 @@ import SocialIcon from "../../components/social-icon";
 const Footer = () => {
     return (
         <footer className="footer-section">
-            <div className="footer-top position-relative">
+            <div className="footer-top ">
                 <img
                     className="footer-shape"
-                    src={
-                        process.env.PUBLIC_URL +
+                    src=
                         "https://res.cloudinary.com/dicgvondb/image/upload/v1674668359/ssebowa/ssebowa.org/search-engine-static-frontend/images/footer/1_g8ohpc.png"
-                    }
+                    
                     alt="shape"
                 />
                 <div className="container">

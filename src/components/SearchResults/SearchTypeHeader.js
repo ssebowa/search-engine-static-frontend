@@ -21,7 +21,7 @@ function SearchTypeHeader() {
                     active={true}
                     commingSoon={false}
                 />
-                <ButtonForType
+                {/* <ButtonForType
                     icon={faImages}
                     text={"Images"}
                     active={false}
@@ -44,7 +44,7 @@ function SearchTypeHeader() {
                     text={"Map"}
                     active={false}
                     commingSoon={true}
-                />
+                /> */}
             </div>
         </div>
     );
