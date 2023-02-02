@@ -1,30 +1,14 @@
 import React from "react";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
-import BrandContainer from "../containers/global/brand/index";
+import VideoCaorusel from "../components/video-carousel";
+import AboutContainer from "../containers/about";
 import FunFactContainer from "../containers/global/funfact";
 import IconBoxContainer from "../containers/global/icon-box";
-import NewsletterArea from "../containers/global/newsletter";
-import TeamContainer from "../containers/global/team";
-import TestimonialContainer from "../containers/global/testimonial";
-import AboutContainer from "../containers/about";
-import HomeAboutContainer from "../containers/home/about";
-import HomeBlog from "../containers/home/blog";
 import IntroContainer from "../containers/home/intro";
-import ServiceListContainer from "../containers/service/service-list";
-import VideoContainer from "../components/testimonials-video-container";
 import Footer from "../layouts/footer";
-import Header from "../layouts/header";
 import Layout from "../layouts/index";
-import VideoCaorusel from "../components/video-carousel";
-import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
-
-import { Box } from "@mui/material";
-import VideoBackgroundSection from "../components/VideoBackgroundSection/VideoBackgroundSection";
-
-import TodosSlideAnimation from "../components/ToDos/index";
-import CardFlipBook from "../components/CardWithAnimations/CardFlipBook";
-import BookCard1 from "../components/CardWithAnimations/BookCard1";
 
 const HomePage = () => {
     const linksArray = [

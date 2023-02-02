@@ -134,7 +134,8 @@ const Footer = () => {
                         <div className="col-12">
                             <div className="copyright-info text-center">
                                 <p>
-                                    Copyright &copy; 2023 Made with <i className="icofont-heart-alt"></i> By{" "}
+                                    Copyright &copy; 2023 Made with {/* <i className="icofont-heart-alt"></i> */}
+                                    By{" "}
                                     <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank" rel="noreferrer">
                                         Ssebowa
                                     </a>

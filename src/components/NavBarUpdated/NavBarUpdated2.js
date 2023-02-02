@@ -1,21 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AppBar, Button, IconButton ,Grid, Tab, Tabs, Menu, MenuItem, Toolbar, Typography, Box, Item, useTheme, useMediaQuery, Drawer } from "@mui/material";
-import { flexbox } from "@mui/system";
+import { AppBar, Box, Grid, IconButton, Menu, MenuItem, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 
-import { makeStyles } from "@material-ui/styles";
-
-
+import SearchIcon from "@mui/icons-material/Search";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
-import SearchIcon from '@mui/icons-material/Search';
 import Modal from "@mui/material/Modal";
 
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../logo";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
-import SearchBarHome from "../searchbarhome/SearchBarHome";
 import NavbarDrawer from "./NavbarDrawer";
-
 
 const style = {
     position: "absolute",
@@ -29,28 +21,28 @@ const style = {
     // p: 4,
 };
 
-
 const NavBarUpdated = () => {
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [searchBarOpen, setSearchBarOpen] = React.useState(false);
 
+    const handleSearchBarOpen = () => {
+        setSearchBarOpen(true);
+    };
+    const handleSearchBarClose = () => {
+        setSearchBarOpen(false);
+    };
 
-     const [anchorEl, setAnchorEl] = useState(null);
-     const [searchBarOpen, setSearchBarOpen] = React.useState(false);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
 
-        const handleSearchBarOpen = () =>{ setSearchBarOpen(true)};
-        const handleSearchBarClose = () =>{ setSearchBarOpen(false)};
-
-     const handleClick = (event) => {
-         setAnchorEl(event.currentTarget);
-     };
-
-     const handleClose = () => {
-         setAnchorEl(null);
-     };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     const location = useLocation();
-    
 
     const [value, setValue] = useState();
 
@@ -63,24 +55,19 @@ const NavBarUpdated = () => {
         { id: 5, navName: "Team", navLink: "/team" },
     ];
 
-     const linksArrayForDrawer = [
-         { id: 0, icon: "fa-solid fa-house", navName: "Home", navLink: "/" },
-         { id: 1, icon: "fa-solid fa-circle-info", navName: "About", navLink: "/about" },
-         { id: 2, icon: "fa-solid fa-image", navName: "Gallery", navLink: "/gallery" },
-         { id: 3, icon: "fa-solid fa-history", navName: "Projects", navLink: "/projects" },
-         { id: 4, icon: "fa-solid fa-phone", navName: "Contact", navLink: "/contact" },
-         { id: 5, icon: "fa-solid fa-people-group", navName: "Team", navLink: "/team" },
-         { id: 6, icon: "fa-solid fa-comment", navName: "Faq", navLink: "/faq" },
-        
-     ];
-
-
-    
+    const linksArrayForDrawer = [
+        { id: 0, icon: "fa-solid fa-house", navName: "Home", navLink: "/" },
+        { id: 1, icon: "fa-solid fa-circle-info", navName: "About", navLink: "/about" },
+        { id: 2, icon: "fa-solid fa-image", navName: "Gallery", navLink: "/gallery" },
+        { id: 3, icon: "fa-solid fa-history", navName: "Projects", navLink: "/projects" },
+        { id: 4, icon: "fa-solid fa-phone", navName: "Contact", navLink: "/contact" },
+        { id: 5, icon: "fa-solid fa-people-group", navName: "Team", navLink: "/team" },
+        { id: 6, icon: "fa-solid fa-comment", navName: "Faq", navLink: "/faq" },
+    ];
 
     const limitToMoreNavs = 3;
-    const normalNavs = linksArray.slice(0,limitToMoreNavs);
-    const moreNavs = linksArray.slice(limitToMoreNavs,linksArray.length)
-
+    const normalNavs = linksArray.slice(0, limitToMoreNavs);
+    const moreNavs = linksArray.slice(limitToMoreNavs, linksArray.length);
 
     return (
         <>
@@ -101,19 +88,24 @@ const NavBarUpdated = () => {
                                     <NavbarDrawer linksArray={linksArrayForDrawer}></NavbarDrawer>
                                 </Grid>
                                 <Grid item xs={1} />
-                                <Grid item xs={5} sx={{ p: 4, overflow: 'hidden' }}>
+                                <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
                                     <Link to="/">
-                                        <img   src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
+                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
                                     </Link>
                                 </Grid>
                                 <Grid item x={2} />
-                                <Grid item xs={2} sx={{ml: 'auto'}} >
+                                <Grid item xs={2} sx={{ ml: "auto" }}>
                                     <IconButton onClick={handleSearchBarOpen} aria-label="search">
                                         <SearchIcon />
                                     </IconButton>
-                                    <Modal open={searchBarOpen} onClose={handleSearchBarClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                                    <Modal
+                                        open={searchBarOpen}
+                                        onClose={handleSearchBarClose}
+                                        aria-labelledby="modal-modal-title"
+                                        aria-describedby="modal-modal-description"
+                                    >
                                         <Box sx={style}>
-                                        <SearchBarForNavbar></SearchBarForNavbar>
+                                            <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
                                     </Modal>
                                 </Grid>
@@ -178,6 +170,22 @@ const NavBarUpdated = () => {
                                                 {linksInfo.navName}
                                             </MenuItem>
                                         ))}
+                                        <MenuItem
+                                            onClick={() => {
+                                                window.open("https://blog.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        >
+                                            Blogs
+                                        </MenuItem>
+                                        <MenuItem
+                                            onClick={() => {
+                                                window.open("https://store.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        >
+                                            Stores
+                                        </MenuItem>
                                     </Menu>
                                 </Grid>
 

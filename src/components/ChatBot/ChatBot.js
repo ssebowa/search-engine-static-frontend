@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
-import { BASEURL_Chat_Bot } from "../../connection/BaseUrl";
 import Typewriter from "typewriter-effect";
+import { BASEURL_Chat_Bot } from "../../connection/BaseUrl";
 
 function ChatBot() {
     const initialData = {
         message:
-            "👋 Hello! My name is YouChat, I’m an AI that can answer general questions, explain things, suggest ideas, translate, summarize text, compose emails, and write code for you. I’m powered by artificial intelligence and natural language processing, allowing you to have human-like conversations with me. I am constantly learning from huge amounts of information on the internet, which means I sometimes may get some answers wrong. My AI is always improving and I will often share sources for my answers. Some example queries you can try asking me:",
+            "👋 Hello! My name is Ssebowa Chat, I’m an AI that can answer general questions, explain things, suggest ideas, translate, summarize text, compose emails, and write code for you. I’m powered by Ssebowa Artificial Neural Networks and Natural Language Processing, allowing you to have human-like conversations with me. I am constantly learning from huge amounts of information on the internet, which means I sometimes may get some answers wrong. My AI is always improving and I will often share sources for my answers. Some example queries you can try asking me:",
         type: "r",
         first: true,
     };
@@ -50,9 +50,8 @@ function ChatBot() {
         fetch(url, { method: "GET" })
             .then((r) => r.json())
             .then((r) => {
-                console.log(r);
                 var s = {
-                    message: r,
+                    message: r?.generated_text,
                     type: "r",
                     first: false,
                 };
@@ -62,8 +61,7 @@ function ChatBot() {
             .catch((e) => {
                 console.log(e);
                 var b = {
-                    message:
-                        "Error While Reaching out to the servers TRY AGAIN LATER",
+                    message: "Error While Reaching out to the servers TRY AGAIN LATER",
                     type: "r",
                     first: false,
                 };
@@ -76,8 +74,8 @@ function ChatBot() {
         if (inputVal.replace(/\s/g, "").length) {
             var v = { message: inputVal, type: "q", first: false };
             pushMessageAndSet(v);
-            FetchMessage(inputVal);
             SetinputVal("");
+            FetchMessage(v?.message);
         }
     };
     return (
@@ -86,17 +84,11 @@ function ChatBot() {
                 <div className="ChatBotNav">
                     <h6 className="fw-bold text-success">SSEBOWA CHAT</h6>
                     {Active ? (
-                        <span
-                            className="text-primary fw-bold"
-                            style={{ fontSize: 13 }}
-                        >
+                        <span className="text-primary fw-bold" style={{ fontSize: 13 }}>
                             • ACTIVE
                         </span>
                     ) : (
-                        <span
-                            className="text-danger fw-bold"
-                            style={{ fontSize: 13 }}
-                        >
+                        <span className="text-danger fw-bold" style={{ fontSize: 13 }}>
                             • INACTIVE
                         </span>
                     )}
@@ -107,21 +99,12 @@ function ChatBot() {
                         if (e.type === "q") {
                             return <MessageSent message={e.message} />;
                         } else {
-                            return (
-                                <MessageRecievded
-                                    message={e.message}
-                                    first={e.first}
-                                />
-                            );
+                            return <MessageRecievded message={e.message} first={e.first} />;
                         }
                     })}
                 </div>
                 <div className="ChatBotFormDiv">
-                    <form
-                        className="ChatBotForm"
-                        method="get"
-                        onSubmit={(e) => SubmitMessageRequest(e)}
-                    >
+                    <form className="ChatBotForm" method="get" onSubmit={(e) => SubmitMessageRequest(e)}>
                         <input
                             placeholder="Try asking anything..."
                             className="ChatBotInput"
@@ -190,16 +173,7 @@ const MessageRecievdedLoading = () => {
     return (
         <div className="MessageRecievdedMain">
             <div className="MessageRecievdedInner">
-                <ThreeDots
-                    height="20"
-                    width="20"
-                    radius="9"
-                    color="#fff"
-                    ariaLabel="three-dots-loading"
-                    wrapperStyle={{}}
-                    wrapperClassName=""
-                    visible={true}
-                />
+                <ThreeDots height="20" width="20" radius="9" color="#fff" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClassName="" visible={true} />
             </div>
         </div>
     );
