@@ -12,7 +12,7 @@ const BlogDetailsWrap = ({ data }) => {
             <div className="blog-details-thumb">
                 <img
                     style={{ height: "400px" }}
-                    src={`${process.env.PUBLIC_URL}/${data.media.largeImage}`}
+                    src={data.media.largeImage}
                     alt="img"
                 />
             </div>

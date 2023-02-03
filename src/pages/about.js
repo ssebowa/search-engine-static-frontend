@@ -30,7 +30,7 @@ const AboutPage = () => {
                         className="text-center"
                         title="About us"
                         excerpt="Ssebowa changes your searches in to meals for starving children, plants trees where needed most and give sanitary pads to young women"
-                        image="./images/banner/about_banner.jpeg"
+                        image="https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/banner/about_banner_bamxbg.jpg"
                     />
 
                     <MissionAndVision></MissionAndVision>

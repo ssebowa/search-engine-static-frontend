@@ -4,20 +4,23 @@
   left: 0;
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .video-background video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+  
   width: auto;
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+  object-fit: cover;
 }
 
 .content {

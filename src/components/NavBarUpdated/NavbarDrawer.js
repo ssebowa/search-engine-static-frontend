@@ -27,14 +27,14 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     drawerBackground: {
-        backgroundImage: "url(./images/backgrounds/drawerBGGreen.jpg)",
-        backgroundSize: 'cover',
-        
+        backgroundImage:
+            "url(https://res.cloudinary.com/dicgvondb/image/upload/v1674668331/ssebowa/ssebowa.org/search-engine-static-frontend/images/backgrounds/drawerBGGreen_l9seap.jpg)",
+        backgroundSize: "cover",
+
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         width: "48%",
         padding: theme.spacing(2),
-    }
-    
+    },
 }));
 
 

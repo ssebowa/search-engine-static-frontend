@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 
-const SocialIcon = ({ path, icon, classOption }) => {
+const SocialIcon = ({ path, icon, classOption, size='md' }) => {
     return (
         <a
             className={`${classOption}`}
@@ -9,7 +9,7 @@ const SocialIcon = ({ path, icon, classOption }) => {
             target="_blank"
             rel="noopener noreferrer"
         >
-            <FontAwesomeIcon icon={icon} />
+            <FontAwesomeIcon icon={icon} className='fa-round fa-border' size={size} style={{borderRadius: '50%' }} />
         </a>
     );
 };

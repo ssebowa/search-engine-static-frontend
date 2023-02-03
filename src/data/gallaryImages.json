@@ -1,43 +1,62 @@
 [
- {   
+    {
         "id": 1,
-        "thumb": "./images/gallery/indo2.jpg"
-         },{
-            "id": 2,
-            "thumb": "./images/gallery/indo3.jpg"
-             },{
-                "id": 3,
-                "thumb": "./images/gallery/indo4.jpg"
-                 },{
-                    "id": 4,
-                    "thumb": "./images/gallery/indo1.jpg"
-                     },{
-                        "id": 5,
-                        "thumb": "./images/gallery/uga1.jpeg"
-                         },{
-                            "id": 6,
-                            "thumb": "./images/gallery/uga2.jpeg"
-                             }
-                             ,{
-                              "id": 7,
-                              "thumb": "./images/gallery/uga3.jpeg"
-                               },{
-                                 "id": 8,
-                                 "thumb": "./images/gallery/uga4.jpeg"
-                                  },{
-                                    "id": 9,
-                                    "thumb": "./images/gallery/uga5.jpeg"
-                                     },{
-                                       "id": 10,
-                                       "thumb": "./images/gallery/uga6.jpeg"
-                                        }  ,{
-                                          "id": 11,
-                                          "thumb": "./images/gallery/uga7.jpeg"
-                                           }  ,{
-                                             "id": 12,
-                                             "thumb": "./images/gallery/uga8.jpeg"
-                                              }  ,{
-                                                "id": 13,
-                                                "thumb": "./images/gallery/indo5.jpg"
-                                                 }    
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga8_edeqye.jpg"
+    },
+    {
+        "id": 2,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668368/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga6_kag2xm.jpg"
+    },
+    {
+        "id": 3,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668368/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga5_anovnu.jpg"
+    },
+    {
+        "id": 4,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668367/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo5_yktvue.jpg"
+    },
+    {
+        "id": 5,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668367/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga4_smj5rk.jpg"
+    },
+    {
+        "id": 6,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668368/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga5_anovnu.jpg"
+    },
+    {
+        "id": 7,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668366/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo4_dek7xo.jpg"
+    },
+    {
+        "id": 8,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668366/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga3_shbagi.jpg"
+    },
+    {
+        "id": 9,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668366/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indoo_vzapjn.jpg"
+    },
+    {
+        "id": 10,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668365/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga2_jlic4h.jpg"
+    },
+    {
+        "id": 11,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668364/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo3_sr8vhn.jpg"
+    },
+    {
+        "id": 12,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668365/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/uga1_oyohts.jpg"
+    },
+    {
+        "id": 13,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668363/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo1_zz7l5b.jpg"
+    },
+    {
+        "id": 14,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668364/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo2_jrepgj.jpg"
+    },
+    {
+        "id": 14,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668364/ssebowa/ssebowa.org/search-engine-static-frontend/images/gallery/indo2_jrepgj.jpg"
+    }
 ]

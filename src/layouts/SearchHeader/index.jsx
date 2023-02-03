@@ -42,13 +42,10 @@ function SearchHeader({ query, InputChanged }) {
                     <img
                         className="d-block img-fluid SsebowaLogoImage"
                         alt="logo"
-                        src={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
+                        src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
                     />
                 </a>
-                <form
-                    className="d-flex align-items-center  SearchBarMainPageForm"
-                    onSubmit={(e) => SubmitSearchRequest(e)}
-                >
+                <form className="d-flex align-items-center  SearchBarMainPageForm" onSubmit={(e) => SubmitSearchRequest(e)}>
                     <input
                         type="search"
                         className="SearchBarMainPage fw-bold"
@@ -73,10 +70,7 @@ function SearchHeader({ query, InputChanged }) {
                 <MenuForSearch />
             </div>
             <div className="searchMenuRightMobileMenu h-100 d-flex align-items-center">
-                <button
-                    className="toggle d-flex align-items-center flex-column mb-2"
-                    onClick={onCanvasHandler}
-                >
+                <button className="toggle d-flex align-items-center flex-column mb-2" onClick={onCanvasHandler}>
                     <span className="icon-top"></span>
                     <span className="icon-middle"></span>
                     <span className="icon-bottom"></span>

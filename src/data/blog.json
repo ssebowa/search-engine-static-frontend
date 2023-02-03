@@ -2,9 +2,9 @@
     {
         "id": 1,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/ug3.jpg",
-            "largeImage": "./images/projects/ug3.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668338/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/ug3_avfyte.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668338/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/ug3_avfyte.jpg"
         },
         "title": "Your Searches in Uganda",
         "author": "",
@@ -16,9 +16,9 @@
     {
         "id": 2,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/indo2.jpg",
-            "largeImage": "./images/projects/indo2.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/indo2_upmopf.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/indo2_upmopf.jpg"
         },
         "title": "Your Searches in Indonasia",
         "author": "",
@@ -30,9 +30,9 @@
     {
         "id": 3,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/pk2.jpg",
-            "largeImage": "./images/projects/pk2.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/pk2_upokzm.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/pk2_upokzm.jpg"
         },
         "title": "Your Searches in Pakistan",
         "author": "",
@@ -44,9 +44,9 @@
     {
         "id": 4,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/grl.jpg",
-            "largeImage": "./images/projects/grl.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/grl_fegyqy.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/grl_fegyqy.jpg"
         },
         "title": "Your Searches for a child girl",
         "author": "",
@@ -58,9 +58,9 @@
     {
         "id": 5,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/drysoil.jpg",
-            "largeImage": "./images/projects/drysoil.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/drysoil_h285eq.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/drysoil_h285eq.jpg"
         },
         "title": "Your Searches Saving the drying soils",
         "author": "",
@@ -72,9 +72,9 @@
     {
         "id": 6,
         "media": {
-            "rcImage": "./images/blog/post/1.png",
-            "gridImage": "./images/projects/chd.jpg",
-            "largeImage": "./images/projects/chd.jpg"
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668335/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/chd_nwquhm.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668335/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/chd_nwquhm.jpg"
         },
         "title": "Your Searches is a meal to a child",
         "author": "",

@@ -34,11 +34,7 @@ const AboutContainer = () => {
                             {/* <span className="date-meta">
                                 Scince 2001 <span className="hr"></span>
                             </span> */}
-                            <p className="mb-2">
-                                Like any other search engine we get our revenue
-                                from advertising but we 100% respect your
-                                privacy.
-                            </p>
+                            <p className="mb-2">Like any other search engine we get our revenue from advertising but we 100% respect your privacy.</p>
 
                             <ul
                                 style={{
@@ -48,10 +44,7 @@ const AboutContainer = () => {
                                 }}
                             >
                                 {WorksData.map((work) => (
-                                    <li
-                                        key={work.key}
-                                        className="p-2 text-dark"
-                                    >
+                                    <li key={work.key} className="p-2 text-dark">
                                         <FontAwesomeIcon
                                             icon={faCheckCircle}
                                             size="xl"
@@ -78,14 +71,10 @@ const AboutContainer = () => {
                         </div>
                     </div>
                     <div className="col-xl-6 order-lg-first col-md-6 mb-7">
-                        <div
-                            className="about-photo scene text-center text-lg-left"
-                            id="scene"
-                            ref={sceneEl}
-                        >
+                        <div className="about-photo scene text-center text-lg-left" id="scene" ref={sceneEl}>
                             <div className="mt-4" data-depth="0.2">
                                 <img
-                                    src={`${process.env.PUBLIC_URL}/images/about/2.jpg`}
+                                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/about/2_zmj8ev.jpg"
                                     alt="about"
                                 />
                             </div>

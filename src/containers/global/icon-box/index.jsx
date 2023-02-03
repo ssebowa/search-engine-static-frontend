@@ -50,19 +50,34 @@ const IconBoxContainer = ({ classOption }) => {
             </div>
 
             <div className="moving-element-1">
-                <img src="images/shape/shape-3.png" alt="" />
+                <img
+                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668346/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-3_hhfdxw.png"
+                    alt=""
+                />
             </div>
             <div className="moving-element-2">
-                <img src="images/shape/shape-4.png" alt="" />
+                <img
+                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668347/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-4_rtiey1.png"
+                    alt=""
+                />
             </div>
             <div className="moving-element-3">
-                <img src="images/shape/shape-14.png" alt="" />
+                <img
+                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668346/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-14_gsd9i6.png"
+                    alt=""
+                />
             </div>
             <div className="moving-element-4">
-                <img src="images/shape/shape-6.png" alt="" />
+                <img
+                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668347/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-6_mpkw3r.png"
+                    alt=""
+                />
             </div>
             <div className="moving-element-5">
-                <img src="images/shape/shape-8.png" alt="" />
+                <img
+                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668347/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-8_ugllqi.png"
+                    alt=""
+                />
             </div>
         </div>
     );

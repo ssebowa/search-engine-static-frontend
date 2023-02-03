@@ -7,13 +7,8 @@ const MobileMenu = ({ show, onClose }) => {
     const onClickHandler = (e) => {
         const target = e.currentTarget;
         const parentEl = target.parentElement;
-        if (
-            parentEl?.classList.contains("menu-expand") ||
-            target.classList.contains("menu-expand")
-        ) {
-            const element = target.classList.contains("icon")
-                ? parentEl
-                : target;
+        if (parentEl?.classList.contains("menu-expand") || target.classList.contains("menu-expand")) {
+            const element = target.classList.contains("icon") ? parentEl : target;
             const parent = getClosest(element, "li");
             const childNodes = parent.childNodes;
             const parentSiblings = getSiblings(parent);
@@ -33,39 +28,29 @@ const MobileMenu = ({ show, onClose }) => {
         }
     };
     return (
-        <div className={`offcanvas-modal ${show ? "show" : ""}`}>
-            <div className="offcanvas-dialog">
+        <div className={`offcanvas-modal ${show ? "show" : ""}`}  >
+            <div className="offcanvas-dialog"  >
                 <div className="menu-content">
-                    <div className="offcanvas-header">
+                    <div className="offcanvas-header" >
                         <Logo
                             classOption="offcanvas-logo d-inline-block"
-                            image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
+                            image="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
                         />
-                        <button
-                            type="button"
-                            className="btn-close"
-                            onClick={onClose}
-                        ></button>
+                        <button type="button" className="btn-close" onClick={onClose}></button>
                     </div>
 
                     <nav id="offcanvasNav" className="offcanvas-menu">
-                        <ul>
+                        <ul style={{marginLeft: 20}} >
                             <li>
                                 <NavLink exact to="/">
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to={process.env.PUBLIC_URL + "/about"}>
-                                    About
-                                </NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + "/about"}>About</NavLink>
                             </li>
                             <li>
-                                <NavLink
-                                    to={process.env.PUBLIC_URL + "/service"}
-                                >
-                                    Gallery
-                                </NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + "/gallery"}>Gallery</NavLink>
                                 {/* <span
                                     className="menu-expand"
                                     onClick={onClickHandler}
@@ -121,9 +106,7 @@ const MobileMenu = ({ show, onClose }) => {
                                 </ul>
                             </li> */}
                             <li>
-                                <NavLink to={process.env.PUBLIC_URL + "/blog"}>
-                                    Projects
-                                </NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + "/projects"}>Projects</NavLink>
                                 {/* <span
                                     className="menu-expand"
                                     onClick={onClickHandler}
@@ -172,11 +155,13 @@ const MobileMenu = ({ show, onClose }) => {
                                 </ul> */}
                             </li>
                             <li>
-                                <NavLink
-                                    to={process.env.PUBLIC_URL + "/contact"}
-                                >
-                                    Contact
-                                </NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + "/contact"}>Contact</NavLink>
+                            </li>
+                            <li>
+                                <a href="https://blog.ssebowa.org" target="_blank" rel="noopener noreferrer">Blog</a>
+                            </li>
+                            <li>
+                                <a href="https://store.ssebowa.org" target="_blank" rel="noopener noreferrer">Store</a>
                             </li>
                         </ul>
                     </nav>
