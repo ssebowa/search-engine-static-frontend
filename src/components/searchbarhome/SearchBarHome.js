@@ -1,10 +1,11 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types"; // ES6
+import React from "react";
+import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
-import { Button, Form } from "react-bootstrap";
 
 function SearchBarHome() {
     const history = useHistory();
@@ -51,10 +52,12 @@ function SearchBarHome() {
             SetSuggestions([]);
         }
     };
-    const SubmitSearchRequest = (e) => {
-        e.preventDefault();
-        if (inputVal.replace(/\s/g, "").length) {
-            history.push("/search?q=" + inputVal, { replace: true });
+    const SubmitSearchRequest = (e = false, text = "") => {
+        let searchText = text;
+        if (text === "") searchText = inputVal;
+        if (e) e.preventDefault();
+        if (searchText.replace(/\s/g, "").length) {
+            history.push("/search?q=" + searchText, { replace: true });
         }
     };
     return (
@@ -161,6 +164,7 @@ function SearchBarHome() {
 
                             <Button
                                 variant="success "
+                                type="submit"
                                 className="  d-flex justify-content-center align-items-center"
                                 style={{
                                     width: "2px",
@@ -181,7 +185,7 @@ function SearchBarHome() {
                         {Suggestions.length !== 0 ? (
                             <>
                                 {Suggestions?.map((item, i) => {
-                                    return <SuggestSpan name={item} key={i} />;
+                                    return <SuggestSpan name={item} key={i} SubmitSearchRequest={SubmitSearchRequest} />;
                                 })}
                             </>
                         ) : (
@@ -200,9 +204,15 @@ function SearchBarHome() {
 
 export default SearchBarHome;
 
-const SuggestSpan = ({ name }) => {
+const SuggestSpan = ({ name, SubmitSearchRequest }) => {
     return (
-        <span className="mainSearchBarSuggestionSpan">
+        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+        <span
+            onClick={(e) => {
+                SubmitSearchRequest(false, name);
+            }}
+            className="mainSearchBarSuggestionSpan"
+        >
             <FontAwesomeIcon
                 icon={faMagnifyingGlass}
                 className="pt-1 pl-1"

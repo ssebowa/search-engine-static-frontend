@@ -1,10 +1,10 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types"; // ES6
+import React from "react";
+import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
-import { Button, Form } from "react-bootstrap";
 
 function SearchBarForNavbar() {
     const history = useHistory();
@@ -92,46 +92,46 @@ function SearchBarForNavbar() {
                     </button>
                 </form> */}
                 {
-                        <Form
-                            method="NONE"
-                            className="d-flex m-5 py-1"
+                    <Form
+                        method="NONE"
+                        className="d-flex m-5 py-1"
+                        style={{
+                            width: "50vw",
+                            maxWidth: "300px",
+                            minWidth: "100px",
+                            height: "80%",
+                            maxHeight: "50px",
+                        }}
+                        onSubmit={(e) => SubmitSearchRequest(e)}
+                    >
+                        <Form.Control
+                            type="text"
+                            className="me-1"
+                            aria-label="Search"
                             style={{
-                                width: "50vw",
+                                width: "80%",
                                 maxWidth: "300px",
-                                minWidth: "100px",
-                                height: "80%",
-                                maxHeight: "50px",
+                                minWidth: "130px",
+                                borderRadius: "20px 10px 10px 20px",
                             }}
-                            onSubmit={(e) => SubmitSearchRequest(e)}
-                        >
-                            <Form.Control
-                                type="text"
-                                className="me-1"
-                                aria-label="Search"
-                                style={{
-                                    width: "80%",
-                                    maxWidth: "300px",
-                                    minWidth: "130px",
-                                    borderRadius: "20px 10px 10px 20px",
-                                }}
-                                value={inputVal}
-                                placeholder="Search the web to plant trees..."
-                                onChange={(e) => onChangeInput(e)}
-                            />
+                            value={inputVal}
+                            placeholder="Search the web to plant trees..."
+                            onChange={(e) => onChangeInput(e)}
+                        />
 
-                            <Button
-                                variant="success "
-                                className=" d-flex justify-content-center align-items-center"
-                                style={{
-                                    width: "10%",
-                                    minWidth: "6px",
-                                    borderRadius: "10px 18px 18px 10px",
-                                }}
-                            >
-                                <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-1" size="md" />
-                            </Button>
-                        </Form>
-                    }
+                        <Button
+                            variant="success"
+                            className=" d-flex justify-content-center align-items-center"
+                            style={{
+                                width: "10%",
+                                minWidth: "6px",
+                                borderRadius: "10px 18px 18px 10px",
+                            }}
+                        >
+                            <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-1" size="md" />
+                        </Button>
+                    </Form>
+                }
 
                 {SuggestionReady ? (
                     <div className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">

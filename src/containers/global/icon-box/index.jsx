@@ -1,14 +1,13 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 
 // import shape10 from "../../assets/images/shape/shape-10.png";
 
-import Button from "../../../components/button";
 import IconBox from "../../../components/icon-box";
 import SectionTitle from "../../../components/section-title";
 import HomeData from "../../../data/home.json";
 
-import '../../../assets/css/floatingAnimations.css'
+import "../../../assets/css/floatingAnimations.css";
 
 const IconBoxContainer = ({ classOption }) => {
     return (

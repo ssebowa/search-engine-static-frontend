@@ -12,7 +12,7 @@ const Footer = () => {
                 <img className="footer-shape" src={process.env.PUBLIC_URL + "/images/footer/1.png"} alt="shape" />
                 <div className="container">
                     <div className="row mb-n7">
-                        <div className="col-lg-3 col-sm-6 mb-7 mt-5">
+                        <div className="col-lg-4 col-sm-6 mb-7 mt-5">
                             <div className="footer-widget">
                                 <Logo classOption="footer-logo mb-9 sm" image={`${process.env.PUBLIC_URL}/images/logo/logo-footer.png`} />
                                 <p>Make your daily searches with Ssebowa and see how you will make this 21st century not look like this 21th century</p>
@@ -80,7 +80,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-2 col-sm-6 mb-7">
+                        {/* <div className="col-lg-2 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Services</h4>
                                 <ul className="footer-menu">
@@ -96,8 +96,8 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 mb-7">
+                        </div> */}
+                        <div className="col-lg-4 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Contact info</h4>
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>

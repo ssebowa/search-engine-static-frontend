@@ -170,7 +170,7 @@ const NavBarUpdated = () => {
                                                 {linksInfo.navName}
                                             </MenuItem>
                                         ))}
-                                        <MenuItem
+                                        {/* <MenuItem
                                             onClick={() => {
                                                 window.open("https://blog.ssebowa.org/", "_blank");
                                                 handleClose();
@@ -185,7 +185,7 @@ const NavBarUpdated = () => {
                                             }}
                                         >
                                             Stores
-                                        </MenuItem>
+                                        </MenuItem> */}
                                     </Menu>
                                 </Grid>
 
@@ -196,8 +196,46 @@ const NavBarUpdated = () => {
                                 </Grid>
 
                                 <Grid item xs={1} />
-                                <Grid item xs={4}>
-                                    <Box
+                                <Grid item xs={4} className="d-flex justify-content-end">
+                                    <Tabs
+                                        indicatorColor="secondary"
+                                        textColor="inherit"
+                                        // value={value}
+                                        // onChange={(e, val) => setValue(val)}
+                                        // sx={{
+                                        //     color: "black",
+                                        // }}
+                                    >
+                                        <Tab
+                                            sx={{
+                                                fontWeight: "bold",
+                                                fontSize: 14,
+                                                ":hover": {
+                                                    color: "#9CDCFE",
+                                                },
+                                            }}
+                                            label="Blogs"
+                                            onClick={() => {
+                                                window.open("https://blog.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        ></Tab>
+                                        <Tab
+                                            sx={{
+                                                fontWeight: "bold",
+                                                fontSize: 14,
+                                                ":hover": {
+                                                    color: "#9CDCFE",
+                                                },
+                                            }}
+                                            label="Stores"
+                                            onClick={() => {
+                                                window.open("https://store.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        ></Tab>
+                                    </Tabs>
+                                    {/* <Box
                                         style={{ width: "500px" }}
                                         sx={{
                                             display: "flex",
@@ -206,7 +244,7 @@ const NavBarUpdated = () => {
                                         }}
                                     >
                                         <SearchBarForNavbar></SearchBarForNavbar>
-                                    </Box>
+                                    </Box> */}
                                 </Grid>
                             </Grid>
                         </>
