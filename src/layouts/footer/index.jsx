@@ -151,7 +151,7 @@ const Footer = () => {
                         <div className="col-lg-3 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Contact info</h4>
-                                <p>30 N Gould St, Sheridan, WY 82801, USA</p>
+                                <p className="street-address">30 N Gould St, Sheridan, WY 82801, USA</p>
                                 <ul className="address">
                                     <li>
                                         <a

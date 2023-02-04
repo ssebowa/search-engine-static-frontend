@@ -16,9 +16,18 @@
     @include max-screen(767) {
       margin-bottom: 15px;
     }
+    @include max-screen(575) {
+      text-align: center;
+    }
   }
   p {
     margin-bottom: 12px;
+   
+  }
+  .street-address{
+    @include max-screen(575) {
+      text-align: center;
+    }
   }
 }
 .footer-logo {
@@ -47,6 +56,9 @@
 .footer-menu {
   li {
     margin-bottom: 10px;
+    @include max-screen(575) {
+      text-align: center;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -62,11 +74,17 @@
 // address
 .address {
   li {
+    @include max-screen(575) {
+      text-align: center;
+    }
     &:nth-child(2) {
       margin-bottom: 10px;
     }
     .address-link {
       color: #6c6e75;
+      @include max-screen(575) {
+        text-align: center;
+      }
       &:hover {
         color: $primary;
       }
