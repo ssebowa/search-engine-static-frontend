@@ -1,21 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AppBar, Button, IconButton ,Grid, Tab, Tabs, Menu, MenuItem, Toolbar, Typography, Box, Item, useTheme, useMediaQuery, Drawer } from "@mui/material";
-import { flexbox } from "@mui/system";
+import { AppBar, Box, Grid, IconButton, Menu, MenuItem, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 
-import { makeStyles } from "@material-ui/styles";
-
-
+import SearchIcon from "@mui/icons-material/Search";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
-import SearchIcon from '@mui/icons-material/Search';
 import Modal from "@mui/material/Modal";
 
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../logo";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
-import SearchBarHome from "../searchbarhome/SearchBarHome";
 import NavbarDrawer from "./NavbarDrawer";
-
 
 const style = {
     position: "absolute",
@@ -29,28 +21,28 @@ const style = {
     // p: 4,
 };
 
-
 const NavBarUpdated = () => {
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [searchBarOpen, setSearchBarOpen] = React.useState(false);
 
+    const handleSearchBarOpen = () => {
+        setSearchBarOpen(true);
+    };
+    const handleSearchBarClose = () => {
+        setSearchBarOpen(false);
+    };
 
-     const [anchorEl, setAnchorEl] = useState(null);
-     const [searchBarOpen, setSearchBarOpen] = React.useState(false);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
 
-        const handleSearchBarOpen = () =>{ setSearchBarOpen(true)};
-        const handleSearchBarClose = () =>{ setSearchBarOpen(false)};
-
-     const handleClick = (event) => {
-         setAnchorEl(event.currentTarget);
-     };
-
-     const handleClose = () => {
-         setAnchorEl(null);
-     };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     const location = useLocation();
-    
 
     const [value, setValue] = useState();
 
@@ -63,24 +55,19 @@ const NavBarUpdated = () => {
         { id: 5, navName: "Team", navLink: "/team" },
     ];
 
-     const linksArrayForDrawer = [
-         { id: 0, icon: "fa-solid fa-house", navName: "Home", navLink: "/" },
-         { id: 1, icon: "fa-solid fa-circle-info", navName: "About", navLink: "/about" },
-         { id: 2, icon: "fa-solid fa-image", navName: "Gallery", navLink: "/gallery" },
-         { id: 3, icon: "fa-solid fa-history", navName: "Projects", navLink: "/projects" },
-         { id: 4, icon: "fa-solid fa-phone", navName: "Contact", navLink: "/contact" },
-         { id: 5, icon: "fa-solid fa-people-group", navName: "Team", navLink: "/team" },
-         { id: 6, icon: "fa-solid fa-comment", navName: "Faq", navLink: "/faq" },
-        
-     ];
-
-
-    
+    const linksArrayForDrawer = [
+        { id: 0, icon: "fa-solid fa-house", navName: "Home", navLink: "/" },
+        { id: 1, icon: "fa-solid fa-circle-info", navName: "About", navLink: "/about" },
+        { id: 2, icon: "fa-solid fa-image", navName: "Gallery", navLink: "/gallery" },
+        { id: 3, icon: "fa-solid fa-history", navName: "Projects", navLink: "/projects" },
+        { id: 4, icon: "fa-solid fa-phone", navName: "Contact", navLink: "/contact" },
+        { id: 5, icon: "fa-solid fa-people-group", navName: "Team", navLink: "/team" },
+        { id: 6, icon: "fa-solid fa-comment", navName: "Faq", navLink: "/faq" },
+    ];
 
     const limitToMoreNavs = 3;
-    const normalNavs = linksArray.slice(0,limitToMoreNavs);
-    const moreNavs = linksArray.slice(limitToMoreNavs,linksArray.length)
-
+    const normalNavs = linksArray.slice(0, limitToMoreNavs);
+    const moreNavs = linksArray.slice(limitToMoreNavs, linksArray.length);
 
     return (
         <>
@@ -103,10 +90,7 @@ const NavBarUpdated = () => {
                                 <Grid item xs={1} />
                                 <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
                                     <Link to="/">
-                                        <img
-                                            src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
-                                            alt=""
-                                        />
+                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
                                     </Link>
                                 </Grid>
                                 <Grid item x={2} />
@@ -192,16 +176,22 @@ const NavBarUpdated = () => {
                                                 {linksInfo.navName}
                                             </MenuItem>
                                         ))}
-                                        <MenuItem onClick={handleClose}>
-                                            <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
-                                                Blog
-                                            </a>
+                                        {/* <MenuItem
+                                            onClick={() => {
+                                                window.open("https://blog.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        >
+                                            Blogs
                                         </MenuItem>
-                                        <MenuItem onClick={handleClose}>
-                                            <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
-                                                Store
-                                            </a>
-                                        </MenuItem>
+                                        <MenuItem
+                                            onClick={() => {
+                                                window.open("https://store.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        >
+                                            Stores
+                                        </MenuItem> */}
                                     </Menu>
                                 </Grid>
 
@@ -215,8 +205,46 @@ const NavBarUpdated = () => {
                                 </Grid>
 
                                 <Grid item xs={1} />
-                                <Grid item xs={4}>
-                                    <Box
+                                <Grid item xs={4} className="d-flex justify-content-end">
+                                    <Tabs
+                                        indicatorColor="secondary"
+                                        textColor="inherit"
+                                        // value={value}
+                                        // onChange={(e, val) => setValue(val)}
+                                        // sx={{
+                                        //     color: "black",
+                                        // }}
+                                    >
+                                        <Tab
+                                            sx={{
+                                                fontWeight: "bold",
+                                                fontSize: 14,
+                                                ":hover": {
+                                                    color: "#9CDCFE",
+                                                },
+                                            }}
+                                            label="Blogs"
+                                            onClick={() => {
+                                                window.open("https://blog.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        ></Tab>
+                                        <Tab
+                                            sx={{
+                                                fontWeight: "bold",
+                                                fontSize: 14,
+                                                ":hover": {
+                                                    color: "#9CDCFE",
+                                                },
+                                            }}
+                                            label="Stores"
+                                            onClick={() => {
+                                                window.open("https://store.ssebowa.org/", "_blank");
+                                                handleClose();
+                                            }}
+                                        ></Tab>
+                                    </Tabs>
+                                    {/* <Box
                                         style={{ width: "500px" }}
                                         sx={{
                                             display: "flex",
@@ -225,7 +253,7 @@ const NavBarUpdated = () => {
                                         }}
                                     >
                                         <SearchBarForNavbar></SearchBarForNavbar>
-                                    </Box>
+                                    </Box> */}
                                 </Grid>
                             </Grid>
                         </>

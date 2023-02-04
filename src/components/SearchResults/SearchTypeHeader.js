@@ -1,13 +1,7 @@
-import React from "react";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faMagnifyingGlass,
-    faImages,
-    faPlayCircle,
-    faNewspaper,
-    faMapMarkedAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
+import React from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
@@ -15,13 +9,8 @@ function SearchTypeHeader() {
     return (
         <div className="SearchTypeHeaderMain">
             <div className="SearchTypeHeaderInner">
-                <ButtonForType
-                    icon={faMagnifyingGlass}
-                    text={"General"}
-                    active={true}
-                    commingSoon={false}
-                />
-                <ButtonForType
+                <ButtonForType icon={faMagnifyingGlass} text={"General"} active={true} commingSoon={false} />
+                {/* <ButtonForType
                     icon={faImages}
                     text={"Images"}
                     active={false}
@@ -44,7 +33,7 @@ function SearchTypeHeader() {
                     text={"Map"}
                     active={false}
                     commingSoon={true}
-                />
+                /> */}
             </div>
         </div>
     );
@@ -62,15 +51,8 @@ const ButtonForType = ({ active, icon, text, commingSoon }) => {
     if (commingSoon) {
         return (
             <>
-                <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 0, hide: 0 }}
-                    overlay={renderTooltip}
-                >
-                    <button
-                        disabled={commingSoon ? true : false}
-                        className="SearchTypeHeaderButton SearchTypeHeaderButton-Disabled"
-                    >
+                <OverlayTrigger placement="bottom" delay={{ show: 0, hide: 0 }} overlay={renderTooltip}>
+                    <button disabled={commingSoon ? true : false} className="SearchTypeHeaderButton SearchTypeHeaderButton-Disabled">
                         <div className="SearchTypeHeaderButton-Disabled-Overlay"></div>
                         <FontAwesomeIcon
                             icon={icon}
@@ -91,11 +73,7 @@ const ButtonForType = ({ active, icon, text, commingSoon }) => {
         <>
             <button
                 disabled={commingSoon ? true : false}
-                className={
-                    active
-                        ? "SearchTypeHeaderButton SearchTypeHeaderButton-Active"
-                        : "SearchTypeHeaderButton"
-                }
+                className={active ? "SearchTypeHeaderButton SearchTypeHeaderButton-Active" : "SearchTypeHeaderButton"}
             >
                 <FontAwesomeIcon
                     icon={icon}

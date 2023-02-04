@@ -1,6 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import appleStore from "../../assets/images/footer/appleStore.png";
+import playStore from "../../assets/images/footer/playStore.png";
 import Logo from "../../components/logo";
 import SocialIcon from "../../components/social-icon";
 
@@ -18,7 +19,7 @@ const Footer = () => {
                 />
                 <div className="container">
                     <div className="row mb-n7">
-                        <div className="col-lg-3 col-sm-6 mb-7 mt-5">
+                        <div className="col-lg-4 col-sm-6 mb-7 mt-5">
                             <div className="footer-widget">
                                 <Logo
                                     classOption="footer-logo mb-9 sm"
@@ -89,8 +90,24 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-
-                        <div className="col-lg-3 col-sm-6 mb-7">
+                        {/* <div className="col-lg-2 col-sm-6 mb-7">
+                            <div className="footer-widget">
+                                <h4 className="title">Services</h4>
+                                <ul className="footer-menu">
+                                    <li>
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + `/service-details/2`}>
+                                            Planting Trees
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="footer-link" to={process.env.PUBLIC_URL + `/service-details/3`}>
+                                            Serving Meals
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> */}
+                        <div className="col-lg-4 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Contact info</h4>
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>
@@ -108,6 +125,14 @@ const Footer = () => {
                                         </a>
                                     </li>
                                 </ul>
+                                <div className="d-flex align-items-center">
+                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=org.ssebowa&hl=en&gl=US" rel="noreferrer">
+                                        <img width={200} src={playStore} alt="play-store" />
+                                    </a>
+                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=org.ssebowa&hl=en&gl=US" rel="noreferrer">
+                                        <img width={170} src={appleStore} alt="play-store" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
@@ -143,7 +168,8 @@ const Footer = () => {
                         <div className="col-12">
                             <div className="copyright-info text-center">
                                 <p>
-                                    Copyright &copy; 2023 Made with <i className="icofont-heart-alt"></i> By{" "}
+                                    Copyright &copy; 2023 Made with {/* <i className="icofont-heart-alt"></i> */}
+                                    By{" "}
                                     <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank" rel="noreferrer">
                                         Ssebowa
                                     </a>

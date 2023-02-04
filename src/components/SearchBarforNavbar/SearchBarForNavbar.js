@@ -1,10 +1,10 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types"; // ES6
+import React from "react";
+import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
-import { Button, Form } from "react-bootstrap";
 
 function SearchBarForNavbar() {
     const history = useHistory();
@@ -120,7 +120,7 @@ function SearchBarForNavbar() {
                         />
 
                         <Button
-                            variant="success "
+                            variant="success"
                             className=" d-flex justify-content-center align-items-center"
                             style={{
                                 width: "10%",

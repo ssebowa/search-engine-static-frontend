@@ -2,7 +2,6 @@ import React from "react";
 import Intro from "../../../components/intro";
 import VideoBackgroundSection from "../../../components/VideoBackgroundSection/VideoBackgroundSection";
 
-
 const IntroContainer = () => {
     return (
         <>
