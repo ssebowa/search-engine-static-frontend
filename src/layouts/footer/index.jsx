@@ -19,7 +19,7 @@ const Footer = () => {
                 />
                 <div className="container">
                     <div className="row mb-n7">
-                        <div className="col-lg-4 col-sm-6 mb-7 mt-5">
+                        <div className="col-lg-3 col-sm-6 mb-7 mt-5">
                             <div className="footer-widget">
                                 <Logo
                                     classOption="footer-logo mb-9 sm"
@@ -107,7 +107,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div> */}
-                        <div className="col-lg-4 col-sm-6 mb-7">
+                        <div className="col-lg-3 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Contact info</h4>
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>
@@ -125,36 +125,26 @@ const Footer = () => {
                                         </a>
                                     </li>
                                 </ul>
-                                <div className="d-flex align-items-center">
-                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=org.ssebowa&hl=en&gl=US" rel="noreferrer">
-                                        <img width={200} src={playStore} alt="play-store" />
-                                    </a>
-                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=org.ssebowa&hl=en&gl=US" rel="noreferrer">
-                                        <img width={170} src={appleStore} alt="play-store" />
-                                    </a>
-                                </div>
+                                {/*  */}
                             </div>
                         </div>
+
+                        {/* ------------ Mobile Apps -------------- */}
 
                         <div className="col-lg-2 col-sm-6 mb-7">
                             <div className="footer-widget">
                                 <h4 className="title">Mobile Apps</h4>
-                                <ul className="footer-social-links me-auto">
+                                <ul className="footer-menu ">
                                     <li>
-                                        <SocialIcon
-                                            classOption="footer-social-link"
-                                            path=" https://apps.apple.com/app/ssebowa-search-engine/id1666356131"
-                                            icon="fa-brands fa-apple"
-                                            size="2x"
-                                        />
+                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=org.ssebowa&hl=en&gl=US" rel="noreferrer">
+                                            <img width={136} src={playStore} alt="play-store" />
+                                        </a>
                                     </li>
-                                    <li>
-                                        <SocialIcon
-                                            classOption="footer-social-link"
-                                            path=" https://play.google.com/store/apps/details?id=org.ssebowa"
-                                            icon=" fa-brands fa-android"
-                                            size="2x"
-                                        />
+
+                                    <li style={{ marginLeft: "8px" }}>
+                                        <a target="_blank" href="https://apps.apple.com/app/ssebowa-search-engine/id1666356131" rel="noreferrer">
+                                            <img width={120} src={appleStore} alt="play-store" />
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

@@ -1,4 +1,4 @@
-import { AppBar, Box, Grid, IconButton, Menu, MenuItem, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Box, Button, Grid, IconButton, Menu, MenuItem, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 
 import SearchIcon from "@mui/icons-material/Search";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
 import NavbarDrawer from "./NavbarDrawer";
+import BookIcon from "@mui/icons-material/Book";
+import StoreIcon from "@mui/icons-material/Store";
 
 const style = {
     position: "absolute",
@@ -90,7 +92,10 @@ const NavBarUpdated = () => {
                                 <Grid item xs={1} />
                                 <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
                                     <Link to="/">
-                                        <img src={`${process.env.PUBLIC_URL}/images/logo/logo.png`} alt="" />
+                                        <img
+                                            src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
+                                            alt=""
+                                        />
                                     </Link>
                                 </Grid>
                                 <Grid item x={2} />
@@ -205,55 +210,49 @@ const NavBarUpdated = () => {
                                 </Grid>
 
                                 <Grid item xs={1} />
-                                <Grid item xs={4} className="d-flex justify-content-end">
-                                    <Tabs
-                                        indicatorColor="secondary"
-                                        textColor="inherit"
-                                        // value={value}
-                                        // onChange={(e, val) => setValue(val)}
-                                        // sx={{
-                                        //     color: "black",
-                                        // }}
-                                    >
-                                        <Tab
+                                <Grid item xs={4} className="d-flex justify-content-center">
+                                    {location.pathname === "/" ? (
+                                        <>
+                                            <Button
+                                                sx={{ m: 1 }}
+                                                onClick={() => {
+                                                    window.open("https://blog.ssebowa.org/", "_blank");
+                                                    handleClose();
+                                                }}
+                                                variant="contained"
+                                                color="success"
+                                                startIcon={<BookIcon />}
+                                            >
+                                                Blog
+                                            </Button>
+                                            <Button
+                                                onClick={() => {
+                                                    window.open("https://store.ssebowa.org/", "_blank");
+                                                    handleClose();
+                                                }}
+                                                variant="contained"
+                                                color="success"
+                                                startIcon={<StoreIcon />}
+                                                sx={{ m: 1 }}
+                                            >
+                                                {" "}
+                                                Store
+                                            </Button>
+                                        </>
+                                    ) : (
+                                        <Box
+                                            style={{ width: "500px" }}
                                             sx={{
-                                                fontWeight: "bold",
-                                                fontSize: 14,
-                                                ":hover": {
-                                                    color: "#9CDCFE",
-                                                },
-                                            }}
-                                            label="Blogs"
-                                            onClick={() => {
-                                                window.open("https://blog.ssebowa.org/", "_blank");
-                                                handleClose();
-                                            }}
-                                        ></Tab>
-                                        <Tab
-                                            sx={{
-                                                fontWeight: "bold",
-                                                fontSize: 14,
-                                                ":hover": {
-                                                    color: "#9CDCFE",
-                                                },
-                                            }}
-                                            label="Stores"
-                                            onClick={() => {
-                                                window.open("https://store.ssebowa.org/", "_blank");
-                                                handleClose();
-                                            }}
-                                        ></Tab>
-                                    </Tabs>
-                                    {/* <Box
-                                        style={{ width: "500px" }}
-                                        sx={{
-                                            display: "flex",
+                                                display: "flex",
 
-                                            mx: "auto",
-                                        }}
-                                    >
-                                        <SearchBarForNavbar></SearchBarForNavbar>
-                                    </Box> */}
+                                                mx: "auto",
+                                            }}
+                                        >
+                                            <SearchBarForNavbar></SearchBarForNavbar>
+                                        </Box>
+                                    )}
+
+                                    {/*  */}
                                 </Grid>
                             </Grid>
                         </>
