@@ -1,3 +1,6 @@
+ 
+ /* ---------------- Iconbox section -------------------------- */
+
 .moving-element-1 {
   position: absolute;
   left: 150px;
@@ -36,6 +39,49 @@
   top: 100px;
   z-index: -1;
   animation: ease-out 20s animationFramesThree infinite;
+}
+
+/* ---------------- Funfact section -------------------------- */
+
+
+.moving-element-6 {
+  position: absolute;
+  left: 100px;
+  top: 5px;
+  z-index: -1;
+  animation: linear 40s animationFramesTwo infinite;
+}
+
+.moving-element-7 {
+  position: absolute;
+  right: 150px;
+  bottom: 340px;
+  z-index: -1;
+  animation: linear 20s animationFramesTwo infinite;
+}
+.moving-element-8 {
+  position: absolute;
+  left: 460px;
+  top: 100px;
+  z-index: -1;
+  animation: ease-out 10s animationFramesThree infinite;
+}
+
+
+.moving-element-9 {
+  position: absolute;
+  left: 45%;
+  top: 1px;
+  z-index: -1;
+  animation: ease-out 5s animationFramesTwo infinite;
+}
+
+.moving-element-10 {
+  position: absolute;
+  right: 460px;
+  top: 100px;
+  z-index: -1;
+  animation: ease-out 10s animationFramesFour infinite;
 }
 
 @keyframes animationFramesOne {

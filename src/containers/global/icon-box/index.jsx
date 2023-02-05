@@ -11,7 +11,15 @@ import "../../../assets/css/floatingAnimations.css";
 
 const IconBoxContainer = ({ classOption }) => {
     return (
-        <div className={`icon-area feature-section position-relative ${classOption}`}>
+        <div
+            className={`icon-area feature-section position-relative ${classOption}`}
+            style={{
+                backgroundImage:
+                    'url("https://res.cloudinary.com/dicgvondb/image/upload/v1675617744/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/3_j1pj2w_a2cbd8.png")',
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "100% 60%",
+            }}
+        >
             <SectionTitle
                 classOption="title-section mt-10 p-3 text-center"
                 title="<span class='text-primary'>What Your Searches </br> <span class='text-dark' >Does</span> </span> "

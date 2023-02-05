@@ -15,13 +15,14 @@ const Funfact = ({ data }) => {
         <div className="fanfact text-md-left text-center">
             <span className="title">
                 <span className="counter">
-                    <VisibilitySensor
+                    {/* <VisibilitySensor
                         onChange={onVisibilityChange}
                         offset={{ top: 10 }}
                         delayedCall
                     >
                         <CountUp end={didViewCountUp ? data.number : 0} />
-                    </VisibilitySensor>
+                    </VisibilitySensor> */}
+                    {data.number}
                 </span>
                 +
             </span>
