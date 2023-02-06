@@ -7,9 +7,9 @@
     },
     {
         "id": 2,
-        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668352/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/sasanka_zlmzoh.jpg",
-        "name": "Kavindu Sasanka",
-        "designation": "COO and Developer"
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1675722086/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Anshika_jo3y0n.jpg",
+        "name": "Anshika Parashar",
+        "designation": "COO"
     },
     {
         "id": 3,
@@ -17,12 +17,7 @@
         "name": "Sujal Bhakare",
         "designation": "CTO and Developer"
     },
-    {
-        "id": 4,
-        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668352/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/sanjida_nmmfwx.jpg",
-        "name": "Sanjida Jahan",
-        "designation": "CMO and Social Media Manager"
-    },
+   
     {
         "id": 5,
         "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668353/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/violah_dkcgjc.jpg",
@@ -33,7 +28,7 @@
         "id": 6,
         "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668350/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Aoun_r7pwup.jpg",
         "name": "Syed Aoon Hussain",
-        "designation": "CIO"
+        "designation": "CIO & Lead Developer"
     },
     {
         "id": 7,
@@ -54,13 +49,7 @@
         "name": "Iqbal Isnaeni Herlambang",
         "designation": "Developer"
     }
-    ,
-    {
-        "id": 10,
-        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Priya_tzi4jl.jpg",
-        "name": "Priya Sutradhar",
-        "designation": "Digital Marketer"
-    }
+    
     ,
     {
         "id": 11,
