@@ -63,7 +63,7 @@ const FunFactContainer = ({ classOption }) => {
                     {problems &&
                         problems.map((problem) => {
                             return (
-                                <div key={problem.id} className="col-md-6 col-6 mb-7">
+                                <div key={problem.id} className="col-md-6 col-10 mb-7">
                                     <Funfact data={problem} key={problem.id} />
                                 </div>
                             );
