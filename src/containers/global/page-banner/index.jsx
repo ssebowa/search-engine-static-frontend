@@ -1,11 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import PageBannerImage from "../../../components/page-banner-image";
-import PageTitle from "../../../components/page-title";
-import VideoBackgroundSection from "../../../components/VideoBackgroundSection/VideoBackgroundSection";
 import { Typography } from "@mui/material";
+import PropTypes from "prop-types";
+import React from "react";
+import VideoBackgroundSection from "../../../components/VideoBackgroundSection/VideoBackgroundSection";
 
-const PageBanner = ({ title, excerpt, image }) => {
+const PageBanner = ({ title, excerpt, image, Titlecolor = "#55FE3F", subVariant = "subtitle1" }) => {
     return (
         <div className="banner-section position-relative " style={{ height: "90vh" }}>
             <VideoBackgroundSection></VideoBackgroundSection>
@@ -16,7 +14,7 @@ const PageBanner = ({ title, excerpt, image }) => {
                         <Typography
                             variant="h1"
                             align="center"
-                            color="#55FE3F"
+                            color={Titlecolor}
                             fontFamily="'Playfair Display', serif"
                             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
                         >
@@ -24,7 +22,7 @@ const PageBanner = ({ title, excerpt, image }) => {
                             {title}
                         </Typography>
                         <Typography
-                            variant="subtitle1"
+                            variant={subVariant}
                             align="center"
                             color="#fff"
                             fontFamily="'Playfair Display', serif"

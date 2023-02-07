@@ -2,7 +2,7 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types"; // ES6
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
@@ -38,6 +38,18 @@ function SearchBarHome() {
                 SetSuggestionReady(false);
             });
     };
+
+    useEffect(() => {
+        if (SuggestionReady) {
+            window.addEventListener("click", function (e) {
+                if (document.getElementById("suggestBox") && document.getElementById("suggestBox")?.contains(e.target)) {
+                    // Clicked in box
+                } else {
+                    SetSuggestionReady(false);
+                }
+            });
+        }
+    }, [SuggestionReady]);
 
     const onChangeInput = (e) => {
         SetInputVal(e.target.value);
@@ -182,7 +194,7 @@ function SearchBarHome() {
                 )}
 
                 {SuggestionReady ? (
-                    <div className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">
+                    <div id="suggestBox" className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">
                         {Suggestions.length !== 0 ? (
                             <>
                                 {Suggestions?.map((item, i) => {

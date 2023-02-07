@@ -1,22 +1,15 @@
 import React from "react";
+import MissionAndVision from "../components/mission-and-vision";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
-import AboutContainer from "../containers/about";
-import BrandContainer from "../containers/global/brand/index";
 import FunFactContainer from "../containers/global/funfact";
 import IconBoxContainer from "../containers/global/icon-box";
-import NewsletterArea from "../containers/global/newsletter";
 import PageBanner from "../containers/global/page-banner";
-import TestimonialReverse from "../containers/global/testimonial-reverse";
 import TeamContainer from "../containers/global/team";
-import ServiceListContainer from "../containers/service/service-list";
-import VideoContainer from "../components/testimonials-video-container";
-import MissionAndVision from "../components/mission-and-vision";
 
-import Footer from "../layouts/footer";
-import Header from "../layouts/header";
-import Layout from "../layouts/index";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
+import Footer from "../layouts/footer";
+import Layout from "../layouts/index";
 
 const AboutPage = () => {
     return (
@@ -29,6 +22,8 @@ const AboutPage = () => {
                     <PageBanner
                         className="text-center"
                         title="About us"
+                        Titlecolor="rgb(255 255 255)"
+                        subVariant="h6"
                         excerpt="Ssebowa changes your searches in to meals for starving children, plants trees where needed most and give sanitary pads to young women"
                         image="https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/banner/about_banner_bamxbg.jpg"
                     />

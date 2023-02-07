@@ -8,7 +8,7 @@ import SocialIcon from "../../components/social-icon";
 const Footer = () => {
     return (
         <footer className="footer-section">
-            <div className="footer-top position-relative">
+            <div className="footer-top position-relative mt-10">
                 <img
                     className="footer-shape"
                     src={
@@ -19,7 +19,7 @@ const Footer = () => {
                 />
                 <div className="container">
                     <div className="row mb-n7">
-                        <div className="col-lg-3 col-sm-6 mb-7 mt-5">
+                        <div className="col-lg-3 col-sm-6 mt-5">
                             <div className="footer-widget">
                                 <Logo
                                     classOption="footer-logo mb-9 sm"
@@ -58,7 +58,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-sm-6 mb-7 offset-xl-1">
+                        <div className="col-lg-3 col-sm-6 offset-xl-1 mt-10">
                             <div className="footer-widget">
                                 <h4 className="title">Quick Link</h4>
                                 <ul className="footer-menu">
@@ -90,7 +90,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="col-lg-2 col-sm-6 mb-7">
+                        {/* <div className="col-lg-2 col-sm-6">
                             <div className="footer-widget">
                                 <h4 className="title">Services</h4>
                                 <ul className="footer-menu">
@@ -107,7 +107,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div> */}
-                        <div className="col-lg-3 col-sm-6 mb-7">
+                        <div className="col-lg-3 col-sm-6 mt-10">
                             <div className="footer-widget">
                                 <h4 className="title">Contact info</h4>
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>
@@ -131,7 +131,7 @@ const Footer = () => {
 
                         {/* ------------ Mobile Apps -------------- */}
 
-                        <div className="col-lg-2 col-sm-6 mb-7">
+                        <div className="col-lg-2 col-sm-6 mt-10">
                             <div className="footer-widget">
                                 <h4 className="title">Mobile Apps</h4>
                                 <ul className="footer-menu ">

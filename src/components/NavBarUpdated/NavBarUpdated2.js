@@ -4,12 +4,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
 import Modal from "@mui/material/Modal";
 
+import BookIcon from "@mui/icons-material/Book";
+import StoreIcon from "@mui/icons-material/Store";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
 import NavbarDrawer from "./NavbarDrawer";
-import BookIcon from "@mui/icons-material/Book";
-import StoreIcon from "@mui/icons-material/Store";
 
 const style = {
     position: "absolute",
@@ -142,7 +142,8 @@ const NavBarUpdated = () => {
                                                     fontWeight: "bold",
                                                     fontSize: 14,
                                                     ":hover": {
-                                                        color: "#9CDCFE",
+                                                        color: "#2e7d32",
+                                                        opacity: 1,
                                                     },
                                                 }}
                                                 key={linkInfo.id}
@@ -160,7 +161,8 @@ const NavBarUpdated = () => {
                                                 fontWeight: "bold",
                                                 fontSize: 14,
                                                 ":hover": {
-                                                    color: "#9CDCFE",
+                                                    color: "#2e7d32",
+                                                    opacity: 1,
                                                 },
                                             }}
                                             label="More"
