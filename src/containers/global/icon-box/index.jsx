@@ -22,7 +22,7 @@ const IconBoxContainer = ({ classOption }) => {
         >
             <SectionTitle
                 classOption="title-section mt-10 p-3 text-center"
-                title="<span class='text-primary'>What Your Searches </br> <span class='text-dark' >Does</span> </span> "
+                title="<span class='text-primary'>What Your Searches <span class='text-dark' >Does</span> </span> "
                 excerptClassOption="null"
                 excerpt="Lets Have a Look"
             />

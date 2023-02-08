@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { MenuForSearch } from "../../components/menu/main-menu";
 import MobileMenu from "../../components/menu/mobile-menu";
-import PropTypes from "prop-types";
-import { useHistory } from "react-router-dom";
 
 function SearchHeader({ query, InputChanged }) {
     const [ofcanvasShow, setOffcanvasShow] = useState(false);

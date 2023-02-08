@@ -1,30 +1,28 @@
-import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import Funfact from "../../../components/funfact";
-import HomeData from "../../../data/home.json";
 
 import "../../../assets/css/floatingAnimations.css";
 
 const FunFactContainer = ({ classOption }) => {
-
     const [temperatureProblem, setTemperatureProblem] = useState({
         id: 1,
-        title: "Temperature Problem",
+        title: "Temperature Increases",
         number: null,
     });
     const [hungerProblem, setHungerProblem] = useState({
         id: 2,
-        title: "Hunger Problem",
+        title: "Child Die From Hunger",
         number: null,
     });
     const [schoolProblem, setSchoolProblem] = useState({
         id: 3,
-        title: "School Problem",
+        title: "Girls Drop From School",
         number: null,
     });
     const [unemployedProblem, setUnemployedProblem] = useState({
         id: 4,
-        title: "Unemployed Problem",
+        title: "People Unemployed",
         number: null,
     });
 
@@ -46,7 +44,6 @@ const FunFactContainer = ({ classOption }) => {
     }, [temperatureProblem]);
 
     const problems = [temperatureProblem, hungerProblem, schoolProblem, unemployedProblem];
-
 
     return (
         <div
