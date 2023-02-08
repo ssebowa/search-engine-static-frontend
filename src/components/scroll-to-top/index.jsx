@@ -2,9 +2,14 @@ import React, { useEffect, useState } from "react";
 
 const ScrollToTop = (props) => {
     const [stick, setStick] = useState(false);
+    const [visible, setVisible] = useState(false);
     const onClickHandler = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
+
+    setTimeout(() => {
+        setVisible(false);
+    }, 10000);
 
     useEffect(() => {
         var position = window.pageYOffset;
@@ -15,8 +20,10 @@ const ScrollToTop = (props) => {
                 setStick(false);
             } else if (scrollPos < position) {
                 setStick(true);
+                setVisible(true);
             } else {
                 setStick(false);
+                setVisible(true);
             }
             position = scrollPos;
         };
@@ -32,14 +39,18 @@ const ScrollToTop = (props) => {
     }, [stick]);
 
     return (
-        <button
-            type="button"
-            className={`scroll-to-top ${stick ? "show" : ""}`}
-            onClick={onClickHandler}
-            {...props}
-        >
-            <i className="arrow-top icofont-long-arrow-up"></i>
-            <i className="arrow-bottom icofont-long-arrow-up"></i>
+        <button type="button" className={`scroll-to-top ${visible ? "show" : ""}`} onClick={onClickHandler} {...props}>
+            {stick ? (
+                <div>
+                    <i className="arrow-top icofont-long-arrow-up"></i>
+                    <i className="arrow-bottom icofont-long-arrow-up"></i>
+                </div>
+            ) : (
+                <div>
+                    <i className="arrow-top icofont-long-arrow-down"></i>
+                    <i className="arrow-bottom icofont-long-arrow-up"></i>
+                </div>
+            )}
         </button>
     );
 };

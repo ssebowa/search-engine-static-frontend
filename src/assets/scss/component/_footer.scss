@@ -18,7 +18,7 @@
     }
   }
   p {
-    margin-bottom: 12px;
+    margin-bottom: 0px;
   }
 }
 .footer-logo {
@@ -77,7 +77,7 @@
 // copyright-info
 
 .copy-right-section {
-  padding: 25px 0px;
+  padding: 20px 0px;
 }
 .copyright-info {
   p {
@@ -105,7 +105,7 @@
 
 .footer-shape {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   width: 100%;
   z-index: -1;
