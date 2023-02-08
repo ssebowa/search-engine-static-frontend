@@ -1,22 +1,29 @@
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faImages } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@mui/material";
 import PropTypes from "prop-types";
 import React from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
-function SearchTypeHeader() {
+function SearchTypeHeader({ handleSearchType }) {
+    const changeSearchType = (value) => {
+        handleSearchType(value);
+    };
+
     return (
         <div className="SearchTypeHeaderMain">
             <div className="SearchTypeHeaderInner">
-                <ButtonForType icon={faMagnifyingGlass} text={"General"} active={true} commingSoon={false} />
-                {/* <ButtonForType
-                    icon={faImages}
-                    text={"Images"}
-                    active={false}
-                    commingSoon={true}
-                />
-                <ButtonForType
+                {/* <ButtonForType icon={faMagnifyingGlass} text={"General"} active={true} commingSoon={false} /> */}
+                {/* <ButtonForType onClick={changeSearchType} icon={faImages} text={"Images"} active={true} commingSoon={false} />  */}
+
+                <Button variant="outlined" onClick={() => changeSearchType("general")}>
+                    General
+                </Button>
+                <Button variant="outlined" sx={{ mx: 1 }} onClick={() => changeSearchType("images")}>
+                    Images
+                </Button>
+                {/*    <ButtonForType
                     icon={faPlayCircle}
                     text={"Videos"}
                     active={false}
