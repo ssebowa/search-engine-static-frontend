@@ -70,10 +70,7 @@ function SearchResults({ query }) {
         );
     } else if (!Results_State) {
         return !Results_Error ? (
-            <div
-                className="w-100 d-flex align-items-center justify-content-center"
-                style={{ height: "70vh" }}
-            >
+            <div className="w-100 d-flex align-items-center justify-content-center" style={{ height: "70vh" }}>
                 <ColorRing
                     visible={true}
                     height="80"
@@ -81,26 +78,13 @@ function SearchResults({ query }) {
                     ariaLabel="blocks-loading"
                     wrapperStyle={{}}
                     wrapperClass="blocks-wrapper"
-                    colors={[
-                        "#59e3a7",
-                        "#118442",
-                        "#181C51",
-                        "#59e3a7",
-                        "#118442",
-                    ]}
+                    colors={["#59e3a7", "#118442", "#181C51", "#59e3a7", "#118442"]}
                 />
             </div>
         ) : (
-            <div
-                className="w-100 d-flex align-items-center justify-content-center flex-column"
-                style={{ height: "70vh" }}
-            >
+            <div className="w-100 d-flex align-items-center justify-content-center flex-column" style={{ height: "70vh" }}>
                 <h6 className="text-danger fw-bold mb-5"> An Error Occured </h6>
-                <button
-                    onClick={() => FetchSearchQuery()}
-                    type="button"
-                    className="btn btn-primary"
-                >
+                <button onClick={() => FetchSearchQuery()} type="button" className="btn btn-primary">
                     Retry
                 </button>
             </div>
