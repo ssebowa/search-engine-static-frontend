@@ -131,7 +131,7 @@ function ChatBot() {
 
 export default ChatBot;
 
-const MessageSent = ({ message }) => {
+export const MessageSent = ({ message }) => {
     return (
         <div className="MessageSentMain">
             <div className="MessageSentInner">{message}</div>
@@ -139,7 +139,7 @@ const MessageSent = ({ message }) => {
     );
 };
 
-const MessageRecievded = ({ message, first }) => {
+export const MessageRecievded = ({ message, first }) => {
     const [rendered, SetRendered] = useState(true);
     if (rendered) {
         return (
@@ -169,7 +169,7 @@ const MessageRecievded = ({ message, first }) => {
         );
     }
 };
-const MessageRecievdedLoading = () => {
+export const MessageRecievdedLoading = () => {
     return (
         <div className="MessageRecievdedMain">
             <div className="MessageRecievdedInner">

@@ -2,6 +2,7 @@ import React from "react";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
+import StickyChatBot from "../components/stickyChatBot";
 import VideoCaorusel from "../components/video-carousel";
 import AboutContainer from "../containers/about";
 import FunFactContainer from "../containers/global/funfact";
@@ -57,6 +58,7 @@ const HomePage = () => {
                     {/* <HomeBlog />
                     <NewsletterArea /> */}
                     <Footer />
+                    <StickyChatBot />
                     <ScrollToTop />
                 </div>
             </Layout>
