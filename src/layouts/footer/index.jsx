@@ -112,16 +112,16 @@ const Footer = () => {
                                 <h4 className="title">Contact info</h4>
                                 <p>30 N Gould St, Sheridan, WY 82801, USA</p>
                                 <ul className="address">
-                                    <li>
+                                    {/* <li>
                                         <a className="address-link" href="tel:+32474171274">
                                             {" "}
                                             +32474171274
                                         </a>
-                                    </li>
+                                    </li> */}
 
                                     <li>
-                                        <a className="address-link" href="mailto:info@ssebowa.ai">
-                                            info@ssebowa.ai
+                                        <a className="address-link" href="mailto:info@ssebowa.org">
+                                            info@ssebowa.org
                                         </a>
                                     </li>
                                 </ul>
