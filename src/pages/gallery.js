@@ -1,13 +1,13 @@
-import { Container, Box } from "@mui/material";
+import { Box } from "@mui/material";
 
 import React from "react";
 import GallaryImageList from "../components/GallaryImageList/GallaryImageList";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
+import StickyChatBot from "../components/stickyChatBot";
 import PageBanner from "../containers/global/page-banner";
 import Footer from "../layouts/footer";
-import Header from "../layouts/header";
 
 function gallary(props) {
     return (
@@ -28,6 +28,7 @@ Thank you for your support!"
                 />
                 <GallaryImageList></GallaryImageList>
                 <Footer></Footer>
+                <StickyChatBot />
                 <ScrollToTop></ScrollToTop>
                 {/* <SEO title="Ssebowa – Gallery" />
                 <div className="wrapper">

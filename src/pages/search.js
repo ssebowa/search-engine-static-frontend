@@ -1,14 +1,13 @@
 import React, { useState } from "react";
+import NavBarFooter from "../components/NavBarFooter/NavBarFooter";
 import ScrollToTop from "../components/scroll-to-top";
+import SearchResults from "../components/SearchResults/SearchResults";
+import SearchResultsImages from "../components/SearchResults/SearchResultsImages";
+import SearchTypeHeader from "../components/SearchResults/SearchTypeHeader";
 import SEO from "../components/seo";
+import StickyChatBot from "../components/stickyChatBot";
 import Layout from "../layouts/index";
 import SearchHeader from "../layouts/SearchHeader";
-import SearchResults from "../components/SearchResults/SearchResults";
-import Footer from "../layouts/footer";
-import SearchTypeHeader from "../components/SearchResults/SearchTypeHeader";
-import NavBarFooter from "../components/NavBarFooter/NavBarFooter";
-import SearchBarHome from "../components/searchbarhome/SearchBarHome";
-import SearchResultsImages from "../components/SearchResults/SearchResultsImages";
 
 const SearchPage = () => {
     const [query, SetQuery] = React.useState("");
@@ -60,6 +59,7 @@ const SearchPage = () => {
                     )}
                     <NavBarFooter></NavBarFooter>
                     <ScrollToTop />
+                    <StickyChatBot />
                 </div>
             </Layout>
         </React.Fragment>

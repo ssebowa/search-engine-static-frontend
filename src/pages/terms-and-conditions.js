@@ -3,9 +3,9 @@ import React from "react";
 import CausesPage from "../components/causes";
 import CausesData from "../data/causes.json";
 
-import { Container } from "react-bootstrap";
-import SEO from "../components/seo";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
+import SEO from "../components/seo";
+import StickyChatBot from "../components/stickyChatBot";
 import PageBanner from "../containers/global/page-banner";
 import Footer from "../layouts/footer";
 
@@ -39,6 +39,7 @@ function TermsAndConditions(props) {
                             );
                         })}
                 </ul>
+                <StickyChatBot />
             </div>
             <Footer></Footer>
         </>

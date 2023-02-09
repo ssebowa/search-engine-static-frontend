@@ -177,8 +177,8 @@ br {
 
 .scroll-to-top {
   position: fixed;
-  right: 45px;
-  bottom: -60px;
+  right: 30px;
+  bottom: 60px;
   z-index: 999;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
   display: block;
@@ -203,7 +203,7 @@ br {
   &.show {
       visibility: visible;
       opacity: 1;
-      bottom: 60px;
+      bottom: 120px;
   }
 
   i {

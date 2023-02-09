@@ -1,6 +1,7 @@
 import { faMessage, faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 import { BASEURL_Chat_Bot } from "../../connection/BaseUrl";
 import { MessageRecievded, MessageRecievdedLoading, MessageSent } from "../ChatBot/ChatBot";
 import "./stickyFooter.css";
@@ -97,16 +98,15 @@ const StickyChatBot = () => {
     return (
         <div className="chat-container">
             {!openChatBot ? (
-                <button onClick={() => setOPenChatBot(true)}>
+                <Button onClick={() => setOPenChatBot(true)} className="border border-0">
                     <FontAwesomeIcon
                         icon={faMessage}
-                        className="pt-1 "
                         size="2xl"
                         style={{
                             color: "#181c51",
                         }}
                     />
-                </button>
+                </Button>
             ) : (
                 <div className="stickyChatBotContainer">
                     <div className="ChatBotMain">
@@ -122,7 +122,7 @@ const StickyChatBot = () => {
                                         • INACTIVE
                                     </span>
                                 )}
-                                <button onClick={() => setOPenChatBot(false)} className="ps-5">
+                                <button onClick={() => setOPenChatBot(false)} className="ms-5">
                                     <FontAwesomeIcon
                                         icon={faXmark}
                                         className="pt-1 "

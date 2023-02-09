@@ -2,11 +2,10 @@ import React from "react";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
+import StickyChatBot from "../components/stickyChatBot";
 import ContactContainer from "../containers/contact";
-import NewsletterArea from "../containers/global/newsletter";
 import PageBanner from "../containers/global/page-banner";
 import Footer from "../layouts/footer";
-import Header from "../layouts/header";
 import Layout from "../layouts/index";
 
 const ContactPage = () => {
@@ -26,6 +25,7 @@ const ContactPage = () => {
 
                     <Footer />
                     <ScrollToTop />
+                    <StickyChatBot />
                 </div>
             </Layout>
         </React.Fragment>

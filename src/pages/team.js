@@ -2,11 +2,10 @@ import React from "react";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
-import NewsletterArea from "../containers/global/newsletter";
+import StickyChatBot from "../components/stickyChatBot";
 import PageBanner from "../containers/global/page-banner";
 import TeampPageContainer from "../containers/team-page-container";
 import Footer from "../layouts/footer";
-import Header from "../layouts/header";
 import Layout from "../layouts/index";
 
 const TeamPage = () => {
@@ -25,6 +24,7 @@ const TeamPage = () => {
 
                     <Footer />
                     <ScrollToTop />
+                    <StickyChatBot />
                 </div>
             </Layout>
         </React.Fragment>

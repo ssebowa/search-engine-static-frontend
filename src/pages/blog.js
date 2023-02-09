@@ -1,15 +1,13 @@
 import React from "react";
-import BlogItemContainer from "../containers/blog/blog-item";
-import NewsletterArea from "../containers/global/newsletter";
-import PageBanner from "../containers/global/page-banner";
-import Footer from "../layouts/footer";
-import Header from "../layouts/header";
-import Layout from "../layouts/index";
-import BlogData from "../data/blog.json";
+import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
-import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
-
+import StickyChatBot from "../components/stickyChatBot";
+import BlogItemContainer from "../containers/blog/blog-item";
+import PageBanner from "../containers/global/page-banner";
+import BlogData from "../data/blog.json";
+import Footer from "../layouts/footer";
+import Layout from "../layouts/index";
 
 const BlogPage = () => {
     return (
@@ -24,6 +22,7 @@ const BlogPage = () => {
                     {/* <NewsletterArea /> */}
                     <Footer />
                     <ScrollToTop />
+                    <StickyChatBot />
                 </div>
             </Layout>
         </React.Fragment>
