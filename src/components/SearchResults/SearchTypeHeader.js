@@ -23,6 +23,9 @@ function SearchTypeHeader({ handleSearchType }) {
                 <Button variant="outlined" sx={{ mx: 1 }} onClick={() => changeSearchType("images")}>
                     Images
                 </Button>
+                <Button variant="outlined" sx={{ mx: 1 }} onClick={() => changeSearchType("videos")}>
+                    Videos
+                </Button>
                 {/*    <ButtonForType
                     icon={faPlayCircle}
                     text={"Videos"}

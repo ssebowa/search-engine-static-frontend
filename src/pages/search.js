@@ -3,6 +3,7 @@ import NavBarFooter from "../components/NavBarFooter/NavBarFooter";
 import ScrollToTop from "../components/scroll-to-top";
 import SearchResults from "../components/SearchResults/SearchResults";
 import SearchResultsImages from "../components/SearchResults/SearchResultsImages";
+import SearchResultsVideos from "../components/SearchResults/SearchResultsVideos";
 import SearchTypeHeader from "../components/SearchResults/SearchTypeHeader";
 import SEO from "../components/seo";
 import StickyChatBot from "../components/stickyChatBot";
@@ -53,6 +54,11 @@ const SearchPage = () => {
                     ) : searchType === "images" ? (
                         <>
                             <SearchResultsImages query={query}></SearchResultsImages>
+                        </>
+                    ) : searchType === "videos" ? (
+                        <>
+                            <SearchResultsVideos query={query}></SearchResultsVideos>
+                            
                         </>
                     ) : (
                         <></>

@@ -18,16 +18,12 @@ function SearchResultsImages({ query }) {
     return (
         <div className="w-100">
             {imageUrls && (
-                <ImageList sx={{ width: "100%", height: 450 }} cols={3} rowHeight={164}>
+                <ImageList sx={{ width: "100%", height: 450}} cols={6} variant="quilted" rowHeight={130}>
                     {imageUrls.map((string, index) => (
                         <ImageListItem key={index}>
-                            <img
-                                src={`${string}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${string}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                style={{ objectFit: "contain" }}
-                                loading="lazy"
-                                alt="img"
-                            />
+                            <a href={string} style={{ textDecoration: "none" }}>
+                                <img src={string} style={{ objectFit: "contain" }} loading="lazy" alt="img" />
+                            </a>
                         </ImageListItem>
                     ))}
                 </ImageList>
