@@ -14,19 +14,17 @@ const HomeBlog = () => {
                     excerptClassOption="mt-lg-10 pt-lg-3 mb-10 mb-lg-0"
                     excerpt="Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain"
                 />
+
+                <meta
+                    name="description"
+                    content="Ssebowa turns your searches to trees, food for hungry children and sanitary  pads for girls without pads. Search now to mitigate climate change and change lives."
+                />
                 <div className="row mb-n7">
                     {BlogData &&
                         BlogData.slice(0, 3).map((single, key) => {
                             return (
-                                <div
-                                    key={key}
-                                    className="col-lg-4 col-sm-6 mb-7"
-                                >
-                                    <BlogGrid
-                                        classOption="null"
-                                        key={key}
-                                        data={single}
-                                    />
+                                <div key={key} className="col-lg-4 col-sm-6 mb-7">
+                                    <BlogGrid classOption="null" key={key} data={single} />
                                 </div>
                             );
                         })}

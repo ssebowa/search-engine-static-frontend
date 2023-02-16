@@ -21,7 +21,7 @@ const Intro = ({ data }) => {
 
                     <SearchBarHome />
                     <div className="w-75 mt-2  p-2 d-flex justify-content-center align-items-center">
-                        <Link
+                        {/* <Link
                             to={"/bot?q=I%20am%20your%20assistant"}
                             className="bg-success p-2 d-flex justify-content-center align-items-center"
                             style={{
@@ -32,7 +32,7 @@ const Intro = ({ data }) => {
                             }}
                         >
                             Search with our ChatBot
-                        </Link>
+                        </Link> */}
                     </div>
                     <Bookmarks />
                 </div>
