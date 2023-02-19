@@ -1,67 +1,19 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import Funfact from "../../../components/funfact";
-
 import "../../../assets/css/floatingAnimations.css";
+import HomeData from "../../../data/home.json";
 
 const FunFactContainer = ({ classOption }) => {
-    const [temperatureProblem, setTemperatureProblem] = useState({
-        id: 1,
-        title: "Temperature Increases",
-        number: null,
-    });
-    const [hungerProblem, setHungerProblem] = useState({
-        id: 2,
-        title: "Child Die From Hunger",
-        number: null,
-    });
-    const [schoolProblem, setSchoolProblem] = useState({
-        id: 3,
-        title: "Girls Drop From School",
-        number: null,
-    });
-    const [unemployedProblem, setUnemployedProblem] = useState({
-        id: 4,
-        title: "People Unemployed",
-        number: null,
-    });
-
-    const setValues = (data) => {
-        setTemperatureProblem({
-            ...temperatureProblem,
-            number: data.change_temprature,
-        });
-        setHungerProblem({ ...hungerProblem, number: data.child_die_from_hunger });
-        setSchoolProblem({ ...schoolProblem, number: data.girl_drop_from_school });
-        setUnemployedProblem({ ...unemployedProblem, number: data.un_employ });
-    };
-
-    useEffect(() => {
-        fetch("https://chatapi.ssebowa.org/counter")
-            .then((response) => response.json())
-            .then((data) => setValues(data))
-            .catch((error) => console.error(error));
-    }, [temperatureProblem]);
-
-    const problems = [temperatureProblem, hungerProblem, schoolProblem, unemployedProblem];
-
     return (
-        <div
-            className={`funfact-section section-pb position-relative ${classOption}`}
-            style={{
-                backgroundImage:
-                    'url("https://res.cloudinary.com/dicgvondb/image/upload/v1675617563/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-1_qsmwq4_d1a9f8.png")',
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "0% 0%",
-            }}
-        >
+        <div className={`funfact-section section-pb position-relative ${classOption}`}>
             <div className="container">
                 <div className="row mb-n7">
-                    {problems &&
-                        problems.map((problem) => {
+                    {HomeData[4].funfact &&
+                        HomeData[4].funfact.map((single, key) => {
                             return (
-                                <div key={problem.id} className="col-md-6 col-10 mb-7">
-                                    <Funfact data={problem} key={problem.id} />
+                                <div key={key} className="col-md-3 col-6 mb-7">
+                                    <Funfact data={single} key={key} />
                                 </div>
                             );
                         })}
@@ -76,37 +28,6 @@ const FunFactContainer = ({ classOption }) => {
                     d="M1919.04,532.448s-223.79-369.607-567.75-318.167-454.362,102.4-664.214-62.038S163.566-47.917-47.473,86.059"
                 />
             </svg>
-
-            <div className="moving-element-6">
-                <img
-                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668347/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-9_wrn1yx.png"
-                    alt=""
-                />
-            </div>
-            <div className="moving-element-7">
-                <img
-                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668345/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-11_gs6lcb.png"
-                    alt=""
-                />
-            </div>
-            <div className="moving-element-8">
-                <img
-                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668343/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/2_ngorqv.png"
-                    alt=""
-                />
-            </div>
-            <div className="moving-element-9">
-                <img
-                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668343/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/1_wvslml.png"
-                    alt=""
-                />
-            </div>
-            <div className="moving-element-10">
-                <img
-                    src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668347/ssebowa/ssebowa.org/search-engine-static-frontend/images/shape/shape-7_ve8dwq.png"
-                    alt=""
-                />
-            </div>
         </div>
     );
 };

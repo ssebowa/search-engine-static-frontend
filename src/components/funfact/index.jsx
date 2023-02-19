@@ -12,17 +12,31 @@ const Funfact = ({ data }) => {
         }
     };
     return (
+        // <div className="fanfact text-md-left text-center">
+        //     <span className="title">
+        //         <span className="counter">
+
+        //             <VisibilitySensor
+        //                 onChange={onVisibilityChange}
+        //                 offset={{ top: 10 }}
+        //                 delayedCall
+        //             >
+        //                 <CountUp end={didViewCountUp ? data.number : 0} />
+        //             </VisibilitySensor>
+
+        //             {data.number}
+        //         </span>
+        //         +
+        //     </span>
+        //     <h6 className="sub-title">{data.title}</h6>
+        // </div>
+
         <div className="fanfact text-md-left text-center">
             <span className="title">
                 <span className="counter">
-                    {/* <VisibilitySensor
-                        onChange={onVisibilityChange}
-                        offset={{ top: 10 }}
-                        delayedCall
-                    >
+                    <VisibilitySensor onChange={onVisibilityChange} offset={{ top: 10 }} delayedCall>
                         <CountUp end={didViewCountUp ? data.number : 0} />
-                    </VisibilitySensor> */}
-                    {data.number}
+                    </VisibilitySensor>
                 </span>
                 +
             </span>
