@@ -81,6 +81,7 @@ const NavBarUpdated = () => {
                 <Toolbar
                     sx={{
                         height: "16vh",
+                        width: "98vw",
                     }}
                 >
                     {isMatch ? (

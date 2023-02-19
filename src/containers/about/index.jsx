@@ -74,6 +74,7 @@ const AboutContainer = () => {
                         <div className="about-photo scene text-center text-lg-left" id="scene" ref={sceneEl}>
                             <div className="mt-4" data-depth="0.2">
                                 <img
+                                    className="coll-imgs"
                                     src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/about/2_zmj8ev.jpg"
                                     alt="about"
                                 />

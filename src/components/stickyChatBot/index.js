@@ -98,10 +98,10 @@ const StickyChatBot = () => {
     return (
         <div className="chat-container">
             {!openChatBot ? (
-                <Button onClick={() => setOPenChatBot(true)} className="border border-0">
+                <Button onClick={() => setOPenChatBot(true)} className="border border-0 ps-5 pe-5">
                     <FontAwesomeIcon
                         icon={faMessage}
-                        size="2xl"
+                        size="xl"
                         style={{
                             color: "#181c51",
                         }}

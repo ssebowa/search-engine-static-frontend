@@ -73,7 +73,7 @@ function SearchBarHome() {
         }
     };
     return (
-        <div className="w-75 d-flex flex-column align-items-center">
+        <div className="w-100 d-flex flex-column align-items-center">
             <div className="mainSearchBarMainDiv100 ">
                 {/* <form
                     method="NONE"
@@ -154,7 +154,7 @@ function SearchBarHome() {
                         <Form
                             className="d-flex m-3 p-1  align-items-center justify-content-center"
                             style={{
-                                width: "60vw",
+                                width: "80vw",
                                 height: "100%",
                                 maxHeight: "200px",
                             }}
@@ -181,7 +181,7 @@ function SearchBarHome() {
                                 className="  d-flex justify-content-center align-items-center"
                                 style={{
                                     width: "2px",
-                                    height: "70%",
+                                    height: "50%",
                                     borderRadius: "10px 100px 100px 10px",
                                 }}
                             >

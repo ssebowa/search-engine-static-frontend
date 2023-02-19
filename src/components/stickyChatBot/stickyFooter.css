@@ -1,9 +1,9 @@
 .chat-container{
-    width: 100vw;
+    width: 98vw;
     position: sticky;
     bottom: 40px;
     display: flex;
-    padding-right: 40px;
+    padding-right: 0px;
     justify-content: end;
     margin-right: 10%;
 }
@@ -14,4 +14,18 @@
     display: flex;
     z-index: 999;
     justify-content: end;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .chat-container{
+        width: 96vw;
+        position: sticky;
+        bottom: 40px;
+        display: flex;
+        padding-right: 0px;
+        justify-content: end;
+        margin-right: 0%;
+    }
+
 }

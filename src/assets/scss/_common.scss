@@ -48,6 +48,19 @@ img {
   transition: all linear 0.5s;
 }
 
+.arrow-u{
+ position: relative;
+  width: 350px;
+  height: 60px;
+  left: 180px;
+  bottom: 10px;
+}
+
+.coll-imgs{
+  width: 555px;
+  height: 390px;
+}
+
 :focus {
   outline: 0;
 }
@@ -177,7 +190,8 @@ br {
 
 .scroll-to-top {
   position: fixed;
-  right: 30px;
+  // right: 30px;
+  left: 1440px;
   bottom: 60px;
   z-index: 999;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
@@ -197,7 +211,7 @@ br {
   background-size: 200% auto;
   background-position: left center;
   color: $white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   overflow: hidden;
 
   &.show {
@@ -211,7 +225,7 @@ br {
       top: 50%;
       left: 50%;
       color: $white;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.1s ease-in-out;
   }
 
   .arrow-top {
@@ -233,3 +247,77 @@ br {
   }
 }
 
+@media only screen and (max-width: 600px) {
+
+  .coll-imgs{
+    width: 345px;
+    height: 250px;
+  }
+
+.arrow-u{
+  position: relative;
+  width: 220px;
+  height: 60px;
+  left: 80px;
+  bottom: 10px;
+   }
+   
+.scroll-to-top {
+    position: fixed;
+    // right: 30px;
+    left: 350px;
+    bottom: 60px;
+    z-index: 999;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    background-color: $primary;
+    background-size: 200% auto;
+    background-position: left center;
+    color: $white;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+  
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        bottom: 120px;
+    }
+  
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $white;
+        transition: all 0.1s ease-in-out;
+    }
+  
+    .arrow-top {
+        transform: translate(-50%, -50%);
+    }
+  
+    .arrow-bottom {
+        transform: translate(-50%, 80px);
+    }
+  
+    &:hover {
+        background-position: right center;
+        .arrow-top {
+            transform: translate(-50%, -80px);
+        }
+        .arrow-bottom {
+            transform: translate(-50%, -50%);
+        }
+    }
+  }
+}

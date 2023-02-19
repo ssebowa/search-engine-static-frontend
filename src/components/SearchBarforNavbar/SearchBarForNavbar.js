@@ -106,7 +106,7 @@ function SearchBarForNavbar() {
                     >
                         <Form.Control
                             type="text"
-                            className="me-1"
+                            className="me-1 fs-6"
                             aria-label="Search"
                             style={{
                                 width: "80%",

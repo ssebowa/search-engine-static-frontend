@@ -14,7 +14,7 @@ const BlogLeftSidebarPage = () => {
         <React.Fragment>
             <Layout>
                 <SEO title="Buznex – Blog Left Sidebar" />
-                <div className="wrapper">
+                <div className="wrapper" style={{ width: "98vw" }}>
                     <Header />
                     <PageBanner
                         title="Blog Post"

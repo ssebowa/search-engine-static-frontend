@@ -71,8 +71,10 @@ const Bookmarks = () => {
     };
     return (
         <div style={{ width: "100%", maxWidth: "700px", marginTop: 20 }}>
-            <div className="d-flex  justify-content-between p-4 align-items-center w-100">
-                <Box sx={{ backgroundColor: "white", color: "black", padding: 2, borderRadius: "15px" }}>Bookmarks</Box>
+            <div className="d-flex  justify-content-around pt-4 align-items-center w-100">
+                <Box sx={{ backgroundColor: "white", color: "black", paddingLeft: 2, paddingRight: 2, paddingTop: 1, paddingBottom: 1, borderRadius: "8px" }}>
+                    Bookmarks
+                </Box>
                 <button onClick={() => closeAddNewBookmark()} className="d-flex justify-content-center align-items-center p-1">
                     {addNew ? (
                         <>
@@ -113,6 +115,9 @@ const Bookmarks = () => {
 
                 {/* <Box sx={{ backgroundColor: "white", color: "black", padding: 2, borderRadius: "20px" }}>Add</Box> */}
             </div>
+            <div>
+                <img className="arrow-u" src="https://i.ibb.co/DMMqWwL/slazzer-edit-image-2-removebg-preview.png" alt="" />
+            </div>
             {addNew ? (
                 <div className="d-flex align-items-center justify-content-center w-100">
                     <AddNewBookmark cancelFxn={closeAddNewBookmark} rerenderFxn={RenderBookmarks} />
@@ -126,10 +131,10 @@ const Bookmarks = () => {
                             );
                         })
                     ) : (
-                        <Box sx={{ padding: 2, borderRadius: "20px" }}>
-                            <p className="text-white text-center">
+                        <Box sx={{ borderRadius: "20px" }}>
+                            <p className="text-white text-center text-decoration-underline">
                                 Add Bookmarks by pressing
-                                <span className="fw-bold"> + ADD </span> Button
+                                <span className="fw-bold-lg"> + ADD </span> Button
                             </p>
                         </Box>
                     )}
