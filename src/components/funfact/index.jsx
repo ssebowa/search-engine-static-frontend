@@ -32,7 +32,7 @@ const Funfact = ({ data }) => {
         // </div>
 
         <div className="fanfact text-md-left text-center">
-            <span className="title">
+            {/* <span className="title">
                 <span className="counter">
                     <VisibilitySensor onChange={onVisibilityChange} offset={{ top: 10 }} delayedCall>
                         <CountUp end={didViewCountUp ? data.number : 0} />
@@ -40,7 +40,7 @@ const Funfact = ({ data }) => {
                 </span>
                 +
             </span>
-            <h6 className="sub-title">{data.title}</h6>
+            <h6 className="sub-title">{data.title}</h6> */}
         </div>
     );
 };

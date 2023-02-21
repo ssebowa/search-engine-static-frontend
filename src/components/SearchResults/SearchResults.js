@@ -2,14 +2,22 @@ import React, { useEffect } from "react";
 import InfoBoxes from "./InfoBoxes";
 import ResultMain, { SearchSuggestions } from "./ResultMain";
 import PropTypes from "prop-types";
-
+import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import { BASEURL } from "../../connection/BaseUrl";
+import Newapi from "./Newapi";
 
 function SearchResults({ query }) {
     const [search_results, SetSearch_Results] = React.useState([]);
+    const [array_search_results, SetArraySearch_Results] = React.useState([]);
     const [Results_State, SetResults_State] = React.useState(false);
     const [Results_Error, SetResults_Error] = React.useState(false);
+
+    const [MWMBLE_Results, SetSerachMWMBleResults] = React.useState([]);
+
+    const [SsebowaResults, SetSsebowaResults] = React.useState([]);
+
+    const [Combine_Results, SetCombineResults] = React.useState([]);
 
     const FetchSearchQuery = () => {
         console.log("Fetching...");
@@ -26,7 +34,11 @@ function SearchResults({ query }) {
             })
                 .then((r) => r.json())
                 .then((r) => {
+                    console.log(r);
                     SetSearch_Results(r);
+                    SetArraySearch_Results(r.results);
+                    console.log("🚀 ~ file: SearchResults.js:36 ~ .then ~ r.results:", r.results);
+                    // console.log(search_results);
                     const timer = setTimeout(() => {
                         SetResults_State(true);
                     }, 1000);
@@ -45,26 +57,51 @@ function SearchResults({ query }) {
         FetchSearchQuery();
     }, [query]);
 
+    let x;
+
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await axios.get(`https://api.mwmbl.org/search?s=${query}`);
+                // console.log(response.data);
+                SetSsebowaResults(response.data);
+            } catch (error) {
+                console.log(`Error in fetching data: ${error.message}`);
+            }
+        }
+
+        fetchData();
+
+        return () => {
+            // Clean up function
+        };
+    }, [query]);
+
     if (Results_State) {
         return (
-            <div className="SearchResultsMain">
-                <div className="SearchResultsInnerLeft ">
-                    {/* <p className="text-dark mt-2">
-                        About {search_results?.number_of_results} results
-                    </p> */}
-                    {search_results?.results?.map((item, i) => {
-                        return <ResultMain key={i} data={item} />;
-                    })}
+            <div>
+                <div className="SearchResultsMain">
+                    <div className="SearchResultsInnerLeft ">
+                        <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
+                        {search_results?.results?.map((item, i) => {
+                            return <ResultMain key={i} data={item} />;
+                        })}
+                    </div>
+
+                    <div className="SearchResultsInnerRight">
+                        {search_results?.infoboxes?.map((item, i) => {
+                            return (
+                                <>
+                                    <InfoBoxes key={i} data={item} />
+                                </>
+                            );
+                        })}
+                    </div>
                 </div>
-                <div className="SearchResultsInnerRight">
-                    {search_results?.infoboxes?.map((item, i) => {
-                        return (
-                            <>
-                                <InfoBoxes key={i} data={item} />
-                            </>
-                        );
+                <div>
+                    {SsebowaResults?.map((ssebowa) => {
+                        return <Newapi key={ssebowa._id} ssebowa={ssebowa} />;
                     })}
-                    {/* <SearchSuggestions data={search_results?.suggestions} />; */}
                 </div>
             </div>
         );
