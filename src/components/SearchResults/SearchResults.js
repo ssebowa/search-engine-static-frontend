@@ -5,7 +5,9 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import { BASEURL } from "../../connection/BaseUrl";
+import Pagination from "./Pagination";
 import Newapi from "./Newapi";
+import BotResult from "./BotResult";
 
 function SearchResults({ query }) {
     const [search_results, SetSearch_Results] = React.useState([]);
@@ -13,11 +15,14 @@ function SearchResults({ query }) {
     const [Results_State, SetResults_State] = React.useState(false);
     const [Results_Error, SetResults_Error] = React.useState(false);
 
-    const [MWMBLE_Results, SetSerachMWMBleResults] = React.useState([]);
-
     const [SsebowaResults, SetSsebowaResults] = React.useState([]);
 
     const [Combine_Results, SetCombineResults] = React.useState([]);
+
+    const [CahtbotResults, SetChatbotResults] = React.useState("");
+
+    const [currentPage, setcurrentPage] = React.useState(1);
+    const [postPerPage, setPostPerPage] = React.useState(5);
 
     const FetchSearchQuery = () => {
         console.log("Fetching...");
@@ -77,12 +82,50 @@ function SearchResults({ query }) {
         };
     }, [query]);
 
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await axios.get(`https://chatapi.ssebowa.org/chatbot/${query}`);
+                console.log(response.data);
+
+                SetChatbotResults(response.data.generated_text);
+            } catch (error) {
+                console.log(`Error in fetching data: ${error.message}`);
+            }
+        }
+
+        fetchData();
+
+        return () => {
+            // Clean up function
+        };
+    }, [query]);
+    var zain;
+    zain = CahtbotResults.split(`\\`);
+    console.log(zain);
+
+    const indexOfLastPost = currentPage * postPerPage;
+    const indexOfFirstPage = indexOfLastPost - postPerPage;
+    const currentPosts = SsebowaResults.slice(indexOfFirstPage, indexOfLastPost);
+
+    // change page
+    const paginate = (pageNumber) => setcurrentPage(pageNumber);
+
     if (Results_State) {
         return (
             <div>
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
                         <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
+
+                        {zain.map((res, index) => {
+                            return (
+                                <>
+                                    <div key={index}> {res}</div> <br />
+                                </>
+                            );
+                        })}
+
                         {search_results?.results?.map((item, i) => {
                             return <ResultMain key={i} data={item} />;
                         })}
@@ -97,11 +140,25 @@ function SearchResults({ query }) {
                             );
                         })}
                     </div>
+
+                    {/* <SearchSuggestions data={search_results?.suggestions} />; */}
+                    {/* <div>
+                    {SsebowaResults.map((data) => (
+                        <ResultMain key={data._id} data={data}></ResultMain>
+                    ))}
+                </div> */}
                 </div>
-                <div>
-                    {SsebowaResults?.map((ssebowa) => {
-                        return <Newapi key={ssebowa._id} ssebowa={ssebowa} />;
-                    })}
+
+                <div className="SearchResultsInnerLeft">
+                    {/* {SsebowaResults?.map((ssebowa) => { */}
+                    {/* // console.log(ssebowa); */}
+                    {/* // return  */}
+                    <Newapi
+                        //  key={ssebowa._id}
+                        SsebowaResults={currentPosts}
+                    />
+                    ;{/* // })} */}
+                    <Pagination postPerPage={postPerPage} totalPosts={SsebowaResults.length} paginate={paginate} />
                 </div>
             </div>
         );

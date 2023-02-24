@@ -23,7 +23,7 @@ function ResultMain({ data }) {
 export default ResultMain;
 
 export const SearchSuggestions = ({ data, ssebowa }) => {
-    console.log(ssebowa);
+    // console.log(ssebowa);
     return (
         <div className="SearchSuggestions p-2">
             <p className="text-dark fw-bold">Suggestions</p>

@@ -97,9 +97,9 @@ function ChatBot() {
                     {MessageLoading ? <MessageRecievdedLoading /> : <></>}
                     {messages.map((e, i) => {
                         if (e.type === "q") {
-                            return <MessageSent message={e.message} />;
+                            return <MessageSent message={e.message} key={i} />;
                         } else {
-                            return <MessageRecievded message={e.message} first={e.first} />;
+                            return <MessageRecievded message={e.message} first={e.first} key={i} />;
                         }
                     })}
                 </div>
@@ -139,12 +139,24 @@ export const MessageSent = ({ message }) => {
     );
 };
 
-export const MessageRecievded = ({ message, first }) => {
+export const MessageRecievded = ({ message, splition, first }) => {
+    const [firstt, setfirstt] = useState(``);
+    let zain;
+    zain = splition.map((msg) => msg);
+    // var i = 0;
+
     const [rendered, SetRendered] = useState(true);
     if (rendered) {
         return (
             <div className="MessageRecievdedMain">
-                <div className="MessageRecievdedInner">{message}</div>
+                <div className="MessageRecievdedInner">
+                    {zain.map((t, index) => (
+                        <>
+                            <div key={index}>{t}</div>
+                            {/* <SsebowaQuick quicknotes={t} key={index}/> */}
+                        </>
+                    ))}
+                </div>
             </div>
         );
     } else {

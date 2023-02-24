@@ -14,7 +14,8 @@ const StickyChatBot = () => {
         type: "r",
         first: true,
     };
-    const [messages, SetMessages] = useState([initialData]);
+    const [messages, SetMessages] = useState([]);
+    const [splitMessages, setSplitedMessage] = useState();
     const [MessageLoading, SetMessageLoading] = useState(false);
     const [Active, SetActive] = useState(true);
     const [inputVal, SetinputVal] = useState("");
@@ -33,7 +34,12 @@ const StickyChatBot = () => {
 
     const pushMessageAndSet = (m) => {
         SetMessages((old_messages) => [m, ...old_messages]);
-        console.log(messages);
+        // console.log(messages);
+        messages.map((msg) => {
+            // console.log(msg.message.split("\\"));
+            // setSplitedMessage(msg.message.split("\\"));
+            // console.log(splitMessages);
+        });
         // try {
         //     localStorage.setItem("ssebowa-chat-messages", messages);
         //     return true;
@@ -56,6 +62,14 @@ const StickyChatBot = () => {
                     type: "r",
                     first: false,
                 };
+                let zain;
+                zain = s.message.split("\\");
+                setSplitedMessage(zain);
+                // zain= zain.map((z)=>{
+
+                //     setSplitedMessage(z);
+                // });
+
                 pushMessageAndSet(s);
                 SetMessageLoading(false);
             })
@@ -98,10 +112,10 @@ const StickyChatBot = () => {
     return (
         <div className="chat-container">
             {!openChatBot ? (
-                <Button onClick={() => setOPenChatBot(true)} className="border border-0 ps-5 pe-5">
+                <Button onClick={() => setOPenChatBot(true)} className="border border-0">
                     <FontAwesomeIcon
                         icon={faMessage}
-                        size="xl"
+                        size="2xl"
                         style={{
                             color: "#181c51",
                         }}
@@ -137,10 +151,10 @@ const StickyChatBot = () => {
                         <div className="ChatBotResponceDiv">
                             {MessageLoading ? <MessageRecievdedLoading /> : <></>}
                             {messages.map((e, i) => {
-                                if (e.type === "q") {
-                                    return <MessageSent message={e.message} />;
+                                if (e.type === "q" || !e.type) {
+                                    return <MessageSent message={e.message} key={i} />;
                                 } else {
-                                    return <MessageRecievded message={e.message} first={e.first} />;
+                                    return <MessageRecievded message={e.message} splition={splitMessages} first={e.first} key={i} />;
                                 }
                             })}
                         </div>
