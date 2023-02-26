@@ -181,6 +181,7 @@ function SearchBarHome() {
                                         // borderRadius: "0 12px 12px 100px",
                                     }
                                 }
+                                // home
                                 value={inputVal}
                                 placeholder="Search the web to plant trees..."
                                 onChange={(e) => onChangeInput(e)}
