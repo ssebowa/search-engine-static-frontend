@@ -253,10 +253,11 @@ const NavBarUpdated = () => {
                                             <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
                                     )} */}
+                                    {/* <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer"></a> */}
 
-                                    <Link to="/">
+                                    <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                         <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
-                                    </Link>
+                                    </a>
                                 </Grid>
                             </Grid>
                         </>

@@ -1,8 +1,6 @@
 import React from "react";
 
-
-import './videobackgroundsection.css'
-
+import "./videobackgroundsection.css";
 
 function VideoBackgroundSection() {
     return (

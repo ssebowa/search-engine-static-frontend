@@ -6,8 +6,8 @@ import React, { useEffect } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
-
-import { AiOutlineHome } from "react-icons/ai";
+import Bookmarks from "../Bookmarks/Bookmarks";
+import SideVideo from "./SideVideo/SideVideo";
 
 function SearchBarHome() {
     const history = useHistory();
@@ -80,6 +80,9 @@ function SearchBarHome() {
             <h1 className="text-white banner-text">
                 The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine
             </h1>
+            <div>
+                <SideVideo></SideVideo>
+            </div>
             <div className="mainSearchBarMainDiv100 ">
                 {/* <form
                     method="NONE"
@@ -158,7 +161,7 @@ function SearchBarHome() {
                 ) : (
                     <>
                         <Form
-                            className="d-flex m-3 p-1  align-items-center justify-content-center"
+                            className="d-flex m-3 p-1  align-items-center justify-content-center serch-focus"
                             style={{
                                 width: "80vw",
                                 height: "100%",
@@ -169,12 +172,14 @@ function SearchBarHome() {
                             <div className="search-imgbox">
                                 <img className="search-img" src="https://i.ibb.co/XZwQzvw/Vector-1.png" alt="" />
                             </div>
+
                             <Form.Control
                                 type="text"
                                 className="me-1 serch-input"
                                 aria-label="Search"
                                 style={
                                     {
+                                        // padding: "0",
                                         // width: "100%",
                                         // maxWidth: "450px",
                                         // minWidth: "110px",
@@ -190,15 +195,19 @@ function SearchBarHome() {
                             <Button
                                 // variant="success "
                                 type="submit"
-                                className="  d-flex justify-content-center align-items-center search-btn"
+                                className="  d-flex justify-content-center align-items-center search-text"
                                 style={{
+                                    width: "2px",
+                                    // height: "50%",
+                                    borderRadius: "0 100px 100px 0",
+                                    position: "relative",
+                                    right: "5px",
                                     backgroundColor: "#40AF04",
                                     border: "none",
                                 }}
                             >
-                                <div>
-                                    <h1 className="search-text text-white">Search</h1>
-                                    {/* <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" /> */}
+                                <div className="">
+                                    <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" />
                                 </div>
                             </Button>
                         </Form>
@@ -223,14 +232,23 @@ function SearchBarHome() {
                     <></>
                 )}
             </div>
+
             <div className="d-flex justify-content-center">
-                <h1 className="text-white banner-text me-4 mt-3 mt-sm-2">+</h1>
-                <h1 className="text-white banner-text me-5 mt-3 mt-sm-2">Add To Chrome</h1>
-                <h1 className="text-white ">|</h1>
-                <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
+                <div className="set-asposition">
+                    <div className="d-flex justify-content-center">
+                        <h1 className="text-white banner-text me-3 chrome">+</h1>
+                        <h1 className="text-white banner-text me-3 chrome">Add To Browser</h1>
+                        <h1 className="text-white">|</h1>
+
+                        {/* <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
                     <AiOutlineHome></AiOutlineHome>
-                </h1>
-                <h1 className="text-white banner-text ms-4 mt-3 mt-sm-2">Set As Home</h1>
+                </h1> */}
+                        {/* <h1 className="text-white banner-text ms-4 mt-3 mt-sm-2">Set As Home</h1> */}
+                    </div>
+                </div>
+                <div className="book-margin">
+                    <Bookmarks></Bookmarks>
+                </div>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import Button from "../button";
 import Parallax from "parallax-js";
 import Logo from "../logo";
 import SearchBarHome from "../searchbarhome/SearchBarHome";
-import Bookmarks from "../Bookmarks/Bookmarks";
+// import Bookmarks from "../Bookmarks/Bookmarks";
 import { Link } from "react-router-dom";
 
 const Intro = ({ data }) => {
@@ -34,7 +34,7 @@ const Intro = ({ data }) => {
                             Search with our ChatBot
                         </Link> */}
                     </div>
-                    <Bookmarks />
+                    {/* <Bookmarks /> */}
                 </div>
             </div>
         </div>

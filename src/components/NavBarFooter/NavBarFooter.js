@@ -31,30 +31,31 @@ const NavBarFooter = () => {
     const linksArray = isMatchSM ? linksArraySM : linksArrayAll;
 
     return (
-        <Navbar className="ml-4" bg="light" style={{ height: "100px" }}>
-            {/* <Container>
-                <Nav className=" w-100 d-flex justify-content-around">
-                    {linksArray &&
-                        linksArray.map((link) => {
-                            return (
-                                <>
-                                    <Nav.Link className="p-2" key={link.id}>
-                                        <Link
-                                            style={{
-                                                color: "#343fd1",
-                                                fontSize: "0.8rem",
-                                            }}
-                                            to={link.navLink}
-                                        >
-                                            {link.navName}
-                                        </Link>
-                                    </Nav.Link>
-                                </>
-                            );
-                        })}
-                </Nav>
-            </Container> */}
-        </Navbar>
+        // <Navbar className="ml-4" bg="light" style={{ height: "100px" }}>
+        //     <Container>
+        //         <Nav className=" w-100 d-flex justify-content-around">
+        //             {linksArray &&
+        //                 linksArray.map((link) => {
+        //                     return (
+        //                         <>
+        //                             <Nav.Link className="p-2" key={link.id}>
+        //                                 <Link
+        //                                     style={{
+        //                                         color: "#343fd1",
+        //                                         fontSize: "0.8rem",
+        //                                     }}
+        //                                     to={link.navLink}
+        //                                 >
+        //                                     {link.navName}
+        //                                 </Link>
+        //                             </Nav.Link>
+        //                         </>
+        //                     );
+        //                 })}
+        //         </Nav>
+        //     </Container>
+        // </Navbar>
+        <div></div>
     );
 };
 
