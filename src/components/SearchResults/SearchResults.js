@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
 import { BASEURL } from "../../connection/BaseUrl";
-import Pagination from "./Pagination";
+// import Pagination from "./Pagination";
 import Newapi from "./Newapi";
 import BotResult from "./BotResult";
 
@@ -104,31 +104,32 @@ function SearchResults({ query }) {
     zain = CahtbotResults.split(`\\`);
     console.log(zain);
 
-    const indexOfLastPost = currentPage * postPerPage;
-    const indexOfFirstPage = indexOfLastPost - postPerPage;
-    const currentPosts = SsebowaResults.slice(indexOfFirstPage, indexOfLastPost);
+    // const indexOfLastPost = currentPage * postPerPage;
+    //     const indexOfFirstPage = indexOfLastPost - postPerPage;
+    // const currentPosts = SsebowaResults.slice(indexOfFirstPage, indexOfLastPost);
 
     // change page
-    const paginate = (pageNumber) => setcurrentPage(pageNumber);
+    // const paginate = (pageNumber) => setcurrentPage(pageNumber);
 
     if (Results_State) {
         return (
             <div>
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
-                        <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
-
-                        {zain.map((res, index) => {
-                            return (
-                                <>
-                                    <div key={index}> {res}</div> <br />
-                                </>
-                            );
-                        })}
-
-                        {search_results?.results?.map((item, i) => {
-                            return <ResultMain key={i} data={item} />;
-                        })}
+                        <p className="text-dark">About {search_results?.number_of_results} results</p>
+                        <div className="chatBotShortResults">
+                            {zain.map((res, index) => {
+                                return (
+                                    <>
+                                        <div key={index}> {res}</div>
+                                    </>
+                                );
+                            })}
+                        </div>
+                        {/* {search_results?.results?.map((item, i) => { */}
+                        {/* return  */}
+                        {/* <ResultMain key={i} data={item} />; */}
+                        <ResultMain resultsData={search_results?.results} />;{/* })} */}
                     </div>
 
                     <div className="SearchResultsInnerRight">
@@ -149,17 +150,9 @@ function SearchResults({ query }) {
                 </div> */}
                 </div>
 
-                <div className="SearchResultsInnerLeft">
-                    {/* {SsebowaResults?.map((ssebowa) => { */}
-                    {/* // console.log(ssebowa); */}
-                    {/* // return  */}
-                    <Newapi
-                        //  key={ssebowa._id}
-                        SsebowaResults={currentPosts}
-                    />
-                    ;{/* // })} */}
-                    <Pagination postPerPage={postPerPage} totalPosts={SsebowaResults.length} paginate={paginate} />
-                </div>
+                {/* <div className="SearchResultsInnerLeft">
+                    <Newapi SsebowaResults={SsebowaResults} />
+                </div> */}
             </div>
         );
     } else if (!Results_State) {
@@ -188,6 +181,6 @@ function SearchResults({ query }) {
 
 export default SearchResults;
 
-SearchResults.propTypes = {
-    query: PropTypes.string,
-};
+// SearchResults.propTypes = {
+// query: PropTypes.string,
+// };

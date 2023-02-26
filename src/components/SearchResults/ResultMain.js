@@ -1,21 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import LinesEllipsis from "react-lines-ellipsis";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
 
-function ResultMain({ data }) {
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+];
+
+function ResultMain({ resultsData }) {
     return (
         <div>
-            <div className="ResultMainConatiner" tabIndex="-1">
-                <a target={"_blank"} rel="noreferrer" href={data.pretty_url} className="ResultMainUpperLink">
-                    {data.pretty_url}
-                </a>
-                <a target={"_blank"} rel="noreferrer" href={data.pretty_url} className="ResultMainLink">
-                    <LinesEllipsis text={data.title} maxLine="2" ellipsis="..." trimRight basedOn="letters" />
-                </a>
-                <p className="ResultMainDescription">
-                    <LinesEllipsis text={data.content} maxLine="4" ellipsis="..." trimRight basedOn="letters" />
-                </p>
-            </div>
+            <Carousel breakPoints={breakPoints}>
+                {resultsData?.map((data, i) => (
+                    <Item key={i}>
+                        <div className="ResultMainConatiner" tabIndex="-1">
+                            <a target={"_blank"} rel="noreferrer" href={data.pretty_url} className="ResultMainUpperLink">
+                                {data.pretty_url}
+                            </a>
+                            <a target={"_blank"} rel="noreferrer" href={data.pretty_url} className="ResultMainLink">
+                                <LinesEllipsis text={data.title} maxLine="2" ellipsis="..." trimRight basedOn="letters" />
+                            </a>
+                            <p className="ResultMainDescription">
+                                <LinesEllipsis text={data.content} maxLine="4" ellipsis="..." trimRight basedOn="letters" />
+                            </p>
+                        </div>
+                    </Item>
+                ))}
+            </Carousel>
         </div>
     );
 }
