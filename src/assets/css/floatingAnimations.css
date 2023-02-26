@@ -290,3 +290,23 @@
         -webkit-transform: translate(-1px, 0px) rotate(180deg);
     }
 }
+.counter-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+ }
+ 
+ 
+ 
+ 
+ @media only screen and (max-width: 600px) {
+ 
+     .counter-flex{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+      
+      }
+ 
+ }

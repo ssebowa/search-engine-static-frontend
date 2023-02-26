@@ -41,6 +41,10 @@ const SearchPage = () => {
         <React.Fragment>
             <Layout>
                 <SEO title="Ssebowa Search" />
+                <meta
+                    name="description"
+                    content="Ssebowa turns your searches to trees, food for hungry children and sanitary  pads for girls without pads. Search now to mitigate climate change and change lives."
+                />
                 <div className="wrapper">
                     <div className="hero-shape1 navbar fixed-top">
                         <img src={`${process.env.PUBLIC_URL}/images/slider/shape/shape1.png`} alt="shape" />
@@ -58,7 +62,6 @@ const SearchPage = () => {
                     ) : searchType === "videos" ? (
                         <>
                             <SearchResultsVideos query={query}></SearchResultsVideos>
-                            
                         </>
                     ) : (
                         <></>

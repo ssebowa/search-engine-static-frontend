@@ -1,49 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    Box,
-    Drawer,
-    IconButton,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemText,
-    
-    Tab,
-    
-    Tabs,
-    
-    Typography,
-} from "@mui/material";
+import { Box, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Tab, Tabs, Typography } from "@mui/material";
 import { flexbox } from "@mui/system";
 import { MenuRounded } from "@mui/icons-material";
 
 import { Link } from "react-router-dom";
 
-
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
-
-
 
 const useStyles = makeStyles((theme) => ({
     drawerBackground: {
         backgroundImage:
             "url(https://res.cloudinary.com/dicgvondb/image/upload/v1674668331/ssebowa/ssebowa.org/search-engine-static-frontend/images/backgrounds/drawerBGGreen_l9seap.jpg)",
         backgroundSize: "cover",
-
+        color: "white",
         backgroundColor: "rgba(0, 0, 0, 0.5)",
-        width: "48%",
+        width: "200px",
         padding: theme.spacing(2),
     },
 }));
 
-
 const NavbarDrawer = ({ linksArray }) => {
-     const classes = useStyles();
-     
+    const classes = useStyles();
+
     const [open, setOpen] = useState(false);
 
-    let componentName = 'Link'
+    let componentName = "Link";
 
     return (
         <>
@@ -55,7 +37,7 @@ const NavbarDrawer = ({ linksArray }) => {
                     anchor="left"
                     open={open}
                     onClose={() => setOpen(false)}
-                    style={{}}
+                    style={{ color: "white" }}
                 >
                     {/* {linksArray.map((linkInfo) => (
                     <Tab
@@ -164,7 +146,7 @@ const NavbarDrawer = ({ linksArray }) => {
                     sx={{
                         marginLeft: "auto",
                         width: "80%",
-                        color: "#0E1133",
+                        color: "white",
                         borderColor: "greenyellow",
                     }}
                 >

@@ -39,19 +39,21 @@ const ScrollToTop = (props) => {
     }, [stick]);
 
     return (
-        <button type="button" className={`scroll-to-top ${visible ? "show" : ""}`} onClick={onClickHandler} {...props}>
-            {stick ? (
-                <div>
-                    <i className="arrow-top icofont-long-arrow-up"></i>
-                    <i className="arrow-bottom icofont-long-arrow-up"></i>
-                </div>
-            ) : (
-                <div>
-                    <i className="arrow-top icofont-long-arrow-down"></i>
-                    <i className="arrow-bottom icofont-long-arrow-up"></i>
-                </div>
-            )}
-        </button>
+        <div>
+            <button type="button" className={`scroll-to-top ${visible ? "show" : ""}`} onClick={onClickHandler} {...props}>
+                {stick ? (
+                    <div>
+                        <i className="arrow-top icofont-long-arrow-up"></i>
+                        <i className="arrow-bottom icofont-long-arrow-up"></i>
+                    </div>
+                ) : (
+                    <div>
+                        <i className="arrow-top icofont-long-arrow-down"></i>
+                        <i className="arrow-bottom icofont-long-arrow-up"></i>
+                    </div>
+                )}
+            </button>
+        </div>
     );
 };
 

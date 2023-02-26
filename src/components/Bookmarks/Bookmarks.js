@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faPlus,
-    faEllipsisV,
-    faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faEllipsisV, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types"; // ES6
 import { Box, Button } from "@mui/material";
 
-import AddIcon from "@mui/icons-material/Add";
+// import AddIcon from "@mui/icons-material/Add";
 import ClearIcon from "@mui/icons-material/Clear";
+import { AiOutlineHome } from "react-icons/ai";
 
 const GetBookmarks = () => {
     try {
@@ -44,7 +41,6 @@ const AddBookmark = (element) => {
         } catch (e) {
             console.log(e);
         }
-        
     }
 };
 
@@ -75,47 +71,58 @@ const Bookmarks = () => {
         SetAddNew(!addNew);
     };
     return (
-        <div style={{ width: "100%", maxWidth: "700px", marginTop: 20 }}>
-            <div className="d-flex  justify-content-between p-5 align-items-center w-100">
-                <Box sx={{ backgroundColor: "white", padding: 2, borderRadius: "20px" }}>Bookmarks</Box>
-                <button onClick={() => closeAddNewBookmark()} className="d-flex justify-content-center align-items-center p-1">
+        <div>
+            <div className="d-flex  justify-content-around  align-items-center">
+                {/* <Box sx={{ backgroundColor: "white", color: "black", paddingLeft: 2, paddingRight: 2, paddingTop: 1, paddingBottom: 1, borderRadius: "8px" }}>
+                    Bookmarks
+                </Box> */}
+                <button onClick={() => closeAddNewBookmark()} className="d-flex justify-content-center align-items-center p-1 ">
                     {addNew ? (
                         <>
-                            <Button
-                                variant="contained"
-                                sx={{
-                                    fontWeight: "bold",
-                                    color: "#d9534f",
-                                    backgroundColor: "white",
-                                    ":hover": {
-                                        backgroundColor: "lightgrey",
-                                    },
-                                }}
-                                size="large"
+                            <button
+                                style={{ color: "white" }}
+                                // variant="contained"
+                                // sx={{
+                                //     fontWeight: "bold",
+                                //     color: "white",
+                                //     backgroundColor: "white",
+                                //     ":hover": {
+                                //         backgroundColor: "lightgrey",
+                                //     },
+                                // }}
+                                // size="large"
                             >
                                 <ClearIcon></ClearIcon>
                                 Cancle
-                            </Button>
+                            </button>
                         </>
                     ) : (
-                        <Button
-                            variant="contained"
-                            sx={{
-                                fontWeight: "bold",
-                                color: "#198754",
-                                backgroundColor: "white",
-                                ":hover": {
-                                    backgroundColor: "lightgrey",
-                                },
-                            }}
-                            size="large"
+                        <button
+                            className="set-as"
+                            style={{ color: "white" }}
+                            // variant="contained"
+                            // sx={{
+                            //     fontWeight: "bold",
+                            //     color: "White",
+                            //     backgroundColor: "white",
+                            //     ":hover": {
+                            //         backgroundColor: "lightgrey",
+                            //     },
+                            // }}
+                            // // size="large"
                         >
-                            <AddIcon></AddIcon>
-                            ADD
-                        </Button>
+                            {/* <AddIcon></AddIcon> */}
+                            <AiOutlineHome className="me-4"></AiOutlineHome>
+                            Bookmark
+                        </button>
                     )}
                 </button>
+
+                {/* <Box sx={{ backgroundColor: "white", color: "black", padding: 2, borderRadius: "20px" }}>Add</Box> */}
             </div>
+            {/* <div>
+                <img className="arrow-u" src="https://i.ibb.co/DMMqWwL/slazzer-edit-image-2-removebg-preview.png" alt="" />
+            </div> */}
             {addNew ? (
                 <div className="d-flex align-items-center justify-content-center w-100">
                     <AddNewBookmark cancelFxn={closeAddNewBookmark} rerenderFxn={RenderBookmarks} />
@@ -129,11 +136,11 @@ const Bookmarks = () => {
                             );
                         })
                     ) : (
-                        <Box sx={{ backgroundColor: "white", padding: 2, borderRadius: "20px" }}>
-                            <p className="text-success text-center">
+                        <Box sx={{ borderRadius: "20px" }}>
+                            {/* <p className="text-white text-center text-decoration-underline">
                                 Add Bookmarks by pressing
-                                <span className="fw-bold"> + ADD </span> Button
-                            </p>
+                                <span className="fw-bold-lg"> + ADD </span> Button
+                            </p> */}
                         </Box>
                     )}
                 </div>
@@ -163,27 +170,16 @@ const BookamarkButton = ({ name, link, image, id, rerenderFxn }) => {
         <div className="BookamarkButton d-flex flex-column align-items-center justify-content-center">
             {editIt ? (
                 <>
-                    <button
-                        className="BookmarkBtnRemove text-white bg-danger p-1"
-                        style={{ borderRadius: 5 }}
-                        onClick={() => removeIt()}
-                    >
+                    <button className="BookmarkBtnRemove text-white bg-danger p-1" style={{ borderRadius: 5 }} onClick={() => removeIt()}>
                         Remove
                     </button>
-                    <button
-                        onClick={() => SetEditIt(false)}
-                        className="BookmarkBtnEdit text-white bg-dark p-1 mt-1"
-                        style={{ borderRadius: 5 }}
-                    >
+                    <button onClick={() => SetEditIt(false)} className="BookmarkBtnEdit text-white bg-dark p-1 mt-1" style={{ borderRadius: 5 }}>
                         Cancel
                     </button>
                 </>
             ) : (
                 <>
-                    <button
-                        className="bookmarkEditBtn"
-                        onClick={() => SetEditIt(true)}
-                    >
+                    <button className="bookmarkEditBtn" onClick={() => SetEditIt(true)}>
                         <FontAwesomeIcon
                             icon={faEllipsisV}
                             className="p-1"
@@ -193,20 +189,9 @@ const BookamarkButton = ({ name, link, image, id, rerenderFxn }) => {
                             }}
                         />
                     </button>
-                    <a
-                        href={"//" + link}
-                        rel="noreferrer"
-                        target="_blank"
-                        className="d-flex flex-column align-items-center justify-content-center"
-                    >
-                        <img
-                            alt="Youtube"
-                            className="img-fluid bookmarkImage"
-                            src={image}
-                        />
-                        <p className="text-dark w-100 overflow-hidden">
-                            {name}
-                        </p>
+                    <a href={"//" + link} rel="noreferrer" target="_blank" className="d-flex flex-column align-items-center justify-content-center">
+                        <img alt="Youtube" className="img-fluid bookmarkImage" src={image} />
+                        <p className="text-dark w-100 overflow-hidden">{name}</p>
                     </a>
                 </>
             )}
@@ -252,38 +237,16 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
     };
     return (
         <div className="AddNewBookmark mb-2">
-            <h6 className="w-100 text-center fw-bolder mt-2 text-success">
-                ADD BOOKMARK
-            </h6>
+            <h6 className="w-100 text-center fw-bolder mt-2 text-success">ADD BOOKMARK</h6>
             <div className="d-flex flex-column ">
                 <div className="d-flex align-items-center justify-content-between">
-                    <input
-                        className="inputBookmarkInput w-100"
-                        placeholder="Name your Bookmark"
-                        onChange={(e) => SetName(e.target.value)}
-                        value={name}
-                    />
-                    {imageUrl ? (
-                        <img
-                            src={imageUrl}
-                            alt={"new"}
-                            className="inputBookmarkPreviewImg"
-                        />
-                    ) : (
-                        <></>
-                    )}
+                    <input className="inputBookmarkInput w-100" placeholder="Name your Bookmark" onChange={(e) => SetName(e.target.value)} value={name} />
+                    {imageUrl ? <img src={imageUrl} alt={"new"} className="inputBookmarkPreviewImg" /> : <></>}
                 </div>
-                <input
-                    className="inputBookmarkInput"
-                    placeholder="Link of Website"
-                    onChange={(e) => LinkChanged(e.target.value)}
-                />
+                <input className="inputBookmarkInput" placeholder="Link of Website" onChange={(e) => LinkChanged(e.target.value)} />
             </div>
             <div className="d-flex align-items-center justify-content-evenly ">
-                <button
-                    className="ButtonActionBookmark"
-                    onClick={() => InitiateAddBookmark()}
-                >
+                <button className="ButtonActionBookmark" onClick={() => InitiateAddBookmark()}>
                     <FontAwesomeIcon
                         icon={faPlus}
                         className="p-1 text-success"
@@ -294,10 +257,7 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
                     />
                     <p className="fw-bolder text-success">ADD</p>
                 </button>
-                <button
-                    className="ButtonActionBookmark"
-                    onClick={() => CancelEverything()}
-                >
+                <button className="ButtonActionBookmark" onClick={() => CancelEverything()}>
                     <FontAwesomeIcon
                         icon={faXmark}
                         className="p-1 text-danger"
