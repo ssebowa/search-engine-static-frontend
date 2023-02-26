@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const styles = {
     container: {
-        height: "30vh",
+        height: "20vh",
         overflowY: "scroll",
         padding: "16px",
     },
@@ -161,7 +161,7 @@ function SearchResults({ query }) {
 
     if (Results_State) {
         return (
-            <div>
+            <div style={{}}>
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
                         <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
