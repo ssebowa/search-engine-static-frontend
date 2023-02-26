@@ -68,19 +68,19 @@ const NavBarUpdated = () => {
     ];
 
     const limitToMoreNavs = 3;
-    const normalNavs = linksArray.slice(0, limitToMoreNavs);
+    const normalNavs = linksArray;
     const moreNavs = linksArray.slice(limitToMoreNavs, linksArray.length);
 
     return (
         <>
             <AppBar
                 style={{
-                    background: "#fff",
+                    background: "#011627",
                 }}
             >
                 <Toolbar
                     sx={{
-                        height: "16vh",
+                        height: "76px",
                         width: "98vw",
                     }}
                 >
@@ -88,20 +88,20 @@ const NavBarUpdated = () => {
                         <>
                             <Grid sx={{ placeItems: "center" }} container>
                                 <Grid item xs={2}>
-                                    <NavbarDrawer linksArray={linksArrayForDrawer}></NavbarDrawer>
+                                    <NavbarDrawer className="bg-white text-white" style={{ color: "white" }} linksArray={linksArrayForDrawer}></NavbarDrawer>
                                 </Grid>
                                 <Grid item xs={1} />
                                 <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
-                                    <Link to="/">
+                                    {/* <Link to="/">
                                         <img
                                             src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
                                             alt=""
                                         />
-                                    </Link>
+                                    </Link> */}
                                 </Grid>
                                 <Grid item x={2} />
-                                <Grid item xs={2} sx={{ ml: "auto" }}>
-                                    <IconButton onClick={handleSearchBarOpen} aria-label="search">
+                                <Grid className="ps-5" item xs={2} sx={{ ml: "auto" }}>
+                                    {/* <IconButton className="bg-whiite" onClick={handleSearchBarOpen} aria-label="search">
                                         <SearchIcon />
                                     </IconButton>
                                     <Modal
@@ -113,7 +113,10 @@ const NavBarUpdated = () => {
                                         <Box sx={style}>
                                             <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
-                                    </Modal>
+                                    </Modal> */}
+                                    <Link to="/">
+                                        <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
+                                    </Link>
                                 </Grid>
                             </Grid>
                         </>
@@ -130,11 +133,12 @@ const NavBarUpdated = () => {
                                 >
                                     <Tabs
                                         indicatorColor="secondary"
+                                        color="white"
                                         textColor="inherit"
                                         value={value}
                                         onChange={(e, val) => setValue(val)}
                                         sx={{
-                                            color: "black",
+                                            color: "white",
                                         }}
                                     >
                                         {normalNavs.map((linkInfo) => (
@@ -154,13 +158,14 @@ const NavBarUpdated = () => {
                                             ></Tab>
                                         ))}
 
-                                        <Tab
+                                        {/* <Tab
                                             aria-controls="tab-menu"
                                             aria-haspopup="true"
                                             onClick={handleClick}
                                             sx={{
                                                 fontWeight: "bold",
                                                 fontSize: 14,
+
                                                 ":hover": {
                                                     color: "#2e7d32",
                                                     opacity: 1,
@@ -169,18 +174,12 @@ const NavBarUpdated = () => {
                                             label="More"
                                             icon={<SouthEastIcon fontSize="small"></SouthEastIcon>}
                                             iconPosition="end"
-                                        ></Tab>
+                                        ></Tab> */}
                                     </Tabs>
 
                                     <Menu id="tab-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
                                         {moreNavs.map((linksInfo) => (
-                                            <MenuItem
-                                                sx={{ color: "#59E3A7" }}
-                                                key={linksInfo.key}
-                                                component={Link}
-                                                to={linksInfo.navLink}
-                                                onClick={handleClose}
-                                            >
+                                            <MenuItem sx={{ color: "white" }} key={linksInfo.key} component={Link} to={linksInfo.navLink} onClick={handleClose}>
                                                 {linksInfo.navName}
                                             </MenuItem>
                                         ))}
@@ -204,17 +203,17 @@ const NavBarUpdated = () => {
                                 </Grid>
 
                                 <Grid item xs={2} sx={{ px: 4 }}>
-                                    <Link to="/">
+                                    {/* <Link to="/">
                                         <img
                                             src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
                                             alt=""
                                         />
-                                    </Link>
+                                    </Link> */}
                                 </Grid>
 
                                 <Grid item xs={1} />
-                                <Grid item xs={4} className="d-flex justify-content-center">
-                                    {location.pathname === "/" ? (
+                                <Grid item xs={4} className="d-flex justify-content-end">
+                                    {/* {location.pathname === "/" ? (
                                         <>
                                             <Button
                                                 sx={{ m: 1 }}
@@ -253,9 +252,11 @@ const NavBarUpdated = () => {
                                         >
                                             <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
-                                    )}
+                                    )} */}
 
-                                    {/*  */}
+                                    <Link to="/">
+                                        <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
+                                    </Link>
                                 </Grid>
                             </Grid>
                         </>

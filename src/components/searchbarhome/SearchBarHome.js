@@ -7,6 +7,8 @@ import { Button, Form } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router-dom";
 import { BASEURL } from "../../connection/BaseUrl";
 
+import { AiOutlineHome } from "react-icons/ai";
+
 function SearchBarHome() {
     const history = useHistory();
     const [inputVal, SetInputVal] = React.useState("");
@@ -74,6 +76,10 @@ function SearchBarHome() {
     };
     return (
         <div className="w-100 d-flex flex-column align-items-center">
+            <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
+            <h1 className="text-white banner-text">
+                The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine
+            </h1>
             <div className="mainSearchBarMainDiv100 ">
                 {/* <form
                     method="NONE"
@@ -160,33 +166,38 @@ function SearchBarHome() {
                             }}
                             onSubmit={(e) => SubmitSearchRequest(e)}
                         >
+                            <div className="search-imgbox">
+                                <img className="search-img" src="https://i.ibb.co/XZwQzvw/Vector-1.png" alt="" />
+                            </div>
                             <Form.Control
                                 type="text"
-                                className="me-1"
+                                className="me-1 serch-input"
                                 aria-label="Search"
-                                style={{
-                                    width: "100%",
-                                    maxWidth: "450px",
-                                    minWidth: "110px",
-                                    borderRadius: "100px 10px 10px 100px",
-                                }}
+                                style={
+                                    {
+                                        // width: "100%",
+                                        // maxWidth: "450px",
+                                        // minWidth: "110px",
+                                        // borderRadius: "0 12px 12px 100px",
+                                    }
+                                }
                                 value={inputVal}
                                 placeholder="Search the web to plant trees..."
                                 onChange={(e) => onChangeInput(e)}
                             />
 
                             <Button
-                                variant="success "
+                                // variant="success "
                                 type="submit"
-                                className="  d-flex justify-content-center align-items-center"
+                                className="  d-flex justify-content-center align-items-center search-btn"
                                 style={{
-                                    width: "2px",
-                                    height: "50%",
-                                    borderRadius: "10px 100px 100px 10px",
+                                    backgroundColor: "#40AF04",
+                                    border: "none",
                                 }}
                             >
                                 <div>
-                                    <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" />
+                                    <h1 className="search-text text-white">Search</h1>
+                                    {/* <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" /> */}
                                 </div>
                             </Button>
                         </Form>
@@ -210,6 +221,15 @@ function SearchBarHome() {
                 ) : (
                     <></>
                 )}
+            </div>
+            <div className="d-flex justify-content-center">
+                <h1 className="text-white banner-text me-4 mt-3 mt-sm-2">+</h1>
+                <h1 className="text-white banner-text me-5 mt-3 mt-sm-2">Add To Chrome</h1>
+                <h1 className="text-white ">|</h1>
+                <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
+                    <AiOutlineHome></AiOutlineHome>
+                </h1>
+                <h1 className="text-white banner-text ms-4 mt-3 mt-sm-2">Set As Home</h1>
             </div>
         </div>
     );

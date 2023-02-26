@@ -42,26 +42,19 @@ const TestimonialReverse = () => {
                                 title="Don’t Believe us Check <span class='text-primary'>Clients</span> word"
                             />
                             <h5 className="happy-customer">
-                                More over{" "}
-                                <span className="font-weight-bold">2500</span>{" "}
-                                happy customer
+                                More over <span className="font-weight-bold">2500</span> happy customer
                             </h5>
                         </div>
                         <div className="testimonial-carousel position-relative">
                             <Swiper {...swiperOption}>
                                 {HomeData[3].testimonial &&
-                                    HomeData[3].testimonial.map(
-                                        (single, key) => {
-                                            return (
-                                                <SwiperSlide key={key}>
-                                                    <Testimonial
-                                                        key={key}
-                                                        data={single}
-                                                    />
-                                                </SwiperSlide>
-                                            );
-                                        }
-                                    )}
+                                    HomeData[3].testimonial.map((single, key) => {
+                                        return (
+                                            <SwiperSlide key={key}>
+                                                <Testimonial key={key} data={single} />
+                                            </SwiperSlide>
+                                        );
+                                    })}
                             </Swiper>
                             <div className="swiper-button-prev">
                                 <i className="icofont-rounded-left"></i>prev
@@ -73,16 +66,9 @@ const TestimonialReverse = () => {
                         </div>
                     </div>
                     <div className="col-xl-7 col-lg-6 mb-7">
-                        <div
-                            className="testimonial-photo scene mt-10 mt-lg-0"
-                            id="scene"
-                            ref={sceneEl}
-                        >
+                        <div className="testimonial-photo scene mt-10 mt-lg-0" id="scene" ref={sceneEl}>
                             <div data-depth="0.2">
-                                <img
-                                    src={`${process.env.PUBLIC_URL}/images/testimonial/1.png`}
-                                    alt="Buznex"
-                                />
+                                <img src={`${process.env.PUBLIC_URL}/images/testimonial/1.png`} alt="Buznex" />
                             </div>
                         </div>
                     </div>

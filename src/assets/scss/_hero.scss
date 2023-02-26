@@ -4,6 +4,60 @@
     }
 }
 
+.banner-text{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.search-imgbox{
+    width: 75px;
+    height: 56px;
+    background-color: white;
+    border-radius: 12px 0 0 12px;
+
+}
+.search-img{
+    width: 50px;
+
+padding-top: 4px;
+padding-left: 4px;
+}
+
+.serch-input{
+    width: 600px;
+    height: 56px;
+    border-radius: 0 12px 12px 0;
+}
+.search-text{
+    font-size: 20px;
+    font-weight: 700px;
+
+}
+
+.search-btn{
+    border-radius: 12px;
+    height: 56px;
+}
+
+@media screen and (max-width: 600px) {
+    .search-imgbox{
+        display: none;
+        width: 75px;
+        height: 56px;
+        background-color: white;
+        border-radius: 12px 0 0 12px;
+    
+    }
+
+    .banner-text{
+        font-size: 14px;
+        font-weight: 500px;
+    }
+  }
+
+.banner-back-img{
+    background-image: url("https://i.ibb.co/wS1QBny/landscape-tropical-green-forest-1.png");
+}
+
 .hero-slider {
     position: relative;
     padding-top: 160px;

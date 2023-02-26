@@ -1,6 +1,6 @@
 .chat-container{
     width: 98vw;
-    position: sticky;
+    position: absolute;
     bottom: 40px;
     display: flex;
     padding-right: 0px;
@@ -20,7 +20,7 @@
 @media only screen and (max-width: 600px) {
     .chat-container{
         width: 96vw;
-        position: sticky;
+        position: absolute;
         bottom: 40px;
         display: flex;
         padding-right: 0px;
