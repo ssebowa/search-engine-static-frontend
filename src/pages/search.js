@@ -38,7 +38,7 @@ const SearchPage = () => {
         RetrieveQuery();
     }, [query]);
     return (
-        <React.Fragment>
+        <React.Fragment style={{ height: "100vh" }}>
             <Layout>
                 <SEO title="Ssebowa Search" />
                 <meta
@@ -66,7 +66,7 @@ const SearchPage = () => {
                     ) : (
                         <></>
                     )}
-                    <NavBarFooter></NavBarFooter>
+                    {/* <NavBarFooter></NavBarFooter> */}
                     <ScrollToTop />
                     <StickyChatBot />
                 </div>

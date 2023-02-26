@@ -38,6 +38,7 @@ const HomePage = () => {
                     </div> */}
 
                     <IntroContainer />
+
                     {/* <BrandContainer /> */}
 
                     {/* <HomeAboutContainer /> */}
@@ -57,7 +58,7 @@ const HomePage = () => {
                     {/* <VideoContainer></VideoContainer> */}
                     {/* <HomeBlog />
                     <NewsletterArea /> */}
-                    <Footer />
+                    {/* <Footer /> */}
                     <StickyChatBot />
                     <ScrollToTop />
                 </div>

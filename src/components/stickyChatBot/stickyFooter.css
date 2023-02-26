@@ -1,4 +1,4 @@
-.chat-container{
+.chat-container {
     width: 98vw;
     position: absolute;
     bottom: 40px;
@@ -16,9 +16,8 @@
     justify-content: end;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .chat-container{
+    .chat-container {
         width: 96vw;
         position: absolute;
         bottom: 40px;
@@ -27,5 +26,4 @@
         justify-content: end;
         margin-right: 0%;
     }
-
 }
