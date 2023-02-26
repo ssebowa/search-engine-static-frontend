@@ -9,6 +9,21 @@ import Pagination from "./Pagination";
 import Newapi from "./Newapi";
 import BotResult from "./BotResult";
 
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const styles = {
+    container: {
+        height: "30vh",
+        overflowY: "scroll",
+        padding: "16px",
+    },
+};
+
 function SearchResults({ query }) {
     const [search_results, SetSearch_Results] = React.useState([]);
     const [array_search_results, SetArraySearch_Results] = React.useState([]);
@@ -23,6 +38,39 @@ function SearchResults({ query }) {
 
     const [currentPage, setcurrentPage] = React.useState(1);
     const [postPerPage, setPostPerPage] = React.useState(5);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
 
     const FetchSearchQuery = () => {
         console.log("Fetching...");
@@ -102,7 +150,7 @@ function SearchResults({ query }) {
     }, [query]);
     var zain;
     zain = CahtbotResults.split(`\\`);
-    console.log(zain);
+    console.log("zain:", zain);
 
     const indexOfLastPost = currentPage * postPerPage;
     const indexOfFirstPage = indexOfLastPost - postPerPage;
@@ -117,21 +165,32 @@ function SearchResults({ query }) {
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
                         <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
-
-                        {zain.map((res, index) => {
-                            return (
-                                <>
-                                    <div key={index}> {res}</div> <br />
-                                </>
-                            );
-                        })}
-
-                        {search_results?.results?.map((item, i) => {
-                            return <ResultMain key={i} data={item} />;
-                        })}
+                        <Card sx={{ width: "70vw" }}>
+                            <CardContent>
+                                <div style={styles.container}>
+                                    {zain.map((res, index) => {
+                                        return (
+                                            <>
+                                                <div key={index}> {res}</div> <br />
+                                            </>
+                                        );
+                                    })}
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <small>Swipe right to see more...</small>
+                        <div style={{ marginY: "10px", width: "90vw" }}>
+                            <div style={{ margin: "0 -15px" }}>
+                                <Slider {...settings}>
+                                    {search_results?.results?.map((item, i) => {
+                                        return <ResultMain key={i} data={item} />;
+                                    })}
+                                </Slider>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="SearchResultsInnerRight">
+                    {/* <div className="SearchResultsInnerRight">
                         {search_results?.infoboxes?.map((item, i) => {
                             return (
                                 <>
@@ -139,7 +198,7 @@ function SearchResults({ query }) {
                                 </>
                             );
                         })}
-                    </div>
+                    </div> */}
 
                     {/* <SearchSuggestions data={search_results?.suggestions} />; */}
                     {/* <div>
@@ -148,18 +207,17 @@ function SearchResults({ query }) {
                     ))}
                 </div> */}
                 </div>
-
-                <div className="SearchResultsInnerLeft">
-                    {/* {SsebowaResults?.map((ssebowa) => { */}
-                    {/* // console.log(ssebowa); */}
-                    {/* // return  */}
-                    <Newapi
+                {/* <div className="SearchResultsInnerLeft"> */}
+                {/* {SsebowaResults?.map((ssebowa) => { */}
+                {/* // console.log(ssebowa); */}
+                {/* // return  */}
+                {/* <Newapi
                         //  key={ssebowa._id}
                         SsebowaResults={currentPosts}
-                    />
-                    ;{/* // })} */}
-                    <Pagination postPerPage={postPerPage} totalPosts={SsebowaResults.length} paginate={paginate} />
-                </div>
+                    /> */};
+                {/* // })} */}
+                {/* <Pagination postPerPage={postPerPage} totalPosts={SsebowaResults.length} paginate={paginate} /> */}
+                {/* </div> */}
             </div>
         );
     } else if (!Results_State) {
