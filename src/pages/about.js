@@ -11,7 +11,7 @@ import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import StickyChatBot from "../components/stickyChatBot";
 import Footer from "../layouts/footer";
 import Layout from "../layouts/index";
-import { Carousel } from "react-daisyui";
+// import { Carousel } from "react-daisyui";
 import CardCarousel from "../components/CardCarousel/CardCarousel";
 
 const AboutPage = () => {
@@ -40,7 +40,7 @@ const AboutPage = () => {
                     {/* <ServiceListContainer /> */}
                     {/* <TestimonialReverse /> */}
                     <TeamContainer classOption="section-pb" />
-                    <CardCarousel></CardCarousel>
+                    {/* <CardCarousel></CardCarousel> */}
 
                     {/* <NewsletterArea /> */}
                     <Footer />

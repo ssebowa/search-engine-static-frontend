@@ -204,7 +204,11 @@ function SearchBarHome() {
                 )}
 
                 {SuggestionReady ? (
-                    <div id="suggestBox" className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">
+                    <div
+                        id="suggestBox"
+                        className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center"
+                        style={{ marginLeft: "200px", paddingLeft: "200px" }}
+                    >
                         {Suggestions.length !== 0 ? (
                             <>
                                 {Suggestions?.map((item, i) => {

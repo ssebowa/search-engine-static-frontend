@@ -80,6 +80,7 @@ const Bookmarks = () => {
                     {addNew ? (
                         <>
                             <button
+                                className=""
                                 style={{ color: "white" }}
                                 // variant="contained"
                                 // sx={{
@@ -235,6 +236,7 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
         CancelEverything();
         rerenderFxn();
     };
+
     return (
         <div className="AddNewBookmark mb-2">
             <h6 className="w-100 text-center fw-bolder mt-2 text-success">ADD BOOKMARK</h6>
@@ -245,6 +247,7 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
                 </div>
                 <input className="inputBookmarkInput" placeholder="Link of Website" onChange={(e) => LinkChanged(e.target.value)} />
             </div>
+
             <div className="d-flex align-items-center justify-content-evenly ">
                 <button className="ButtonActionBookmark" onClick={() => InitiateAddBookmark()}>
                     <FontAwesomeIcon
@@ -252,10 +255,10 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
                         className="p-1 text-success"
                         size="lg"
                         style={{
-                            paddingHorizontal: 5,
+                            paddingHorizontal: 2,
                         }}
                     />
-                    <p className="fw-bolder text-success">ADD</p>
+                    <p className=" text-success">ADD</p>
                 </button>
                 <button className="ButtonActionBookmark" onClick={() => CancelEverything()}>
                     <FontAwesomeIcon
@@ -263,10 +266,10 @@ const AddNewBookmark = ({ cancelFxn, rerenderFxn }) => {
                         className="p-1 text-danger"
                         size="lg"
                         style={{
-                            paddingHorizontal: 5,
+                            paddingHorizontal: 2,
                         }}
                     />
-                    <p className="fw-bolder text-danger">CANCEL</p>
+                    <p className=" text-danger">CANCEL</p>
                 </button>
             </div>
         </div>

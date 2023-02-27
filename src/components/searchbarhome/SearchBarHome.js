@@ -161,7 +161,7 @@ function SearchBarHome() {
                 ) : (
                     <>
                         <Form
-                            className="d-flex m-3 p-1  align-items-center justify-content-center serch-focus"
+                            className="d-flex me-3 ms-3 pe-1 ps-1  align-items-center justify-content-center serch-focus"
                             style={{
                                 width: "80vw",
                                 height: "100%",
@@ -215,7 +215,11 @@ function SearchBarHome() {
                 )}
 
                 {SuggestionReady ? (
-                    <div id="suggestBox" className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start">
+                    <div
+                        id="suggestBox"
+                        className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start search-suggesition"
+                        // style={{ marginLeft: "276px", width: "656px", marginTop: "0" }}
+                    >
                         {Suggestions.length !== 0 ? (
                             <>
                                 {Suggestions?.map((item, i) => {
