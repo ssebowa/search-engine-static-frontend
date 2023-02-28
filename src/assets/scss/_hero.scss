@@ -26,9 +26,8 @@
 }
 .search-img{
     width: 40px;
-
     margin-top: 8px;
-margin-left: 16px;
+    margin-left: 16px;
 }
 .serch-focus:focus{
     position: absolute;
@@ -38,7 +37,7 @@ margin-left: 16px;
     width: 675px;
     height: 56px;
     border-radius: 100px 0 0 100px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .search-text{
     height: 56px;
@@ -232,9 +231,15 @@ margin-left: 16px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  margin-left: 18%;
+//   margin-left: 18%;
   width: 656px;
-  margin-top: 0;
+//   margin-top: 0;
+}
+
+.search-bars{
+    // style={{ marginTop: "80px", marginRight: "45px" }}
+    margin-top: 80px;
+    margin-right: 45px;
 }
 .mainSearchBarSuggestionSpan{
   font-size: 20px;
@@ -348,15 +353,40 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 @media screen and (max-width: 992px) {
     .set-asposition{
          position: absolute;
-         right: 460px;
-         top: 420px;
+         top: 32%;
+        //  right: 460px;
+        //  top: 420px;
      }
  
      .chrome{
          margin-top: 8px;
      }
 
-     .mainSearchBarSuggestionDiv{
+    //  .mainSearchBarSuggestionDiv{
+    //     position: absolute;
+    //     background-color: #ffffff;
+    //     z-index: 99;
+    //   //   width: 36%;
+    //     height: 10em;
+    //     overflow-y: scroll;
+    //     overflow-x: hidden;
+    //   //   margin-top: 0.1em;
+    //   //   margin-left: 13%;
+    //     border-radius: 10px;
+    //     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      
+    //     margin-left: 9%;
+    //     width: 57%;
+    //     margin-top: 0;
+    //   }
+
+    //  .search-suggesition{
+    //     margin-left: 276px;
+    //     width: 656px;
+    //     margin-top: 0;
+    // }
+
+    .mainSearchBarSuggestionDiv{
         position: absolute;
         background-color: #ffffff;
         z-index: 99;
@@ -370,16 +400,33 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       
         margin-left: 9%;
-        width: 57%;
+        width: 68%;
         margin-top: 0;
       }
 
     //  .search-suggesition{
-    //     margin-left: 276px;
-    //     width: 656px;
-    //     margin-top: 0;
+    //     // margin-left: 276px;
+    //     width: 170px;
+    //     // margin-top: 0;
     // }
    }
+
+
+   @media screen and (max-width: 912px) {
+    .set-asposition{
+         position: absolute;
+         top: 32%;
+      
+     }
+    }
+
+    @media screen and (max-width: 768px) {
+        .set-asposition{
+             position: absolute;
+             top: 37%;
+          
+         }
+        }
 
 
    @media screen and (max-width: 600px) {
@@ -416,7 +463,8 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         position: absolute;
         // right: 170px;
         right: 48%;
-        top: 360px;
+        top: 370px;
+        // top: 53%;
         // top: 53%;
     }
     
@@ -427,7 +475,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         // right: 14%;
 
         position: relative;
-        top: 8px;
+        top: 16px;
         left: 70px;
     }
 
@@ -467,7 +515,96 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
       }
 
+
+    
+
+      .search-bars{
+        // style={{ marginTop: "80px", marginRight: "45px" }}
+        margin-top: 80px;
+        margin-right: 80px;
+    }
+
+    
+     .mainSearchBarSuggestionDiv{
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 99;
+      //   width: 36%;
+        height: 10em;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      //   margin-top: 0.1em;
+      //   margin-left: 13%;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      
+        margin-left: 9%;
+        width: 56%;
+        margin-top: 0;
+      }
+
+     .search-suggesition{
+        // margin-left: 276px;
+        width: 170px;
+        // margin-top: 0;
+    }
       
 
   }
 
+
+  @media screen and (max-device-width: 480px){
+  .set-asposition{
+    position: absolute;
+    // right: 170px;
+    right: 48%;
+    top: 378px;
+    // top: 53%;
+    // top: 53%;
+}
+}
+
+@media screen and (max-device-width: 390px){
+    .set-asposition{
+      position: absolute;
+      // right: 170px;
+      right: 48%;
+      top: 369px;
+      // top: 53%;
+      // top: 53%;
+  }
+  }
+
+  @media screen and (max-device-width: 393px){
+    .set-asposition{
+      position: absolute;
+      // right: 170px;
+      right: 48%;
+      top: 368px;
+      // top: 53%;
+      // top: 53%;
+  }
+  }
+
+@media screen and (max-device-width: 375px){
+    .set-asposition{
+      position: absolute;
+      // right: 170px;
+      right: 48%;
+      top: 366px;
+      // top: 53%;
+      // top: 53%;
+  }
+  }
+
+  @media screen and (max-device-width: 360px){
+    .set-asposition{
+      position: absolute;
+      // right: 170px;
+      right: 48%;
+      top: 360px;
+      // top: 53%;
+      // top: 53%;
+  }
+  }
+  

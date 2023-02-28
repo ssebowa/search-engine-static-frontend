@@ -83,7 +83,7 @@ function SearchBarHome() {
             <div>
                 <SideVideo></SideVideo>
             </div>
-            <div className="mainSearchBarMainDiv100 ">
+            <div className="mainSearchBarMainDiv100">
                 {/* <form
                     method="NONE"
                     className="mainSearchBarForm"
@@ -215,22 +215,24 @@ function SearchBarHome() {
                 )}
 
                 {SuggestionReady ? (
-                    <div
-                        id="suggestBox"
-                        className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start search-suggesition"
-                        // style={{ marginLeft: "276px", width: "656px", marginTop: "0" }}
-                    >
-                        {Suggestions.length !== 0 ? (
-                            <>
-                                {Suggestions?.map((item, i) => {
-                                    return <SuggestSpan name={item} key={i} SubmitSearchRequest={SubmitSearchRequest} />;
-                                })}
-                            </>
-                        ) : (
-                            <div className="d-flex w-100 align-items-center justify-content-center" style={{ height: "100%" }}>
-                                <p className="text-danger">No results Found</p>
-                            </div>
-                        )}
+                    <div className="d-flex justify-content-center align-items-center search-bars " style={{ marginTop: "80px", marginRight: "45px" }}>
+                        <div
+                            id="suggestBox"
+                            className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start ms-0"
+                            // style={{ marginLeft: "276px", width: "656px", marginTop: "0" }}
+                        >
+                            {Suggestions.length !== 0 ? (
+                                <>
+                                    {Suggestions?.map((item, i) => {
+                                        return <SuggestSpan name={item} key={i} SubmitSearchRequest={SubmitSearchRequest} />;
+                                    })}
+                                </>
+                            ) : (
+                                <div className="d-flex w-100 align-items-center justify-content-center" style={{ height: "100%" }}>
+                                    <p className="text-danger">No results Found</p>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 ) : (
                     <></>
@@ -238,20 +240,25 @@ function SearchBarHome() {
             </div>
 
             <div className="d-flex justify-content-center">
-                <div className="set-asposition">
-                    <div className="d-flex justify-content-center">
-                        <h1 className="text-white banner-text me-3 chrome">+</h1>
-                        <h1 className="text-white banner-text me-3 chrome">Add To Browser</h1>
-                        <h1 className="text-white">|</h1>
+                <div>
+                    <div className="set-asposition">
+                        <div className="d-flex justify-content-center">
+                            <h1 className="text-white banner-text me-3 chrome">+</h1>
+                            <h1 className="text-white banner-text me-3 chrome">Add To Browser</h1>
+                            <h1 className="text-white">|</h1>
 
-                        {/* <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
+                            {/* <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
                     <AiOutlineHome></AiOutlineHome>
                 </h1> */}
-                        {/* <h1 className="text-white banner-text ms-4 mt-3 mt-sm-2">Set As Home</h1> */}
+                            {/* <h1 className="text-white banner-text ms-4 mt-3 mt-sm-2">Set As Home</h1> */}
+                        </div>
                     </div>
                 </div>
-                <div className="book-margin">
-                    <Bookmarks></Bookmarks>
+
+                <div>
+                    <div className="book-margin">
+                        <Bookmarks></Bookmarks>
+                    </div>
                 </div>
             </div>
         </div>

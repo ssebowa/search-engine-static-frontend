@@ -165,7 +165,15 @@ function SearchResults({ query }) {
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
                         <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
-                        <Card sx={{ width: "70vw" }}>
+                        <Card
+                            sx={{
+                                width: {
+                                    lg: "70vw",
+                                    md: "70vw",
+                                    xs: "100vw",
+                                },
+                            }}
+                        >
                             <CardContent>
                                 <div style={styles.container}>
                                     {zain.map((res, index) => {
