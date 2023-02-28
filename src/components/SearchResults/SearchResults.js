@@ -20,7 +20,8 @@ const styles = {
     container: {
         height: "20vh",
         overflowY: "scroll",
-        padding: "16px",
+        overflowX: "none",
+        // padding: "16px",
     },
 };
 
@@ -148,9 +149,9 @@ function SearchResults({ query }) {
             // Clean up function
         };
     }, [query]);
-    var zain;
-    zain = CahtbotResults.split(`\\`);
-    console.log("zain:", zain);
+    var searchChatot;
+    searchChatot = CahtbotResults.split(`\\`);
+    console.log("zain:", searchChatot);
 
     const indexOfLastPost = currentPage * postPerPage;
     const indexOfFirstPage = indexOfLastPost - postPerPage;
@@ -176,7 +177,7 @@ function SearchResults({ query }) {
                         >
                             <CardContent>
                                 <div style={styles.container}>
-                                    {zain.map((res, index) => {
+                                    {searchChatot.map((res, index) => {
                                         return (
                                             <>
                                                 <div key={index}> {res}</div> <br />

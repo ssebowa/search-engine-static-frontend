@@ -5,7 +5,7 @@ const Newapi = ({ SsebowaResults }) => {
     return (
         <>
             {SsebowaResults.map((ssebowa, index) => (
-                <div className="ResultMainConatiner  " key={index} tabIndex="-1">
+                <div className="ResultMainConatiner py-md-5" key={index} tabIndex="-1">
                     <a target={"_blank"} rel="noreferrer" href={ssebowa.url} className="ResultMainUpperLink">
                         {ssebowa.url}
                     </a>
