@@ -9,7 +9,12 @@ import { BASEURL } from "../../connection/BaseUrl";
 import Bookmarks from "../Bookmarks/Bookmarks";
 import SideVideo from "./SideVideo/SideVideo";
 
-function SearchBarHome() {
+const mobileSearchbar = {
+    width: "80vw",
+    height: "100%",
+    maxHeight: "200px",
+};
+function SearchBarHome(props) {
     const history = useHistory();
     const [inputVal, SetInputVal] = React.useState("");
     const [SuggestionReady, SetSuggestionReady] = React.useState(false);
@@ -74,11 +79,13 @@ function SearchBarHome() {
             history.push("/search?q=" + searchText, { replace: true });
         }
     };
+
     return (
         <div className="w-100 d-flex flex-column align-items-center">
-            <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
+            <img src={props.ssebowaSearchLogo} alt="" />
             <h1 className="text-white banner-text">
-                The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine
+                {/* The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine */}
+                {props.searchQoute}
             </h1>
             <div>
                 <SideVideo></SideVideo>
@@ -161,31 +168,25 @@ function SearchBarHome() {
                 ) : (
                     <>
                         <Form
-                            className="d-flex me-3 ms-3 pe-1 ps-1  align-items-center justify-content-center serch-focus"
-                            style={{
-                                width: "80vw",
-                                height: "100%",
-                                maxHeight: "200px",
-                            }}
+                            className="searchbarhideinmobileview d-flex me-3 ms-3 pe-1 ps-1  align-items-center justify-content-center serch-focus"
+                            style={mobileSearchbar}
                             onSubmit={(e) => SubmitSearchRequest(e)}
                         >
                             <div className="search-imgbox">
                                 <img className="search-img" src="https://i.ibb.co/XZwQzvw/Vector-1.png" alt="" />
                             </div>
 
-                            <Form.Control
+                            <input
                                 type="text"
                                 className="me-1 serch-input"
                                 aria-label="Search"
-                                style={
-                                    {
-                                        // padding: "0",
-                                        // width: "100%",
-                                        // maxWidth: "450px",
-                                        // minWidth: "110px",
-                                        // borderRadius: "0 12px 12px 100px",
-                                    }
-                                }
+                                style={{
+                                    // padding: "0",
+                                    width: `${props.width}`,
+                                    // maxWidth: "450px",
+                                    // minWidth: "110px",
+                                    // borderRadius: "0 12px 12px 100px",
+                                }}
                                 // home
                                 value={inputVal}
                                 placeholder="Search the web to plant trees..."
@@ -215,7 +216,12 @@ function SearchBarHome() {
                 )}
 
                 {SuggestionReady ? (
-                    <div className="d-flex justify-content-center align-items-center search-bars " style={{ marginTop: "80px", marginRight: "45px" }}>
+                    <div
+                        className="
+                    suggestionInMobile
+                    d-flex justify-content-center align-items-center search-bars "
+                        style={{ marginTop: "80px", marginRight: "45px" }}
+                    >
                         <div
                             id="suggestBox"
                             className="mainSearchBarSuggestionDiv d-flex flex-column align-items-center justify-content-start ms-0"
@@ -243,9 +249,9 @@ function SearchBarHome() {
                 <div>
                     <div className="set-asposition">
                         <div className="d-flex justify-content-center">
-                            <h1 className="text-white banner-text me-3 chrome">+</h1>
-                            <h1 className="text-white banner-text me-3 chrome">Add To Browser</h1>
-                            <h1 className="text-white">|</h1>
+                            <h1 className="text-white banner-text me-3 chrome">{props.addd}</h1>
+                            <h1 className="text-white banner-text me-3 chrome">{props.addtobrowser}</h1>
+                            <h1 className="text-white">{props.sepratorline}</h1>
 
                             {/* <h1 className="text-white banner-text ms-5 mt-3 mt-sm-2">
                     <AiOutlineHome></AiOutlineHome>
@@ -257,7 +263,9 @@ function SearchBarHome() {
 
                 <div>
                     <div className="book-margin">
-                        <Bookmarks></Bookmarks>
+                        {/* <Bookmarks></Bookmarks> */}
+                        {/* <Bookmarks /> */}
+                        {/* <props.Bookmarks /> */}
                     </div>
                 </div>
             </div>

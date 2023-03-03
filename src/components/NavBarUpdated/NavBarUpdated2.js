@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
 import NavbarDrawer from "./NavbarDrawer";
+import SearchBarHome from "../searchbarhome/SearchBarHome";
 
 const style = {
     position: "absolute",
@@ -21,6 +22,10 @@ const style = {
     // border: "2px solid #000",
     // boxShadow: 24,
     // p: 4,
+};
+
+const searchNavField = {
+    marginRight: "900px",
 };
 
 const NavBarUpdated = () => {
@@ -114,9 +119,12 @@ const NavBarUpdated = () => {
                                             <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
                                     </Modal> */}
-                                    <Link to="/">
-                                        <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
-                                    </Link>
+                                    <div className="navbarSearchbox d-flex">
+                                        <SearchBarHome style={searchNavField} width={"50%"} />
+                                        <Link to="/">
+                                            <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
+                                        </Link>
+                                    </div>
                                 </Grid>
                             </Grid>
                         </>
@@ -201,7 +209,6 @@ const NavBarUpdated = () => {
                                         </MenuItem> */}
                                     </Menu>
                                 </Grid>
-
                                 <Grid item xs={2} sx={{ px: 4 }}>
                                     {/* <Link to="/">
                                         <img
@@ -254,6 +261,7 @@ const NavBarUpdated = () => {
                                         </Box>
                                     )} */}
                                     {/* <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer"></a> */}
+                                    {/* <SearchBarHome width={"40%"} /> */}
 
                                     <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                         <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />

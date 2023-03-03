@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import Button from "../button";
 import Parallax from "parallax-js";
@@ -6,8 +6,16 @@ import Logo from "../logo";
 import SearchBarHome from "../searchbarhome/SearchBarHome";
 // import Bookmarks from "../Bookmarks/Bookmarks";
 import { Link } from "react-router-dom";
+import Bookmarks from "../Bookmarks/Bookmarks";
 
-const Intro = ({ data }) => {
+const Intro = () => {
+    const [classToggler] = useState(true);
+
+    // const SearchclassToggler = () => {
+    // console.log(`done`);
+    // setClassToggler(true);/
+    // console.log(classToggler);
+    // };
     return (
         <div className="hero-slider">
             <div className="container">
@@ -18,8 +26,17 @@ const Intro = ({ data }) => {
                             image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
                         />
                     </div> */}
-
-                    <SearchBarHome />
+                    <div className={`${classToggler ? "headerMobileSearch" : ""}`}>
+                        <SearchBarHome
+                            width={"70%"}
+                            Bookmarks={Bookmarks}
+                            addd={"+"}
+                            sepratorline={"|"}
+                            addtobrowser={"Add To Browser"}
+                            searchQoute={"The World’s Most Private Search Engine"}
+                            ssebowaSearchLogo={"https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png"}
+                        />
+                    </div>
                     <div className="w-75 mt-2  p-2 d-flex justify-content-center align-items-center">
                         {/* <Link
                             to={"/bot?q=I%20am%20your%20assistant"}
@@ -41,8 +58,8 @@ const Intro = ({ data }) => {
     );
 };
 
-Intro.propTypes = {
-    data: PropTypes.object,
-};
+// Intro.propTypes = {
+// data: PropTypes.object,
+// };
 
 export default Intro;

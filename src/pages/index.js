@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
+import RecentBlog from "../components/RecentBlogs/RecentBlog";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import StickyChatBot from "../components/stickyChatBot";
@@ -37,6 +38,7 @@ const HomePage = () => {
                         </div>
                     </div> */}
                     <IntroContainer />
+                    <RecentBlog />
                     <Testimonials />
                     {/* <TestimonialContainer /> */}
                     {/* <BrandContainer /> */}

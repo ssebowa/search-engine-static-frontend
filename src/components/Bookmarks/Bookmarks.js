@@ -94,7 +94,7 @@ const Bookmarks = () => {
                                 // size="large"
                             >
                                 <ClearIcon></ClearIcon>
-                                Cancle
+                                Cancel
                             </button>
                         </>
                     ) : (

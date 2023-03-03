@@ -1,0 +1,63 @@
+.RecentBlogTop h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.RecentBlogTop h2 span {
+    color: #77c54e;
+}
+.RecentBlogTop p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.BlogSecondColBox {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RecentBlogBox {
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 44px;
+
+    background: #ffffff;
+    border-radius: 10px;
+    height: 268px;
+    width: 320px;
+    /* left: 609px; */
+    /* top: 5696px; */
+    border-radius: 10px;
+}
+.RecentBlogBox button {
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #77c54e;
+
+    color: #fff;
+    height: 26px;
+    width: 109.484375px;
+    border-radius: 6px;
+    padding: 6px 19px 6px 12px;
+}
+@media only screen and (max-width: 600px) {
+    .BlogSecondColBox {
+        flex-direction: column;
+    }
+}
