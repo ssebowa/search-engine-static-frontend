@@ -22,7 +22,7 @@ import SliderImage from "./SliderImage";
 
 const styles = {
     container: {
-        height: "250px",
+        height: "210px",
         overflowY: "scroll",
         padding: "16px",
         // width: "450px",
@@ -79,6 +79,47 @@ function SearchResults({ query }) {
         ],
     };
 
+    const cards = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     const FetchSearchQuery = () => {
         console.log("Fetching...");
         SetResults_State(false);
@@ -98,7 +139,7 @@ function SearchResults({ query }) {
                     SetSearch_Results(r);
                     SetArraySearch_Results(r.results);
                     console.log("🚀 ~ file: SearchResults.js:36 ~ .then ~ r.results:", r.results);
-                    // console.log(search_results);
+                    console.log(search_results);
                     const timer = setTimeout(() => {
                         SetResults_State(true);
                     }, 1000);
@@ -181,7 +222,10 @@ function SearchResults({ query }) {
             <div style={{}}>
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
-                        <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
+                        <p className="text-dark mt-2">
+                            About {search_results != undefined ? <>{Math.round(Math.random() * 27300000000)}</> : <> {search_results?.number_of_results}</>}{" "}
+                            results
+                        </p>
 
                         <Card
                             // style={{ width: "480px", marginLeft: "20px" }}
@@ -225,7 +269,7 @@ function SearchResults({ query }) {
                         <div className="mb-5">
                             <div className="img-slider" style={{ marginY: "10px" }}>
                                 <div style={{ margin: "0 -15px" }}>
-                                    <Slider {...settings}>
+                                    <Slider {...cards}>
                                         {ImageResult.map((string, index) => {
                                             return <SliderImage key={index} string={string} />;
                                         })}
