@@ -1,4 +1,5 @@
 import React from "react";
+import HomeGallery from "../components/HomeGallery/HomeGallery";
 import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import RecentBlog from "../components/RecentBlogs/RecentBlog";
 import ScrollToTop from "../components/scroll-to-top";
@@ -10,8 +11,9 @@ import AboutContainer from "../containers/about";
 import FunFactContainer from "../containers/global/funfact";
 import IconBoxContainer from "../containers/global/icon-box";
 import IntroContainer from "../containers/home/intro";
-import Footer from "../layouts/footer";
+// import Footer from "../layouts/footer";
 import Layout from "../layouts/index";
+import FooterUpdated from "../components/FooterUpdated/Footer";
 
 // Import the Cloudinary classes.
 
@@ -38,8 +40,11 @@ const HomePage = () => {
                         </div>
                     </div> */}
                     <IntroContainer />
+                    <HomeGallery />
                     <RecentBlog />
                     <Testimonials />
+                    {/* <Footer /> */}
+                    <FooterUpdated />
                     {/* <TestimonialContainer /> */}
                     {/* <BrandContainer /> */}
                     {/* <HomeAboutContainer /> */}

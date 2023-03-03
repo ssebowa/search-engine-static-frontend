@@ -22,12 +22,15 @@ const RecentBlog = () => {
                         <div className="RecentBlogbox1 RecentBlogBox">
                             <button className="my-3">New</button>
                             <h3 className="my-3">Why Do People Suffer From Hunger Crisis?</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches</p>
                         </div>
                         <div className="RecentBlogbox2 RecentBlogBox">
                             <button className="my-3">Popular Tour</button>
                             <h3 className="my-3">Why Global Warming Keeps On Increasing?</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>
+                                Human activity has increased greenhouse gases in the atmosphere since the Industrial Revolution, leading to more heat retention
+                                and an increase in surface temperatures.{" "}
+                            </p>
                         </div>
                     </div>
                 </div>

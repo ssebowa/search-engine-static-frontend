@@ -1,51 +1,51 @@
-.SearchResultsMain{
+.SearchResultsMain {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow: hidden!important;
+    overflow: hidden !important;
 }
-.SearchResultsInnerLeft{
-width: 50%;
-max-width: 1000px;
-margin-left:140px;
-padding: 0.5em;
+.SearchResultsInnerLeft {
+    width: 50%;
+    max-width: 1000px;
+    margin-left: 140px;
+    padding: 0.5em;
 }
-.SearchResultsInnerRight{
-width: 30%;
-padding: 0.5em;
-margin-top: 5em;
+.SearchResultsInnerRight {
+    width: 30%;
+    padding: 0.5em;
+    margin-top: 5em;
+}
+.slick-dots {
+    display: none !important;
 }
 
-
-@media screen and (max-width:1000px) {
-    .SearchResultsInnerLeft{
+@media screen and (max-width: 1000px) {
+    .SearchResultsInnerLeft {
         margin-left: 10px;
         width: 60%;
     }
-    .SearchResultsInnerRight{
+    .SearchResultsInnerRight {
         width: 40%;
-        }
+    }
 }
-@media screen and (max-width:700px) {
-    .SearchResultsMain{
+@media screen and (max-width: 700px) {
+    .SearchResultsMain {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-start;
-        overflow: hidden!important;
+        overflow: hidden !important;
     }
-    .SearchResultsInnerLeft{
+    .SearchResultsInnerLeft {
         width: 100%;
-        margin-left:0px;
+        margin-left: 0px;
     }
-    .SearchResultsInnerRight{
+    .SearchResultsInnerRight {
         width: 100%;
         margin-top: 1em;
         padding: 0em;
-
-        }
-
+    }
 }
