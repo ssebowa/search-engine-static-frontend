@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function ResultMain({ data }) {
     return (
-        <div className="p-5 d-flex justify-items-center justify-content-center">
+        <div className="pt- pb-5 pe-5 ms-sm-5 d-flex justify-items-center justify-content-center">
             <div className="ResultMainConatiner pt-5" tabIndex="-1">
                 <a target={"_blank"} rel="noreferrer" href={data.pretty_url} className="ResultMainUpperLink pe-3">
                     {data.pretty_url}

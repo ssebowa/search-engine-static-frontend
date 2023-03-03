@@ -16,11 +16,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import SliderImage from "./SliderImage";
+
 const styles = {
     container: {
-        height: "20vh",
+        height: "250px",
         overflowY: "scroll",
         padding: "16px",
+        // width: "450px",
     },
 };
 
@@ -35,6 +40,8 @@ function SearchResults({ query }) {
     const [Combine_Results, SetCombineResults] = React.useState([]);
 
     const [CahtbotResults, SetChatbotResults] = React.useState("");
+
+    const [ImageResult, SetImageResult] = React.useState([]);
 
     const [currentPage, setcurrentPage] = React.useState(1);
     const [postPerPage, setPostPerPage] = React.useState(5);
@@ -148,6 +155,16 @@ function SearchResults({ query }) {
             // Clean up function
         };
     }, [query]);
+
+    useEffect(() => {
+        fetch(`https://chatapi.ssebowa.org/image/?keyword=${query}`, {
+            method: "post",
+        })
+            .then((response) => response.json())
+            .then((data) => SetImageResult(data.images))
+            .catch((error) => console.error(error));
+    }, [query]);
+
     var zain;
     zain = CahtbotResults.split(`\\`);
     console.log("zain:", zain);
@@ -165,12 +182,18 @@ function SearchResults({ query }) {
                 <div className="SearchResultsMain">
                     <div className="SearchResultsInnerLeft ">
                         <p className="text-dark mt-2">About {search_results?.number_of_results} results</p>
+
                         <Card
+                            // style={{ width: "480px", marginLeft: "20px" }}
                             sx={{
                                 width: {
-                                    lg: "70vw",
-                                    md: "70vw",
-                                    xs: "100vw",
+                                    lg: "80vw",
+                                    md: "90vw",
+                                    xs: "90vw",
+                                },
+                                marginLeft: {
+                                    lg: "0",
+                                    xs: "15px",
                                 },
                             }}
                         >
@@ -186,8 +209,46 @@ function SearchResults({ query }) {
                                 </div>
                             </CardContent>
                         </Card>
-                        <small>Swipe right to see more...</small>
-                        <div style={{ marginY: "10px", width: "90vw" }}>
+
+                        {/* <div className="SearchResultsInnerRight">
+                                {search_results?.infoboxes?.map((item, i) => {
+                                    return (
+                                        <>
+                                            <InfoBoxes key={i} data={item} />
+                                        </>
+                                    );
+                                })}
+                            </div> */}
+
+                        {/* <small>Swipe right to see more...</small> */}
+
+                        <div className="mb-5">
+                            <div className="img-slider" style={{ marginY: "10px" }}>
+                                <div style={{ margin: "0 -15px" }}>
+                                    <Slider {...settings}>
+                                        {ImageResult.map((string, index) => {
+                                            return <SliderImage key={index} string={string} />;
+                                        })}
+
+                                        {/* 
+                                        {ImageResult && (
+                                            <ImageList className="d-flex">
+                                                {ImageResult.map((string, index) => (
+                                                    <ImageListItem key={index}>
+                                                        <a href={string} className="d-flex">
+                                                            <img src={string} alt="img" />
+                                                        </a>
+                                                    </ImageListItem>
+                                                ))}
+                                            </ImageList>
+                                        )}
+ */}
+                                    </Slider>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="result-slider mt-5" style={{ marginY: "10px" }}>
                             <div style={{ margin: "0 -15px" }}>
                                 <Slider {...settings}>
                                     {search_results?.results?.map((item, i) => {
@@ -197,35 +258,7 @@ function SearchResults({ query }) {
                             </div>
                         </div>
                     </div>
-
-                    {/* <div className="SearchResultsInnerRight">
-                        {search_results?.infoboxes?.map((item, i) => {
-                            return (
-                                <>
-                                    <InfoBoxes key={i} data={item} />
-                                </>
-                            );
-                        })}
-                    </div> */}
-
-                    {/* <SearchSuggestions data={search_results?.suggestions} />; */}
-                    {/* <div>
-                    {SsebowaResults.map((data) => (
-                        <ResultMain key={data._id} data={data}></ResultMain>
-                    ))}
-                </div> */}
                 </div>
-                {/* <div className="SearchResultsInnerLeft"> */}
-                {/* {SsebowaResults?.map((ssebowa) => { */}
-                {/* // console.log(ssebowa); */}
-                {/* // return  */}
-                {/* <Newapi
-                        //  key={ssebowa._id}
-                        SsebowaResults={currentPosts}
-                    /> */};
-                {/* // })} */}
-                {/* <Pagination postPerPage={postPerPage} totalPosts={SsebowaResults.length} paginate={paginate} /> */}
-                {/* </div> */}
             </div>
         );
     } else if (!Results_State) {

@@ -2,6 +2,8 @@
  width: 100%;   
  display: flex;
  flex-direction: column;
+ justify-content: center;
+ justify-items: center;
  padding: 1em;
  background:transparent;
  transition: 0.3s ease-in-out;
@@ -17,7 +19,10 @@
 }
 .ResultMainUpperLink{
     color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: 11px;
+    // margin-top: 40px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
 }
 .ResultMainUpperLink:hover{
     color: blue;
@@ -25,22 +30,23 @@
 }
 
 .ResultMainLink{
-    font-size: 20px;
+    font-size: 18px;
     color: blue;
 }
 .ResultMainLink:hover{
     color: blue;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 .ResultMainDescription{
-    font-size: 12px;
+    font-size: 10px;
     color: #000;
 }
 
 @media screen and (max-width:700px) {
     .ResultMainConatiner{
         width: 100%;   
-        height: 300px;
+        height: 250px;
         display: flex;
         flex-direction: column;
         padding: 0.5em;
@@ -48,6 +54,8 @@
         transition: 0.3s ease-in-out;
         margin-bottom: 0.5em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 20px;
+    padding-left: 30px;
        }
       
 
@@ -55,11 +63,12 @@
         font-size: 15px;
     }
     .ResultMainLink {
-        font-size: 18px;
+        margin-bottom: 10px;
+        font-size: 14px;
         color: blue;
     }
     .ResultMainDescription {
-        font-size: 14px;
+        font-size: 10px;
     }
 
 }
