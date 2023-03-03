@@ -3,6 +3,7 @@ import NavBarUpdated2 from "../components/NavBarUpdated/NavBarUpdated2";
 import ScrollToTop from "../components/scroll-to-top";
 import SEO from "../components/seo";
 import StickyChatBot from "../components/stickyChatBot";
+import Testimonials from "../components/Testimonials/Testimonials";
 import VideoCaorusel from "../components/video-carousel";
 import AboutContainer from "../containers/about";
 import FunFactContainer from "../containers/global/funfact";
@@ -30,28 +31,22 @@ const HomePage = () => {
                     {/* <Header /> */}
                     {/* <NavBarUpdated></NavBarUpdated>  */}
                     <NavBarUpdated2></NavBarUpdated2>
-
                     {/* <div className="d-flex justify-content-end" style={{ background: "transparent" }}>
                         <div className="m-1 p-2 " style={{ width: "6rem", height: "5rem" }}>
                             <NavbarDrawer linksArray={linksArray}></NavbarDrawer>
                         </div>
                     </div> */}
-
                     <IntroContainer />
-
+                    <Testimonials />
+                    {/* <TestimonialContainer /> */}
                     {/* <BrandContainer /> */}
-
                     {/* <HomeAboutContainer /> */}
                     {/* <ServiceListContainer />
-                    <TestimonialContainer /> */}
 
                     <IconBoxContainer classOption="section-pb"></IconBoxContainer>
                     {/* <TodosSlideAnimation classOption="section-pb"></TodosSlideAnimation>  */}
-
                     {/* <CardFlipBook></CardFlipBook> */}
-
                     {/* <BookCard1></BookCard1> */}
-
                     <FunFactContainer classOption="mt-10 mt-lg-0" />
                     <AboutContainer></AboutContainer>
                     <VideoCaorusel></VideoCaorusel>
