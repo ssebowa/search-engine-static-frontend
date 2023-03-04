@@ -2,75 +2,43 @@ import TestimonialCardContainer from "./TestimonialCardContainer";
 import "./Testimonials.css";
 
 const Testimonials = () => {
-  const cardsData = [
-    {
-      id: 1,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Clark Kent",
-      imgUrl: "https://unsplash.it/200/200",
-    },
-    {
-      id: 2,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Bruce Wayne",
-      imgUrl: "https://unsplash.it/201/200",
-    },
-    {
-      id: 3,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Peter Parker",
-      imgUrl: "https://unsplash.it/200/201",
-    },
-    {
-      id: 4,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Tony Stark",
-      imgUrl: "https://unsplash.it/201/201",
-    },
-    {
-      id: 5,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Reed Richards",
-      imgUrl: "https://unsplash.it/202/200",
-    },
-    {
-      id: 6,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Wade Wilson",
-      imgUrl: "https://unsplash.it/200/199",
-    },
-    {
-      id: 7,
-      title:
-        "In the artists own experience, of course, art is fundamentally indefinable, unsayable",
-      content: "Peter Quill",
-      imgUrl: "https://unsplash.it/199/199",
-    }
-  ];
-  return (
-    <>
-      <div className="testimonials-main-container">
-        <div className="testimonials-data">
-          <h1>Testimonials</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </p>
-        </div>
-        {/* <div className="SlideContainer"> */}
-        {/* <h1 style={{ "text-align": "center" }}>React Card Slider</h1> */}
-        <TestimonialCardContainer cards={cardsData} />
-        <div className="testimonials-slider-back-green"></div>
-      </div>
-    </>
-  );
+    const cardsData = [
+        {
+            id: 1,
+            title: "YouTube video player",
+            content: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+            videoUrl: "https://www.youtube.com/embed/5Zyc_fqsLqc?controls=0&amp;start=3",
+        },
+        {
+            id: 2,
+            title: "YouTube video player",
+            content: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+            videoUrl: "https://www.youtube.com/embed/Ag6Cn0lT_ys",
+        },
+        {
+            id: 3,
+            title: "YouTube video player",
+            content: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+            videoUrl: "https://www.youtube.com/embed/5J-wCwuLJuU",
+        },
+    ];
+    return (
+        <>
+            <div className="testimonials-main-container">
+                <div className="testimonials-data">
+                    <h1>Testimonials</h1>
+                    <p>
+                        Feel inspired and get confident to search on the Ssebowa. You could become a testimony to many
+                        <br /> people and make them join you to search for a good cause.
+                    </p>
+                </div>
+                {/* <div className="SlideContainer"> */}
+                {/* <h1 style={{ "text-align": "center" }}>React Card Slider</h1> */}
+                <TestimonialCardContainer cards={cardsData} />
+                <div className="testimonials-slider-back-green"></div>
+            </div>
+        </>
+    );
 };
 
 export default Testimonials;

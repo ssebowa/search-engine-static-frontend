@@ -56,32 +56,30 @@ const NavbarDrawer = ({ linksArray }) => {
                 ))} */}
 
                     <List>
-                        {linksArray.map((linkInfo) => (
-                            <>
-                                <ListItem onClick={() => setOpen(false)} key={linkInfo.id} component={Link} to={linkInfo.navLink} divider>
-                                    <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
-                                        <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
-                                            <FontAwesomeIcon icon={linkInfo.icon} color="royalblue"></FontAwesomeIcon>
+                        {linksArray.map((linkInfo, index) => (
+                            <ListItem onClick={() => setOpen(false)} key={index} component={Link} to={linkInfo.navLink} divider>
+                                <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
+                                    <Box sx={{ display: "flex", alignItems: "center", my: 0.5 }}>
+                                        <FontAwesomeIcon icon={linkInfo.icon} color="royalblue"></FontAwesomeIcon>
 
-                                            <Typography
-                                                sx={{
-                                                    color: "#181C51 ",
-                                                    fontWeight: "bold",
-                                                    fontSize: "1.2rem",
-                                                    fontFamily: "Raleway",
+                                        <Typography
+                                            sx={{
+                                                color: "#181C51 ",
+                                                fontWeight: "bold",
+                                                fontSize: "1.2rem",
+                                                fontFamily: "Raleway",
 
-                                                    ":hover": {
-                                                        color: "coral",
-                                                    },
-                                                    mx: 3,
-                                                }}
-                                            >
-                                                {linkInfo.navName}
-                                            </Typography>
-                                        </Box>
-                                    </ListItemText>
-                                </ListItem>
-                            </>
+                                                ":hover": {
+                                                    color: "coral",
+                                                },
+                                                mx: 3,
+                                            }}
+                                        >
+                                            {linkInfo.navName}
+                                        </Typography>
+                                    </Box>
+                                </ListItemText>
+                            </ListItem>
                         ))}
                         <>
                             <ListItem onClick={() => setOpen(false)} divider>

@@ -14,6 +14,9 @@ import IntroContainer from "../containers/home/intro";
 // import Footer from "../layouts/footer";
 import Layout from "../layouts/index";
 import FooterUpdated from "../components/FooterUpdated/Footer";
+import WhyChooseUs from "../components/WhyChoose.jsx/WhyChooseUs";
+import AboutSsebowa from "../components/Aboutssebowa/AboutSsebowa";
+import HowItWorks from "../components/HowItWorks/HowItWorks";
 
 // Import the Cloudinary classes.
 
@@ -41,6 +44,9 @@ const HomePage = () => {
                     </div> */}
                     <IntroContainer />
                     <HomeGallery />
+                    <HowItWorks />
+                    <AboutSsebowa />
+                    <WhyChooseUs />
                     <RecentBlog />
                     <Testimonials />
                     {/* <Footer /> */}

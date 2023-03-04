@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import Bookmarks from "../Bookmarks/Bookmarks";
 
 const Intro = () => {
-    const [classToggler] = useState(true);
+    // const [classToggler] = useState(true);
 
     // const SearchclassToggler = () => {
     // console.log(`done`);
@@ -26,17 +26,17 @@ const Intro = () => {
                             image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
                         />
                     </div> */}
-                    <div className={`${classToggler ? "headerMobileSearch" : ""}`}>
-                        <SearchBarHome
-                            width={"70%"}
-                            Bookmarks={Bookmarks}
-                            addd={"+"}
-                            sepratorline={"|"}
-                            addtobrowser={"Add To Browser"}
-                            searchQoute={"The World’s Most Private Search Engine"}
-                            ssebowaSearchLogo={"https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png"}
-                        />
-                    </div>
+                    {/* <div className={`${classToggler ? "headerMobileSearch" : ""}`}> */}
+                    <SearchBarHome
+                        width={"70%"}
+                        Bookmarks={Bookmarks}
+                        addd={"+"}
+                        sepratorline={"|"}
+                        addtobrowser={"Add To Browser"}
+                        searchQoute={"The World’s Most Private Search Engine"}
+                        ssebowaSearchLogo={"https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png"}
+                    />
+                    {/* </div> */}
                     <div className="w-75 mt-2  p-2 d-flex justify-content-center align-items-center">
                         {/* <Link
                             to={"/bot?q=I%20am%20your%20assistant"}

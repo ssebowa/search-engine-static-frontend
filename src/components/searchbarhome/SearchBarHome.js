@@ -168,7 +168,7 @@ function SearchBarHome(props) {
                 ) : (
                     <>
                         <Form
-                            className="searchbarhideinmobileview d-flex me-3 ms-3 pe-1 ps-1  align-items-center justify-content-center serch-focus"
+                            className=" d-flex me-3 ms-3 pe-1 ps-1  align-items-center justify-content-center serch-focus"
                             style={mobileSearchbar}
                             onSubmit={(e) => SubmitSearchRequest(e)}
                         >
@@ -265,7 +265,7 @@ function SearchBarHome(props) {
                     <div className="book-margin">
                         {/* <Bookmarks></Bookmarks> */}
                         {/* <Bookmarks /> */}
-                        {/* <props.Bookmarks /> */}
+                        <props.Bookmarks />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../utils/style.css";
 import { Container, Card, Row, Col, CardBody, CardHeader } from "reactstrap";
-// import child from "../../assets/images/banner/child.png";
+import child from "../../assets/images/BannerImg/child.png";
 
 const HomeGallery = () => {
     return (
@@ -32,7 +32,7 @@ const HomeGallery = () => {
                         </div>
                     </Col>
                 </Row>
-                {/* <Row style={{ marginBottom: 80, marginTop: 50 }}>
+                <Row style={{ marginBottom: 80, marginTop: 50 }}>
                     <Col
                         className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
                         style={{
@@ -44,12 +44,12 @@ const HomeGallery = () => {
                         <div className="container1">
                             <div className="card1">
                                 <div className="image">
-                                    <img alt="" src={child} style={{ borderRadius: 30 }} />
+                                    {" "}
+                                    <img alt="" src={child} style={{ borderRadius: 30 }} />{" "}
                                 </div>
                                 <div className="content" style={{ border: "transparent" }}>
                                     <h6 style={{ fontWeight: "bold", fontSize: 20 }}>Feed a Hungry Child</h6>
                                     <p>
-                                        {" "}
                                         Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches
                                     </p>
                                 </div>
@@ -59,20 +59,24 @@ const HomeGallery = () => {
                     <Col className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <div className="container1">
                             <div className="card1">
-                                <div className="image">
-                                    <img alt="" src={child} style={{ borderRadius: 30 }} />
+                                <div
+                                    className="image"
+                                    style={{
+                                        borderRadius: "47.8981px",
+                                    }}
+                                >
+                                    <img alt="" src={child} style={{ borderRadius: 30 }} />{" "}
                                 </div>
                                 <div className="content" style={{ border: "transparent" }}>
-                                    <h6 style={{ fontWeight: "bold", fontSize: 20 }}>Feed a Hungry Child</h6>
+                                    <h6 style={{ fontWeight: "bold", fontSize: 20 }}>Give A Sanitary Pad</h6>
                                     <p>
-                                        {" "}
                                         Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
             {/* <div className='flex flex-col justify-center m-0' >
             <div className='text-center mt-24 mb-14 pt-1 pb-1'>
