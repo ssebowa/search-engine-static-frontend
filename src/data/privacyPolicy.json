@@ -1,0 +1,35 @@
+
+[
+    {
+    "id": 0,
+    "title": "Your privacy is 💯% secure",
+    "description": "With your privacy protected, a tree can be planted, a hungry child gets a delicious meal, and a girl child without a pad receives a sanitary pad."
+    },
+    {
+        "id": 1,
+        "title": "Your searches are not permanently kept",
+        "description": "We don't permanently keep your searches. We avoid using your search history to create individual profiles. That's why we anonymize all searches within 7days."
+        },
+        {
+            "id": 2,
+            "title": "Your data is not displayed to advertisers",
+            "description": "We respect you and so don't gather your user information to sell it without being granted permission from you. We prioritise you and believe that advertising sectors have no right to your data and searches unless you permit them."
+            },
+            {
+                "id": 3,
+                "title": "Your searches are encrypted",
+                "description": "Eavesdroppers have no access to your searches because we protect them with a secure encrypted connection so that neither you nor we can view your searches"
+                },
+                {
+                    "id": 4,
+                    "title": "No external tracking tools are used",
+                    "description": "For us to protect your information and searches from being tracked by others, we avoid using third-party trackers like Google Analytics that many websites use to enhance their services."
+                    },
+                    {
+                        "id": 5,
+                        "title": "Your hands control our tracking",
+                        "description": "To improve our services, we only collect a little amount of data but leave the decision control in your hands. You can activate the <b> Do Not Track </b>  button in your browser settings if you want to opt-out of tracking."
+                        }
+        
+]
+  

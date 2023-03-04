@@ -1,0 +1,137 @@
+[
+    {
+        "slider": [
+            {
+                "id": 1,
+                "image": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668348/ssebowa/ssebowa.org/search-engine-static-frontend/images/slider/slide2_ywdblt.png",
+                "image1": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png",
+                "title": "Full Solution <br />for your <span class='text-decoration-underline'>Business</span><br />Development"
+            }
+        ]
+    },
+    {
+        "brand": [
+            {
+                "id": 1,
+                "image": "./images/brand-logo/1.png",
+                "title": "Meals Served",
+                "number": 1000
+            },
+            {
+                "id": 2,
+                "image": "./images/brand-logo/2.png",
+                "title": "Trees Planted",
+                "number": 750
+            },
+            {
+                "id": 3,
+                "image": "./images/brand-logo/3.png",
+                "title": "Projects",
+                "number": 458
+            },
+            {
+                "id": 4,
+                "image": "./images/brand-logo/4.png",
+                "title": "Pads Give Out",
+                "number": 670
+            }
+        ]
+    },
+    {
+        "iconBox": [
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668333/ssebowa/ssebowa.org/search-engine-static-frontend/images/intro/support_skbwpy.jpg",
+                "title": "Become Climate Active",
+                "excerpt": "Everytime you search with Ssebowa, you plant a needed tree in a needed place."
+            },
+            {
+                "id": 2,
+                "className": "grid-item card-mt-75 mb-7",
+                "icon": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668360/ssebowa/ssebowa.org/search-engine-static-frontend/images/intro/img_6_yj0gaa.jpg",
+                "title": "Become Soil Active",
+                "excerpt": "Your searches contributes to bring back the deforested land back to shade."
+            },
+            {
+                "id": 1,
+                "className": "grid-item mb-7",
+                "icon": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668925/ssebowa/ssebowa.org/search-engine-static-frontend/images/intro/img_5_q4nmrl.jpg",
+                "title": "Become Animal Active",
+                "excerpt": "Animal protection is education to humanity. Let them test the sweetness of technology."
+            }
+        ]
+    },
+    {
+        "testimonial": [
+            {
+                "id": 1,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "David Loyed",
+                "designation": "CEO, Omex"
+            },
+            {
+                "id": 2,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/2.png",
+                "name": "John Loyed",
+                "designation": "CEO, Omex"
+            },
+            {
+                "id": 3,
+                "excerpt": "Pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires maintain",
+                "authorThumb": "./images/testimonial/avater.png",
+                "name": "David Loyed",
+                "designation": "CEO, Omex"
+            }
+        ]
+    },
+    {
+        "funfact": [
+            {
+                "id": 1,
+                "number": 1000,
+                "title": "Meal Served"
+            },
+            {
+                "id": 2,
+                "number": 750,
+                "title": "Trees Plant"
+            },
+            {
+                "id": 3,
+                "number": 458,
+                "title": "Project"
+            },
+            {
+                "id": 4,
+                "number": 670,
+                "title": "Pads Served"
+            }
+        ]
+    },
+    {
+        "team": [
+            {
+                "id": 1,
+                "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/disan_hqv7iq.jpg",
+                "name": "Disan Ssebowa",
+                "designation": "Founder and CEO"
+            },
+            {
+                "id": 2,
+                "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1675722086/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Anshika_jo3y0n.jpg",
+
+                "name": "Anshika Parashar",
+                "designation": "COO"
+            },
+            {
+                "id": 3,
+                "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668352/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/sujal_ifl10t.jpg",
+                "name": "Sujal Bhakare",
+                "designation": "CTO and Developer"
+            }
+        ]
+    }
+]

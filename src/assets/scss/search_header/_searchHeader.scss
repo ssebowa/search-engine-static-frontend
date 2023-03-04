@@ -1,0 +1,79 @@
+.SearchHeaderMain{
+    height:5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed!important;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.SsebowaLogoImage{
+    width: 5em;
+    display: flex;
+    height: 2em;
+    object-fit: contain;
+}
+.searchMainDivContent{
+    width: 75%;
+}
+.SearchBarMainPageForm{
+    width: 75%;
+    margin-left:2em;
+    border-radius: 100px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+    max-width: 500px;
+    min-width: 250px;
+}
+.searchMainZInde{
+    z-index: 999!important;
+}
+
+.SearchBarMainPage{
+    width: 100%;
+    padding: 1em;
+    height: 3em;
+    border-radius: 100px;
+    border:none;
+}
+.SearchBarMainButton{
+    background-color: #59e3a7 ;
+    height: 3em;
+    width: 3em;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.searchMenuRightMobileMenu{
+    display: none;
+}
+@media screen and (max-width:700px){
+    .searchMenuRight{
+        display: none;
+    }
+    .searchMainDivContent{
+        width: 90%;
+    }
+    .searchMenuRightMobileMenu{
+        display: flex;
+    }
+}
+@media screen and (max-width:550px){
+    .SsebowaLogoImage{
+        width: 0;
+        height: 0;
+    }
+    .SearchBarMainPageForm{
+        width: 70%;
+        margin-left:0em;
+    }
+}

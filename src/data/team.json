@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/disan_hqv7iq.jpg",
+        "name": "Disan Ssebowa Basalidde",
+        "designation": "Founder and CEO"
+    },
+    {
+        "id": 2,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1675722086/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Anshika_jo3y0n.jpg",
+        "name": "Anshika Parashar",
+        "designation": "COO"
+    },
+    {
+        "id": 3,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668352/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/sujal_ifl10t.jpg",
+        "name": "Sujal Bhakare",
+        "designation": "CTO and Developer"
+    },
+   
+    {
+        "id": 5,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668353/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/violah_dkcgjc.jpg",
+        "name": "Violah Audray",
+        "designation": "Content and Digital Marketer"
+    },
+    {
+        "id": 6,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668350/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Aoun_r7pwup.jpg",
+        "name": "Syed Aoon Hussain",
+        "designation": "CIO & Lead Developer"
+    },
+    {
+        "id": 7,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/bilal_upgnbv.jpg",
+        "name": "Billal Rasheed",
+        "designation": "Graphics Designer"
+    },
+    {
+        "id": 8,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/prejon_y28z3h.jpg",
+        "name": "Rajib Hossain Prejon",
+        "designation": "Full Stack Developer"
+    }
+    ,
+    {
+        "id": 9,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668351/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Iqbal_har25p.jpg",
+        "name": "Iqbal Isnaeni Herlambang",
+        "designation": "Developer"
+    }
+    
+    ,
+    {
+        "id": 11,
+        "thumb": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668350/ssebowa/ssebowa.org/search-engine-static-frontend/images/team/Arafath_lwm3mw.jpg",
+        "name": "Hussain Mohamed Arafath",
+        "designation": "AI Engineer"
+    }
+]

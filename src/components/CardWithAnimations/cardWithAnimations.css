@@ -1,0 +1,62 @@
+.d-flex {
+    display: flex;
+}
+.card-animation {
+    border: 0.2px solid #008000 !important;
+
+    color: "yellow" !important;
+}
+.card-animation-body {
+    position: relative;
+    right: -100%;
+    overflow: hidden;
+    transition: 1s;
+}
+.card-animation:hover .card-animation-body {
+    position: relative;
+    
+    right: 0;
+}
+
+.card-animation:hover::after .card-animation-body {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+
+/* FLIP */
+.card2 {
+    padding-left: 20px;
+}
+
+.card-body2 {
+    position: absolute;
+    padding: 0 !important;
+    transform: rotateY(-20deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all 0.5s ease-in;
+}
+.card2:hover .card-body2 {
+    transform: rotateY(-180deg);
+}
+figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    backface-visibility: hidden;
+}
+figure.front {
+    background-color: yellow;
+}
+figure.back {
+    background: green;
+    transform: rotateY(180deg);
+}

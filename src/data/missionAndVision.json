@@ -1,0 +1,28 @@
+[
+    
+    {   
+        "id": 1,
+        "title": "Our Mission",
+        "img": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/icons/target_v6vara.png",
+        "description": "Our mission is to foster a healthier, greener and more equitable society.",
+        "collapse_title": "Mission",
+        "collapse_description":"We provide meals to disadvantaged children, plant trees to reduce carbon emissions, and distribute sanitary pads to empower women and improve health outcomes. All profits from our organisation are used directly to achieve our mission. Our work is dedicated to helping those in need, combating climate change, and promoting gender equality to ensure that all people have access to the resources they need to lead successful and healthy lives."
+    },
+    {   
+        "id": 2,
+        "title": "Our Vision",
+        "img": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/icons/eye_npnwbn.png",
+        "description": "Our vision is to promote a healthier and more equitable world through the strategic reinvestment of profits into climate, soil and humanitarian actions.",
+        "collapse_title": "Vision",
+        "collapse_description":"We envision a world where the environment is actively protected, global soil is healthy, and children and teens of all backgrounds have access to basic needs, like food and sanitary pads. By applying our profits to sustainable climate, soil and humanitarian needs, we are equipping communities worldwide with the resources and knowledge necessary for self-sufficiency and well-being. </br> "
+    },
+    {   
+        "id": 3,
+        "title": "Our Value",
+        "img": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668369/ssebowa/ssebowa.org/search-engine-static-frontend/images/icons/value_izx38v.png",
+        "description": "We respect and prioritise our people and the communities they come from",
+        "collapse_title": "Core Values",
+        "collapse_description":" <b> 1. People: </b> We respect and prioritise our people and the communities they come from. We strive to make a positive difference in the lives of people and the environment.</br> </br> <b>2. Transparency:</b> We take an open and honest approach to our operations to ensure that our actions meet our values and that we stay true to our commitment to the environment and social justice. </br></br> <b> 3. Sustainability: </b>We strive for sustainability in our work and our decisions, working with respect for the Earth’s resources and for future generations.</br> </br><b>4.Education:</b> We take a holistic approach to educating people about environmental processes and their impacts, from the local level to the global. </br></br> <Innovation:><b> 5. Innovation:</b> We embrace innovation to seek novel and creative solutions to environmental and social challenges, while still meeting our core values.</br></br><b>6. Respect: </b>We strive to be kind to each other and the environment, taking respect for nature and each other as a guide in our work.</br></br><b>7. Compassion: </b>Committing to eliminate hunger, empowering young women with sanitary pads.</br></br><b>8 . Social Responsibility: </b>Utilising profits to positively impact communities and the environment.</br></br><b>9. Inclusivity: </b>Serving every person regardless of their background or identity.</br></br><b>10. Quality:</b> Ensuring the highest standard of service and results."
+    }
+    
+]

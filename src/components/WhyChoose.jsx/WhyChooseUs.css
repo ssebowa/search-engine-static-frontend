@@ -1,0 +1,22 @@
+/* WhyChooseUsCards */
+
+@media only screen and (max-width: 500px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}

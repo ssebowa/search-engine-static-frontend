@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "classOption": "address-list mb-4 mb-xl-10 pb-2",
+        "title": "Our Address",
+        "info": "30 N Gould St, Sheridan, WY 82801, USA"
+    },
+    {
+        "id": 2,
+        "classOption": "address-list mb-4 mb-xl-10 pb-2",
+        "title": "Contact Info",
+        "info": "Email: supoort@ssebowa.ai <br /> Phone: +32474171274"
+    }
+]
