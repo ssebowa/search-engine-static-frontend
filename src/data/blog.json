@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668338/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/ug3_avfyte.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668338/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/ug3_avfyte.jpg"
+        },
+        "title": "Your Searches in Uganda",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>Uganda has a rapidly growing population, which is putting a great deal of stress on the country's forests by increasing demand for firewood, pushing agricultural expansion, and expanding land settlement. As a result, Uganda now has one of the highest rates of deforestation in the world. In Northern Uganda, much of the forest has been cleared for charcoal production, degrading wildlife habitat and presenting a hardship for local farmers. </br> Uganda is one of the most biologically diverse countries in Africa. Home to endangered species like Chimpanzees, wild dogs, and most of the region's endemic bird species, planting trees here gives them a better chance of survival. </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 Trees</p><p><b> Planted </b> <i class='fa fa-angle-double-right mx-2'></i>20000 trees</p></div>", "<div class='blog-qutation w-50'><p>10% Planted </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    },
+    {
+        "id": 2,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/indo2_upmopf.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/indo2_upmopf.jpg"
+        },
+        "title": "Your Searches in Indonasia",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>Indonesia’s rainforests contain 10% of the world’s known plant species, 12% of mammal species – including endangered orangutans and critically endangered Sumatran tigers and rhinos – and 17% of all known bird species. Unfortunately, Indonesia also leads the world in the number of threatened mammals at 135 species, which is nearly a third of all of its native mammals. The fragmentation of habitats through expansion of agriculture is acknowledged as major factor in the decline of species, the main causes of species extinction and alteration of ecosystem services. </br> Our focus in Indonesia is replanting mangrove forests and tropical forests to rejuvenate the vast and vital wetland ecosystems – an incredibly biodiverse chain of 17,000 islands that is home to 25% of the world’s fish population. This project includes conservation education in schools to empower new generations to protect this crucial ecosystem. </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 trees</p><p><b> Planted </b> <i class='fa fa-angle-double-right mx-2'></i>2000 trees</p></div>", "<div class='blog-qutation w-50'><p>10% Planted </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    },
+    {
+        "id": 3,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/pk2_upokzm.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668337/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/pk2_upokzm.jpg"
+        },
+        "title": "Your Searches in Pakistan",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>The temperature in Karachi is changing one degree a year! There is growing global consensus that climate change is humankind's greatest threat in modern times and through planting trees could help fight Climate change. We are hoping to plant 10000 trees by the end of the year. Make the earth cooler for both people and planet. Trees are natural coolers of our planet: they absorb the excess carbon dioxide from the atmosphere and help produce clouds; very needed in a desert like Karachi, Pakistan. </br> The harmful impacts of this global warming effect are already manifesting themselves around the world in the form of extreme weather events like storms, tornadoes, floods and droughts. </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 trees</p><p><b> Planted </b> <i class='fa fa-angle-double-right mx-2'></i>20000 Trees</p></div>", "<div class='blog-qutation w-50'><p>10% Planted </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    },
+    {
+        "id": 4,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/grl_fegyqy.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/grl_fegyqy.jpg"
+        },
+        "title": "Your Searches for a child girl",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>Often, the cost of sanitary products for girls is simply too high, forcing them to skip school. In some countries, like Malawi, sanitary pads can cost the equivalent of an entire day’s salary. In India, it has been estimated that as many as 1 in 5 girls drop out of school after they get their periods. In some regions, like Maharashtra, that number is nearer to 4 in 5.</br> When a girl finishes secondary school, she is less likely to experience child marriage, face domestic abuse, and suffer from long-term health complications. As a result, educated women and girls are more likely to have fewer, healthier children. These children then, in turn, more likely to get an education and pull themselves out of poverty. </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 pads a month</p><p><b> Planted </b> <i class='fa fa-angle-double-right mx-2'></i>10000 pads a month</p></div>", "<div class='blog-qutation w-50'><p>10% Reached </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    },
+    {
+        "id": 5,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/drysoil_h285eq.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668336/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/drysoil_h285eq.jpg"
+        },
+        "title": "Your Searches Saving the drying soils",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>Soil erosion removes valuable top soil which is the most productive part of the soil profile for agricultural purposes. Soil erosion could reduce crop yields by up to 10 per cent by 2050, which is equivalent to taking millions of acres of productive land away from agriculture. When the world loses soil, food supply, drinking water and biodiversity are also threatened. </br>The good news is that trees and forests have an important role to play in preventing the loss of topsoil through soil erosion. If you have ever noticed dark brown floodwater, you have seen soil erosion in practice. Soil can also be eroded by wind action and when it is damaged by livestock. Trees prevent soil erosion in several ways: They intercept rainfall which stops ‘splash erosion’, they reduce the amount of water in soil through transpiration, their roots bind soil to sloping ground, they break the wind, preventing it from blowing soil away. </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 trees</p><p><b> Planted </b> <i class='fa fa-angle-double-right mx-2'></i>20000 pads a month</p></div>", "<div class='blog-qutation w-50'><p>10% Planted </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    },
+    {
+        "id": 6,
+        "media": {
+            "rcImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668341/ssebowa/ssebowa.org/search-engine-static-frontend/images/blog/1_s5fgyo.png",
+            "gridImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668335/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/chd_nwquhm.jpg",
+            "largeImage": "https://res.cloudinary.com/dicgvondb/image/upload/v1674668335/ssebowa/ssebowa.org/search-engine-static-frontend/images/projects/chd_nwquhm.jpg"
+        },
+        "title": "Your Searches is a meal to a child",
+        "author": "",
+        "date": "",
+        "categories": ["Business"],
+        "tags": ["Tree Planted", "Pads Served", "Meal Served", "Unique Feeling"],
+        "body": ["<p class='pb-2'>Poor nutrition and hunger is responsible for the death of 3.1 million children a year. That’s nearly half of all deaths in children under the age of 5. The children die because their bodies lack basic nutrients.Globally, 822 million people suffer from undernourishment. </br> Of the 822 million undernourished people in the world, 113 million face acute hunger meaning they are in urgent need of food and nutrients. Well into the 21st century hunger is still the world's biggest health problem. And it’s about to get worse due to climate change and soil degradation </p>", "<div class='blog-details-list'><p><b> Goal </b> <i class='fa fa-angle-double-right mx-2'></i>100000 meals a month</p><p><b> Served </b> <i class='fa fa-angle-double-right mx-2'></i>10000 meals a month</p></div>", "<div class='blog-qutation w-50'><p>10% Served </p></div>", "<div class='blog-details-grid'><div class='row mb-n7'>"]
+    }
+]

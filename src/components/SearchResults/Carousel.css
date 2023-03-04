@@ -1,0 +1,16 @@
+.css-46bh2p-MuiCardContent-root:last-child {
+    padding-bottom: 24px;
+    height: 160px !important;
+}
+
+.img-slider{
+    width: 100% !important;
+}
+
+@media screen and (min-width:1000px) {
+	
+   .img-slider{
+    width: 147% !important;
+}
+
+    }

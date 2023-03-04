@@ -1,0 +1,80 @@
+.ResultMainConatiner{
+    width: 100%;   
+    height: 270px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 1em;
+    background:#ffffff !important;
+    transition: 0.3s ease-in-out;
+    border: 3px solid #d4d4d4 !important;
+    border-radius: 20px !important;
+   
+   }
+   .ResultMainConatiner:hover{
+       background:#fff;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(142, 255, 161, 0.2) 0px 2px 8px 0px !important;
+   }
+   .ResultMainConatiner:focus{
+       box-shadow: rgba(192, 255, 163, 0.25) 0px 30px 60px -12px inset , rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   }
+   .ResultMainUpperLink{
+       color: rgba(0, 0, 0, 0.596);
+       font-size: 13px !important;
+       font-weight: 900 !important;
+       // margin-top: 40px;
+       margin-bottom: 10px;
+       overflow-x: hidden;
+   }
+   .ResultMainUpperLink:hover{
+       color: rgb(0, 0, 0) !important;
+       text-decoration: none !important;
+   }
+   
+   .ResultMainLink{
+       font-size: 18px;
+       color: rgb(0, 89, 255);
+       font-weight: 800 !important;
+   }
+   .ResultMainLink:hover{
+       color: rgb(31, 133, 0);
+       text-decoration: underline;
+       margin-bottom: 2px !important;
+   }
+   .ResultMainDescription{
+       font-size: 11px;
+       color: #000;
+       font-weight: 800 !important;
+   }
+   
+   @media screen and (max-width:700px) {
+       .ResultMainConatiner{
+           width: 100%;   
+           height: 250px;
+           display: flex;
+           flex-direction: column;
+           padding: 0.5em;
+           background:#fff;
+           transition: 0.3s ease-in-out;
+           margin-bottom: 0.5em;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+       margin-left: 20px;
+       padding-left: 30px;
+          }
+         
+   
+       .ResultMainUpperLink {
+           font-size: 15px;
+       }
+       .ResultMainLink {
+           margin-bottom: 10px;
+           font-size: 14px;
+           color: rgb(0, 89, 255);
+       }
+       .ResultMainDescription {
+           font-size: 13px;
+       }
+   
+   }

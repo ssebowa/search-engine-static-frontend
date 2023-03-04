@@ -1,0 +1,73 @@
+/* WhyChooseUsCards */
+
+.choose-title{
+    font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 74px;
+/* identical to box height, or 155% */
+
+letter-spacing: 0.464972px;
+
+/* Headings */
+
+color: #2E2E2E;
+}
+
+.choose-para{
+    font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+/* or 135% */
+
+text-align: center;
+
+color: #969696;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .choose-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 64px;
+        /* identical to box height, or 268% */
+        
+        text-align: center;
+        letter-spacing: 0.301582px;
+        
+        /* Headings */
+        
+        color: #2E2E2E;
+    }
+
+    .choose-para{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        
+        text-align: center;
+        
+        color: #969696;
+    
+    }
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .WhyChooseUsCards {
+        flex-direction: column;
+    }
+}
