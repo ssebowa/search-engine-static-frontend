@@ -11,61 +11,56 @@
 //     margin-top: 0;
 // }
 
-
-.banner-text{
+.banner-text {
     font-size: 20px;
     font-weight: 500px;
 }
-.search-imgbox{
+.search-imgbox {
     display: none;
     width: 75px;
     height: 56px;
     background-color: white;
     border-radius: 12px 0 0 12px;
-
 }
-.search-img{
+.search-img {
     width: 40px;
     margin-top: 8px;
     margin-left: 16px;
 }
-.serch-focus:focus{
+.serch-focus:focus {
     position: absolute;
     top: 100px;
 }
-.serch-input{
+.serch-input {
     width: 675px;
     height: 56px;
     border-radius: 100px 0 0 100px;
     font-size: 20px;
 }
-.search-text{
+.search-text {
     height: 56px;
 }
 
-.search-btn{
+.search-btn {
     border-radius: 12px;
     height: 56px;
 }
 
-
-.set-asposition{
+.set-asposition {
     position: absolute;
     right: 48%;
 }
 
-.book-margin{
+.book-margin {
     // margin-left: 210px;
     // margin-top: 8px;
     position: relative;
     top: 8px;
     left: 120px;
 }
-.chrome{
+.chrome {
     margin-top: 15px;
 }
-
-
 
 //   @media screen and (max-width: 402px) {
 //     .set-asposition{
@@ -73,13 +68,12 @@
 //          right: 120px;
 //          top: 420px;
 //      }
- 
-   
+
 //    }
 
-.banner-back-img{
- height: 100vh;
-    background-image: url("https://i.ibb.co/wS1QBny/landscape-tropical-green-forest-1.png");
+.banner-back-img {
+    height: 100vh;
+    // background-image: url("https://i.ibb.co/wS1QBny/landscape-tropical-green-forest-1.png");
 }
 
 .hero-slider {
@@ -199,16 +193,16 @@
 .w-90 {
     width: 90%;
 }
-.mainSearchBarMainDiv{
-  width: 100%;
-  max-width: 500px;
-  border: 1px solid #000;
-  border-radius: 100px;
-  background-color: #fff;
-  position: relative;
-  height: 25px;
-  margin-bottom: 42px;
-  margin-top: 21px;
+.mainSearchBarMainDiv {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    background-color: #fff;
+    position: relative;
+    height: 25px;
+    margin-bottom: 42px;
+    margin-top: 21px;
 }
 .mainSearchBar {
     width: 75%;
@@ -218,134 +212,131 @@
     font-weight: bold;
     border-radius: 100px;
 }
-.mainSearchBarSuggestionDiv{
-  position: absolute;
-  background-color: #ffffff;
-  z-index: 99;
-//   width: 36%;
-  height: 10em;
-  overflow-y: scroll;
-  overflow-x: hidden;
-//   margin-top: 0.1em;
-//   margin-left: 13%;
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.mainSearchBarSuggestionDiv {
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 99;
+    //   width: 36%;
+    height: 10em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    //   margin-top: 0.1em;
+    //   margin-left: 13%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-//   margin-left: 18%;
-  width: 656px;
-//   margin-top: 0;
+    //   margin-left: 18%;
+    width: 656px;
+    //   margin-top: 0;
 }
 
-.search-bars{
+.search-bars {
     // style={{ marginTop: "80px", marginRight: "45px" }}
     margin-top: 80px;
     margin-right: 45px;
 }
-.mainSearchBarSuggestionSpan{
-  font-size: 20px;
-  width: 100%;
-  padding:0.5em;
-  cursor: pointer;
-  border-top:none;
-  border-left:none;
-  border-right:none;
-  border-bottom:0.1px solid rgba(0, 0, 0, 0.158);
+.mainSearchBarSuggestionSpan {
+    font-size: 20px;
+    width: 100%;
+    padding: 0.5em;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.158);
 }
 // Bookmark css
-.BookamarkButton{
-  width: 7em;
-  height: 7em;
-  margin: 1em;
-  position: relative;
-  border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: 0.6s ease-in-out;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
-          line-clamp: 1; 
-  -webkit-box-orient: vertical;
-  padding: 1em;
+.BookamarkButton {
+    width: 7em;
+    height: 7em;
+    margin: 1em;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 1em;
 }
-.BookamarkButton:hover{
-  transition: 0.6s ease-in-out;
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+.BookamarkButton:hover {
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.bookmarkEditBtn{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2em;
-  height: 2em;
-  background-color: #fff;
-  border-radius: 100px;
-  z-index: 999;
-  color: #000;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  display: flex;
-  transition: 0.6s ease-in-out;
-  border: none;
+.bookmarkEditBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+    border-radius: 100px;
+    z-index: 999;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    transition: 0.6s ease-in-out;
+    border: none;
 }
-.bookmarkEditBtn:hover{
-background-color:#198785;
-color: #fff!important;
+.bookmarkEditBtn:hover {
+    background-color: #198785;
+    color: #fff !important;
 }
-.AddNewBookmark{
-  background-color: #fff;
-  border: none;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 400px;
-  padding: 1em;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+.AddNewBookmark {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.inputBookmarkPreviewImg{
-  width: 5em;
-  height: 5em;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.inputBookmarkPreviewImg {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.inputBookmarkInput{
-  border: 1px solid rgba(0, 0, 0, 0.156);
-  margin: .5em;
-// margin: 6px;
-  padding: 0.5em;
-  border-radius: 5px;
-  color: #000;
-  font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.inputBookmarkInput {
+    border: 1px solid rgba(0, 0, 0, 0.156);
+    margin: 0.5em;
+    // margin: 6px;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.set-as{
+.set-as {
     font-size: 20px;
     font-weight: 500;
 }
 
-.set-asspos{
+.set-asspos {
     // position: absolute;
     top: 413px;
     left: 830px;
 }
 
-
-
-
-.ButtonActionBookmark{
-  display: flex;
-  padding: 0.5em;
-align-items: center;
-justify-content: space-evenly;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.ButtonActionBookmark {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.bookmarkImage{
+.bookmarkImage {
     border-radius: 5px;
 }
 
@@ -358,18 +349,20 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 //      }
 //     }
 
-
 @media screen and (max-width: 992px) {
-    .set-asposition{
-         position: absolute;
-         top: 32%;
+    .row{
+        flex-direction: column;
+    }
+    .set-asposition {
+        position: absolute;
+        top: 36%;
         //  right: 460px;
         //  top: 420px;
-     }
- 
-     .chrome{
-         margin-top: 8px;
-     }
+    }
+
+    .chrome {
+        margin-top: 8px;
+    }
 
     //  .mainSearchBarSuggestionDiv{
     //     position: absolute;
@@ -383,7 +376,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     //   //   margin-left: 13%;
     //     border-radius: 10px;
     //     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      
+
     //     margin-left: 9%;
     //     width: 57%;
     //     margin-top: 0;
@@ -395,89 +388,85 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     //     margin-top: 0;
     // }
 
-    .mainSearchBarSuggestionDiv{
+    .mainSearchBarSuggestionDiv {
         position: absolute;
         background-color: #ffffff;
         z-index: 99;
-      //   width: 36%;
+        //   width: 36%;
         height: 10em;
         overflow-y: scroll;
         overflow-x: hidden;
-      //   margin-top: 0.1em;
-      //   margin-left: 13%;
+        //   margin-top: 0.1em;
+        //   margin-left: 13%;
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      
+
         margin-left: 9%;
         width: 68%;
         margin-top: 0;
-      }
+    }
 
     //  .search-suggesition{
     //     // margin-left: 276px;
     //     width: 170px;
     //     // margin-top: 0;
     // }
-   }
+}
 
-
-   @media screen and (max-width: 912px) {
-    .set-asposition{
-         position: absolute;
-         top: 32%;
-      
-     }
+@media screen and (max-width: 912px) {
+    .row{
+        flex-direction: column;
     }
+    .set-asposition {
+        position: absolute;
+        top: 36%;
+    }
+}
 
-    @media screen and (max-width: 768px) {
-        .set-asposition{
-             position: absolute;
-             top: 37%;
-          
-         }
-        }
+@media screen and (max-width: 768px) {
+    .set-asposition {
+        position: absolute;
+        top: 34%;
+    }
+}
 
-
-   @media screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px) {
     // .search-suggesition{
     //     margin-left: 276px;
     //     width: 656px;
     //     margin-top: 0;
     // }
-    .search-imgbox{
+    .search-imgbox {
         display: none;
         width: 75px;
         height: 56px;
         background-color: white;
-        border-radius:  0 0 12px;
-    
+        border-radius: 0 0 12px;
     }
-    .chrome{
+    .chrome {
         margin-top: 10px;
     }
 
-    .serch-input{
-      
+    .serch-input {
         border-radius: 100px 0 0 100px;
         font-size: 12px;
     }
 
-    .banner-text{
+    .banner-text {
         font-size: 14px;
         font-weight: 500px;
     }
 
-    .set-asposition{
+    .set-asposition {
         position: absolute;
         // right: 170px;
         right: 48%;
-        top: 370px;
+        top: 230px;
         // top: 53%;
         // top: 53%;
     }
-    
-    .book-margin{
+
+    .book-margin {
         // position: absolute;
         // right: 50px;
         // top: 393px;
@@ -488,132 +477,121 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         left: 70px;
     }
 
-   
-
     // .serch-focus:start{
     //     position: absolute;
     //     top: 100px;
     // }
 
-    .set-as{
+    .set-as {
         font-size: 14px;
-    font-weight: 500;   
+        font-weight: 500;
     }
 
-
-    .AddNewBookmark{
+    .AddNewBookmark {
         background-color: #fff;
         border: none;
         border-radius: 20px;
         width: 100%;
-        max-width:300px;
+        max-width: 300px;
         padding: 1em;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         margin-right: 120px;
         height: 270px;
-      }
+    }
 
-      .inputBookmarkInput{
+    .inputBookmarkInput {
         border: 1px solid rgba(0, 0, 0, 0.156);
-      //   margin: 1em;
-      margin: 6px;
+        //   margin: 1em;
+        margin: 6px;
         padding: 0.5em;
         border-radius: 5px;
         color: #000;
         font-weight: bold;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-      }
+    }
 
-
-    
-
-      .search-bars{
+    .search-bars {
         // style={{ marginTop: "80px", marginRight: "45px" }}
         margin-top: 80px;
         margin-right: 80px;
     }
 
-    
-     .mainSearchBarSuggestionDiv{
+    .mainSearchBarSuggestionDiv {
         position: absolute;
         background-color: #ffffff;
         z-index: 99;
-      //   width: 36%;
+        //   width: 36%;
         height: 10em;
         overflow-y: scroll;
         overflow-x: hidden;
-      //   margin-top: 0.1em;
-      //   margin-left: 13%;
+        //   margin-top: 0.1em;
+        //   margin-left: 13%;
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      
+
         margin-left: 9%;
         width: 56%;
         margin-top: 0;
-      }
+    }
 
-     .search-suggesition{
+    .search-suggesition {
         // margin-left: 276px;
         width: 170px;
         // margin-top: 0;
     }
-      
-
-  }
-
-
-  @media screen and (max-device-width: 480px){
-  .set-asposition{
-    position: absolute;
-    // right: 170px;
-    right: 48%;
-    top: 378px;
-    // top: 53%;
-    // top: 53%;
-}
 }
 
-@media screen and (max-device-width: 390px){
-    .set-asposition{
-      position: absolute;
-      // right: 170px;
-      right: 48%;
-      top: 369px;
-      // top: 53%;
-      // top: 53%;
-  }
-  }
+@media screen and (max-device-width: 480px) {
+    .set-asposition {
+        position: absolute;
+        // right: 170px;
+        right: 48%;
+        top: 230px;
+        // top: 53%;
+        // top: 53%;
+    }
+}
 
-  @media screen and (max-device-width: 393px){
-    .set-asposition{
-      position: absolute;
-      // right: 170px;
-      right: 48%;
-      top: 368px;
-      // top: 53%;
-      // top: 53%;
-  }
-  }
+@media screen and (max-device-width: 390px) {
+    .set-asposition {
+        position: absolute;
+        // right: 170px;
+        right: 48%;
+        top: 230px;
+        // top: 53%;
+        // top: 53%;
+    }
+}
 
-@media screen and (max-device-width: 375px){
-    .set-asposition{
-      position: absolute;
-      // right: 170px;
-      right: 48%;
-      top: 366px;
-      // top: 53%;
-      // top: 53%;
-  }
-  }
+@media screen and (max-device-width: 393px) {
+    .set-asposition {
+        position: absolute;
+        // right: 170px;
+        right: 48%;
+        top: 230px;
+        // top: 53%;
+        // top: 53%;
+    }
+}
 
-  @media screen and (max-device-width: 360px){
-    .set-asposition{
-      position: absolute;
-      // right: 170px;
-      right: 48%;
-      top: 360px;
-      // top: 53%;
-      // top: 53%;
-  }
-  }
-  
+@media screen and (max-device-width: 375px) {
+    .set-asposition {
+        position: absolute;
+        // right: 170px;
+        right: 48%;
+        top: 234px;
+        // top: 53%;
+        // top: 53%;
+    }
+}
+
+@media screen and (max-device-width: 360px) {
+    .set-asposition {
+        position: absolute;
+        // right: 170px;
+        right: 48%;
+        top: 230px;
+        // top: 53%;
+        // top: 53%;
+    }
+}

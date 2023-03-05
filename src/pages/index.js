@@ -16,6 +16,8 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import HomeGallery from "../components/HomeGallery/HomeGallery";
 import Footer from "../components/FooterUpdated/Footer";
 // Import the Cloudinary classes.
+import AboutSsebowa from "../components/Aboutssebowa/AboutSsebowa";
+import HowItWorks from "../components/HowItWorks/HowItWorks";
 
 const HomePage = () => {
     const linksArray = [
@@ -30,7 +32,7 @@ const HomePage = () => {
         <React.Fragment>
             <Layout>
                 <SEO title="Ssebowa Home" />
-                <div className="wrapper" style={{ background: "#E6E6E6" }}>
+                <div className="wrapper">
                     {/* <Header /> */}
                     {/* <NavBarUpdated></NavBarUpdated>  */}
                     <NavBarUpdated2></NavBarUpdated2>
@@ -42,8 +44,9 @@ const HomePage = () => {
                     </div> */}
 
                     <IntroContainer />
-                    {/* <HowItWorks/> */}
                     <HomeGallery />
+                    <HowItWorks />
+                    <AboutSsebowa />
                     <WhyChooseUs />
                     <RecentBlog />
 

@@ -39,6 +39,7 @@ const HomeGallery = () => {
                 <div className="d-flex justify-items-center justify-content-center mx-auto mt-5">
                     <div className="me-4">
                         <img
+                            style={{ borderRadius: "10%" }}
                             className="mg-fluid"
                             // style={{ height: "594px", width: "599px" }}
                             src="https://i.ibb.co/gPCLxdc/rsz-whatsapp-image-2023-03-04-at-152137.jpg"
@@ -54,7 +55,7 @@ const HomeGallery = () => {
                     </div>
 
                     <div className="ms-4">
-                        <img className="img-fluid" src="https://i.ibb.co/g7jtCtW/image-2303.png" alt="" />
+                        <img style={{ borderRadius: "10%" }} className="img-fluid" src="https://i.ibb.co/g7jtCtW/image-2303.png" alt="" />
 
                         <div className="text-center bg-white gellary-infos">
                             <h6 className="infos-tilte">Give A Sanitary Pad</h6>

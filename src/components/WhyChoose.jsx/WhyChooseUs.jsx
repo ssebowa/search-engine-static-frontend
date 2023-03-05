@@ -3,7 +3,10 @@ import happiness1 from "../../assets/choose/choose4.jpeg";
 import happiness2 from "../../assets/choose/choose2.jpeg";
 import happiness3 from "../../assets/choose/choose3.jpeg";
 import happiness4 from "../../assets/choose/choosee4.jpeg";
-import shape from "../../assets/images/howWorks/shape.png";
+import cupshape from "../../assets/images/howWorks/cupshape.jpeg";
+import bagshape from "../../assets/images/howWorks/bagshape.jpeg";
+import purseshape from "../../assets/images/howWorks/purseshape.jpeg";
+import shape2 from "../../assets/images/howWorks/shape2.jpeg";
 
 const WhyChooseUs = () => {
     return (
@@ -39,7 +42,7 @@ const WhyChooseUs = () => {
 
                 "
                 >
-                    <img className="bg-blue ml-6 w-60 h-36" src={shape} alt="" width="90px" height="90px" />
+                    <img className="bg-blue ml-6 w-60 h-36" src={cupshape} alt="" width="90px" height="90px" />
 
                     <h1 className=" text-3xl font-semibold mt-3">750+</h1>
                     <p className=" text-2xl font-medium mt-3" style={{ color: "#808080" }}>
@@ -49,7 +52,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="flex flex-col justify-center justify-items-center text-center my-5">
                     {/* <img className="bg-blue ml-6 w-60 h-36" src="https://i.ibb.co/0rkqqSf/Vector.png" alt="" /> */}
-                    <img className="bg-blue ml-6 w-60 h-36" src={shape} alt="" width="90px" height="90px" />
+                    <img className="bg-blue ml-6 w-60 h-36" src={purseshape} alt="" width="90px" height="90px" />
 
                     <h1 className=" text-3xl font-semibold mt-3">1000+</h1>
                     <p className=" text-2xl font-medium mt-3" style={{ color: "#808080" }}>
@@ -59,7 +62,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="flex flex-col justify-center justify-items-center text-center my-5">
                     {/* <img className="bg-blue ml-6 w-60 h-36" src="https://i.ibb.co/0rkqqSf/Vector.png" alt="" /> */}
-                    <img className="bg-blue ml-6 w-60 h-36" src={shape} alt="" width="90px" height="90px" />
+                    <img className="bg-blue ml-6 w-60 h-36" src={shape2} alt="" width="90px" height="90px" />
 
                     <h1 className=" text-3xl font-semibold mt-3">670+</h1>
                     <p className=" text-2xl font-medium mt-3" style={{ color: "#808080" }}>
@@ -69,7 +72,7 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="flex flex-col justify-center justify-items-center text-center my-5">
                     {/* <img className="bg-blue ml-6 w-60 h-36" src="https://i.ibb.co/0rkqqSf/Vector.png" alt="" width="250px" height="250px" /> */}
-                    <img className="bg-blue ml-6 w-60 h-36" src={shape} alt="" width="90px" height="90px" />
+                    <img className="bg-blue ml-6 w-60 h-36" src={bagshape} alt="" width="90px" height="90px" />
 
                     <h1 className=" text-3xl font-semibold mt-3">458+</h1>
                     <p className=" text-2xl font-medium mt-3" style={{ color: "#808080" }}>

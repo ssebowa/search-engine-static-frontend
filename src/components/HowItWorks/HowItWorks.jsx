@@ -1,5 +1,8 @@
 import "./HowItWorks.css";
-import Ornament from "../../assets/images/howWorks/Ornament.png";
+import workicon1 from "../../assets/images/work/workicon1.jpeg";
+import workicon2 from "../../assets/images/work/workicon2.jpeg";
+import workicon3 from "../../assets/images/work/workicon3.jpeg";
+import { height } from "@mui/system";
 
 const HowItWorks = () => {
     return (
@@ -39,8 +42,8 @@ const HowItWorks = () => {
                 </div>
 
                 <div className="lg:flex lg:justify-around d-flex justify-content-evenly align-items-center WhyChooseUsCards">
-                    <div className="flex flex-col text-center flex-sm-column HowItWorkbox">
-                        <img className="bg-blue ml-6 w-60 h-36 rectangleimages" src={Ornament} alt="" />
+                    <div className="flex flex-col mt-5 text-center flex-sm-column HowItWorkbox">
+                        <img className="bg-blue ml-6 w-60 h-36 rectangleimages" src={workicon1} alt="" width="80px" height="80px" />
                         <h2 className=" text-2xl font-semibold mt-3" style={{ color: "#4AB421" }}>
                             Protect Our Envoirnment
                         </h2>
@@ -50,8 +53,8 @@ const HowItWorks = () => {
                         </p>
                         {/* <img className="mt-6 rounded-xl w-56 h-56 ml-6" src="https://i.ibb.co/0jDJKb4/image-2304.png" alt="" /> */}
                     </div>
-                    <div className="flex flex-col justify-center justify-items-center text-center HowItWorkbox">
-                        <img className="bg-blue ml-6 w-60 h-36" src={Ornament} alt="" />
+                    <div className="flex flex-col mt-5 justify-center justify-items-center text-center HowItWorkbox">
+                        <img className="bg-blue ml-6 w-60 h-36" src={workicon2} alt="" width="80px" height="80px" />
                         <h2 className=" text-2xl font-semibold mt-3" style={{ color: "#4AB421" }}>
                             Fight Global Hunger
                         </h2>
@@ -61,8 +64,8 @@ const HowItWorks = () => {
                         </p>
                         {/* <img className="mt-6 rounded-xl w-56 h-56 ml-6" src="https://i.ibb.co/0jDJKb4/image-2304.png" alt="" /> */}
                     </div>
-                    <div className="flex flex-col justify-center justify-items-center text-center HowItWorkbox">
-                        <img className="bg-blue ml-6 w-60 h-36" src={Ornament} alt="" />
+                    <div className="flex flex-col mt-5 justify-center justify-items-center text-center HowItWorkbox">
+                        <img className="bg-blue ml-6 w-60 h-36" src={workicon3} alt="" width="80px" height="80px" />
                         <h2 className=" text-2xl font-semibold mt-3" style={{ color: "#4AB421" }}>
                             Empower A Girl Child
                         </h2>

@@ -76,10 +76,10 @@ function SearchBarHome() {
     };
     return (
         <div className="w-100 d-flex flex-column align-items-center">
-            <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
+            {/* <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
             <h1 className="text-white banner-text">
                 The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine
-            </h1>
+            </h1> */}
             <div>
                 <SideVideo></SideVideo>
             </div>
@@ -198,16 +198,18 @@ function SearchBarHome() {
                                 className="  d-flex justify-content-center align-items-center search-text"
                                 style={{
                                     width: "2px",
+                                    color: "black",
                                     // height: "50%",
                                     borderRadius: "0 100px 100px 0",
                                     position: "relative",
                                     right: "5px",
-                                    backgroundColor: "#40AF04",
+                                    // backgroundColor: "#40AF04",
+                                    backgroundColor: "#fff",
                                     border: "none",
                                 }}
                             >
-                                <div className="">
-                                    <FontAwesomeIcon icon={faMagnifyingGlass} className="text-light me-2" size="lg" />
+                                <div className="text-black bg-light">
+                                    <FontAwesomeIcon icon={faMagnifyingGlass} className="text-black me-2" size="lg" />
                                 </div>
                             </Button>
                         </Form>

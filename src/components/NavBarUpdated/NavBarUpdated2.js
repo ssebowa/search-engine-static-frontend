@@ -11,6 +11,9 @@ import { Link, useLocation } from "react-router-dom";
 import SearchBarForNavbar from "../SearchBarforNavbar/SearchBarForNavbar";
 import NavbarDrawer from "./NavbarDrawer";
 
+import { faBlog } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const style = {
     position: "absolute",
     top: "20%",
@@ -254,8 +257,17 @@ const NavBarUpdated = () => {
                                         </Box>
                                     )} */}
                                     {/* <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer"></a> */}
-
                                     <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon
+                                            icon={faBlog}
+                                            className="pt-1 ps-3 "
+                                            size="xl"
+                                            style={{
+                                                color: "#3FAF04",
+                                            }}
+                                        ></FontAwesomeIcon>
+                                    </a>
+                                    <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                         <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
                                     </a>
                                 </Grid>
