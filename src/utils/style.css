@@ -320,13 +320,13 @@ color: #969696;
 
  @media only screen and (max-width: 499px) and (min-width:400px){
     .top_searchBar{
-        width: 150px;
+        width: 403px;
         height: 38px;
         /* background-color: #FFFFFF; */
         position: fixed;
         top: 0;
         z-index: 10000000000;
-        left: 38px;
+        left: 3px;
         top: 21px;
     }
             .two_images{
@@ -359,13 +359,13 @@ color: #969696;
         @media only screen and (max-width: 399px) and (min-width:260px){
 
             .top_searchBar{
-                width: 40vw;
+                width: 99vw;
                 height: 38px;
                 /* background-color: #FFFFFF; */
                 position: absolute;
                 top: 18px;
                 z-index: 10000000000;
-                left: 17px;
+                left: 1px;
             }
             .two_images{
                 flex-wrap:  wrap;   

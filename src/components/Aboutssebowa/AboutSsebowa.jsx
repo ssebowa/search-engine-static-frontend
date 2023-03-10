@@ -17,8 +17,13 @@ const AboutSsebowa = () => {
                         <h3>Learn About Ssebowa </h3>
                         <p>The more you use Ssebowa, the more you realize how minor daily changes can make major differences in the world.</p>
                         <div className="availabilyimages">
-                            <img src={googleplay} alt="" className="me-3" />
-                            <img src={appstore} alt="" />
+                            <a href="https://play.google.com/store/apps/details?id=org.ssebowa&pli=1">
+                                <img src={googleplay} alt="" className="me-3" />
+                            </a>
+
+                            <a href="https://apps.apple.com/app/ssebowa-search-engine/id1666356131">
+                                <img src={appstore} alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>

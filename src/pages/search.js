@@ -9,6 +9,7 @@ import SEO from "../components/seo";
 import StickyChatBot from "../components/stickyChatBot";
 import Layout from "../layouts/index";
 import SearchHeader from "../layouts/SearchHeader";
+import "./Caro.css";
 
 const SearchPage = () => {
     const [query, SetQuery] = React.useState("");
@@ -38,14 +39,14 @@ const SearchPage = () => {
         RetrieveQuery();
     }, [query]);
     return (
-        <React.Fragment style={{ height: "100vh" }}>
-            <Layout>
+        <React.Fragment className="over " style={{ height: "100vh" }}>
+            <Layout className="over ">
                 <SEO title="Ssebowa Search" />
                 <meta
                     name="description"
                     content="Ssebowa turns your searches to trees, food for hungry children and sanitary  pads for girls without pads. Search now to mitigate climate change and change lives."
                 />
-                <div className="wrapper">
+                <div className="wrapper over">
                     <div className="hero-shape1 navbar fixed-top">
                         <img src={`${process.env.PUBLIC_URL}/images/slider/shape/shape1.png`} alt="shape" />
                     </div>

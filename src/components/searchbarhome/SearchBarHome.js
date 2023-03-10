@@ -77,7 +77,7 @@ function SearchBarHome() {
         <div className="w-100 d-flex flex-column align-items-center">
             <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
             <h1 className="text-white banner-text">
-                The World’s Most <span style={{ color: "#40AF04" }}>Private</span> Search Engine
+                Adds value to <span style={{ color: "#40AF04" }}>your</span> internet searches
             </h1>
             <div>
                 <SideVideo></SideVideo>
