@@ -34,7 +34,7 @@ const NavbarDrawer = ({ linksArray }) => {
                     PaperProps={{
                         className: classes.drawerBackground,
                     }}
-                    anchor="left"
+                    anchor="right"
                     open={open}
                     onClose={() => setOpen(false)}
                     style={{ color: "white" }}
@@ -83,7 +83,7 @@ const NavbarDrawer = ({ linksArray }) => {
                                 </ListItem>
                             </>
                         ))}
-                        <>
+                        {/* <>
                             <ListItem onClick={() => setOpen(false)} divider>
                                 <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                     <ListItemText variant="h1" sx={{ display: "flex", flexDirection: "row", flexWrap: "nowrap" }}>
@@ -137,7 +137,7 @@ const NavbarDrawer = ({ linksArray }) => {
                                     </ListItemText>
                                 </a>
                             </ListItem>
-                        </>
+                        </> */}
                     </List>
                 </Drawer>
 

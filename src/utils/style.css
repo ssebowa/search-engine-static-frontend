@@ -7,24 +7,25 @@
 }
 
 .gellary-infos{
-    border-radius: 47px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
     position: relative;
-    left: 20px;
-    bottom: 100px;
-    width: 554px;
-    height: 201px;
-    background-color:#FFFFFF ;
-
+    left: 42px;
+    bottom: 80px;
+    width: 495px;
+    height: 157px;
+    background-color: #FFFFFF;
+    padding: 20px;
 }
 
 .infos-pra{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .infos-tilte{
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .home-title {
@@ -45,35 +46,65 @@ text-align: center;
 color: #969696;
 }
 
-@media only screen and (max-width: 992px) {
-    .infos-tilte{
-        font-weight: 600;
-        font-size: 12px;
-    }
 
-    
-
-
-    .infos-pra{
-        font-weight: 400;
-font-size: 10px;
-    }
+@media only screen and (max-width: 1130px)and (min-width:900px) {
     .gellary-infos{
-        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
-        border-radius: 12.6376px;
-        position: relative;
-        left: 2%;
-        bottom: 10px;
-        width: 43vw;
-        height: 105px;
-        background-color:#FFFFFF ;
-    
+        left: 8%;
+        width: 380px;  
+      }
+      .RecentBlogBox{
+        width: 40rem;
+        height: 40rem;
+      }
+      .top-left {
+        position: absolute;
+        top: 0px;
+        left: 112px;
+        background-color: rgb(243, 243, 243, 0.3);
+        opacity: 2;
+        color: white;
+        padding: 30px 30px 40px 30px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 0px;
     }
+        
+}
+
+@media only screen and (max-width: 899px) and (min-width:600px){
+    .ChatBotMain {
+        margin: 1em;
+        width: 16rem;
+        max-width: 115px;
+        
+    }
+    .two_images{
+        flex-wrap:  wrap;   
+    }
+      .gellary-infos{
+        left: 4%;
+        bottom: 50px;
+        width: 42vw;
+        height: 185px ;
+        
+    
+    } 
+    .infos-tilte{
+        font-size: 26px ;
+    }
+    .infos-pra{
+        font-size: 18px ;
+    }
+    
+   
 
     .homegallery-active {
         width: 300px;
         height: 70px;
     }
+/* .blog_img{
+width: 80rem;    
+} */
 }
 
 .home-title {
@@ -104,6 +135,8 @@ color: #969696;
     color: #969696;
     text-align: center;
 }
+
+
 
 .card-div {
     /* margin-left: 5%; */
@@ -136,7 +169,7 @@ color: #969696;
 }
 
 .card-main-header {
-    font-size: 18px;
+    font-size: 12px;
     color: white;
     text-align: left;
 }
@@ -151,8 +184,33 @@ color: #969696;
  
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) and (min-width:500px){
 
+    .top_searchBar{
+        width: 150px;
+        height: 38px;
+        /* background-color: #FFFFFF; */
+        position: fixed;
+        top: 0;
+        z-index: 10000000000;
+        left: 0;
+    }
+    .two_images{
+        flex-wrap:  wrap;   
+    }
+    .gellary-infos {
+        left: 7px;
+        bottom: 40px;
+        width: 355px;
+        height: 140px;
+        padding: 10px;
+    }
+    .infos-tilte{
+        font-size: 20px;
+    }
+    .infos-pra{
+        font-size: 12px;
+    }
     .home-title {
         font-style: normal;
         font-weight: 600;
@@ -174,33 +232,26 @@ color: #969696;
         
     }
 
-    .gellary-infos{
-        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
-    border-radius: 12.6376px;
-        position: relative;
-        left: 2%;
-        bottom: 50px;
-        width: 43vw;
-        height: 105px;
-        background-color:#FFFFFF ;
-    
-    }
+   
     .card-image {
-        border-radius: 10px;
-        width: 340px;
-        object-fit: "contain";
-        height: 166px;
+        width: 90%;
+        height: 400px ;
+    object-fit: cover;
     }
+    .images{
+        height: 23rem ;
+        width: 23rem ;
+        object-fit: cover;
+    }     
 
     .top-left {
         padding: 10px 10px 40px 30px;
-        /* background-color: rgba(209, 207, 207, 0.3);  */
         height: 98px;
         width: 227px;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 10px;
         border-top-right-radius: 0px;
-        left: auto;
+        left: 0px;
 
     }
 
@@ -240,9 +291,6 @@ color: #969696;
     border-radius: 15px;
 }
 
-/* .container1 .card1:hover {
-    height : 240px;    
-    } */
 
 .container1 .card1 .image {
     position: relative;
@@ -250,20 +298,14 @@ color: #969696;
     height: 90%;
     top: -50%;
     left: 20px;
-    /* box-shadow : 0 5px 20px rgba(0,0,0,0.2); */
     z-index: 1;
     text-align: center;
     border-radius: 30px;
-    /* border: 0px solid transparent; */
-    /* background-color: rgb(120, 140, 170); */
-    /* background-color: #ffffff; */
-    /* color: white; */
+   
     padding: 5px;
 }
 
-/* .container1 .card1 .image img {
-    max-width : 50%;
-    } */
+
 
 .container1 .card1 .content {
     position: relative;
@@ -274,12 +316,118 @@ color: #969696;
     opacity: 1;
     transition: 0.3s ease-in-out;
     color: black;
-    /* margin-top : 30px; */
 }
 
-/* .container1 .card1:hover .content {
-         margin-top : 30px;
-         visibility : visible;
-         opacity : 1;
-         transition-delay: 0.2s;
-        } */
+ @media only screen and (max-width: 499px) and (min-width:400px){
+    .top_searchBar{
+        width: 150px;
+        height: 38px;
+        /* background-color: #FFFFFF; */
+        position: fixed;
+        top: 0;
+        z-index: 10000000000;
+        left: 38px;
+        top: 21px;
+    }
+            .two_images{
+                flex-wrap:  wrap;   
+            }
+              .gellary-infos {
+                left: 4%;
+                width: 162px; 
+                bottom: 53px;
+                height: 175px;
+            }
+              .card-image {
+                width: 100%;
+                /* height: 337px; */
+                border-radius: 20px;
+                object-fit: cover;
+            }
+              .images{
+                    height: 23rem ;
+                    width: 23rem ;
+                    object-fit: cover;
+                }            
+              .infos-tilte{
+                font-size: 14px;
+            }
+            .infos-pra{
+                font-size: 10px;
+            }
+        }
+        @media only screen and (max-width: 399px) and (min-width:260px){
+
+            .top_searchBar{
+                width: 40vw;
+                height: 38px;
+                /* background-color: #FFFFFF; */
+                position: absolute;
+                top: 18px;
+                z-index: 10000000000;
+                left: 17px;
+            }
+            .two_images{
+                flex-wrap:  wrap;   
+            }
+              .gellary-infos {
+                left: 4%;
+                width: 142px;
+                bottom: 29px;
+                padding: 10px;
+                height: 80px;
+            }
+              .infos-tilte{
+                font-size: 10px;
+            }
+            .infos-pra{
+                font-size: 7px;
+            }
+            .card-image {
+                width: 90%;
+                /* height: 260px; */
+                object-fit: cover;
+                border-radius: 13px;
+            }
+            
+            .top-left {
+                padding: 10px;
+                height: 100px;
+                width: 270px;
+
+
+
+                position: absolute;
+    top: 0px;
+    left: 18px;
+    padding: 30px 30px 40px 30px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0px;
+            }
+
+
+            
+            .card-paragraph {
+                font-size: 7px;
+            }
+            .images{
+                height: 18rem ;
+                width: 18rem ;
+            }
+            .home-title {
+                font-size: 28px;
+                line-height: 50.4px;
+            }
+            .home-para {
+                font-size: 15px;
+            }
+            .work_head{
+                font-size: 38px;
+            }
+            .HowItWorkbox {
+                height: 400.567291px;
+                width: 268.653839px;
+            }
+        }
+        

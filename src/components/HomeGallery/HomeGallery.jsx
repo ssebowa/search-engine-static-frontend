@@ -23,10 +23,11 @@ const HomeGallery = () => {
                 <Row>
                     <Col>
                         <div className="card-div">
-                            <img className="card-image" src="https://i.ibb.co/nLsQQM6/support-skbwpy-jpg.png" alt="" />
+                            <img className="card-image" src="https://i.ibb.co/W2R82Y2/what-our-searches-do-1.jpg" alt="" />
+
                             <div className="top-left">
                                 <div>
-                                    <p className="card-main-header">Become Climate Active </p>
+                                    <p className=" fw-bold card-main-header">Become Climate Active </p>
                                     <p className="card-paragraph">
                                         Be a solution to the disastrous effects of climate change as you
                                         <br /> beautify the environment with your green searches.
@@ -36,13 +37,44 @@ const HomeGallery = () => {
                         </div>
                     </Col>
                 </Row>
+                {/* <div className="d-flex justify-items-center justify-content-center gap-4 two_images mt-5">
+                    <div>
+                        <img
+                            style={{ borderRadius: "10%" }}
+                            className="images mg-fluid "
+                            // style={{ height: "594px", width: "599px" }}
+                            src="https://i.ibb.co/gPCLxdc/rsz-whatsapp-image-2023-03-04-at-152137.jpg"
+                            alt=""
+                        />
+
+
+                        <div className="text-center bg-white gellary-infos">
+                            <h6 className=" infos-tilte">Feed a Hungry Child</h6>
+                            <p className="infos-pra">
+                                Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches
+                            </p>
+                        </div>
+                    </div>
+
+                    <div >
+                        <img style={{ borderRadius: "10%" }} className="images img-fluid" src="https://i.ibb.co/g7jtCtW/image-2303.png" alt="" />
+
+                        <div className="text-center bg-white gellary-infos">
+                            <h6 className="infos-tilte">Give A Sanitary Pad</h6>
+                            <p className="infos-pra">
+                                Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches
+                            </p>
+                        </div>
+                    </div>
+                </div> */}
+
                 <div className="d-flex justify-items-center justify-content-center mx-auto mt-5">
                     <div className="me-4">
                         <img
                             style={{ borderRadius: "10%" }}
                             className="mg-fluid"
                             // style={{ height: "594px", width: "599px" }}
-                            src="https://i.ibb.co/gPCLxdc/rsz-whatsapp-image-2023-03-04-at-152137.jpg"
+                            src="https://i.ibb.co/FsW0s8X/what-our-searches-do-2.jpg"
                             alt=""
                         />
 
@@ -55,16 +87,18 @@ const HomeGallery = () => {
                     </div>
 
                     <div className="ms-4">
-                        <img style={{ borderRadius: "10%" }} className="img-fluid" src="https://i.ibb.co/g7jtCtW/image-2303.png" alt="" />
+                        <img style={{ borderRadius: "10%" }} className="img-fluid" src="https://i.ibb.co/D4RGsn3/what-our-searches-do-3-1.jpg" alt="" />
 
                         <div className="text-center bg-white gellary-infos">
                             <h6 className="infos-tilte">Give A Sanitary Pad</h6>
                             <p className="infos-pra">
-                                Create an active mind and body that could break a chain of a particular poverty cycle through your hunger-free searches
+                                Shape a girl into a change maker or an inspiration that the world can not wait to have by making your searches girl-power
+                                oriented.
                             </p>
                         </div>
                     </div>
                 </div>
+
                 {/* <Row style={{ marginBottom: 80 }}>
                     <Col
                         className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"

@@ -4912,13 +4912,6 @@
     "domelementtype" "^2.0.1"
     "entities" "^2.0.0"
 
-"dom7@^3.0.0":
-  "integrity" "sha512-oNlcUdHsC4zb7Msx7JN3K0Nro1dzJ48knvBOnDPKJ2GV9wl1i5vydJZUSyOfrkKFDZEud/jBsTk92S/VGSAe/g=="
-  "resolved" "https://registry.npmjs.org/dom7/-/dom7-3.0.0.tgz"
-  "version" "3.0.0"
-  dependencies:
-    "ssr-window" "^3.0.0-alpha.1"
-
 "domain-browser@^1.1.1":
   "integrity" "sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA=="
   "resolved" "https://registry.npmjs.org/domain-browser/-/domain-browser-1.2.0.tgz"
@@ -11857,10 +11850,10 @@
     "safer-buffer" "^2.0.2"
     "tweetnacl" "~0.14.0"
 
-"ssr-window@^3.0.0", "ssr-window@^3.0.0-alpha.1":
-  "integrity" "sha512-q+8UfWDg9Itrg0yWK7oe5p/XRCJpJF9OBtXfOPgSJl+u3Xd5KI328RUEvUqSMVM9CiQUEf1QdBzJMkYGErj9QA=="
-  "resolved" "https://registry.npmjs.org/ssr-window/-/ssr-window-3.0.0.tgz"
-  "version" "3.0.0"
+"ssr-window@^4.0.2":
+  "integrity" "sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ=="
+  "resolved" "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.2.tgz"
+  "version" "4.0.2"
 
 "ssri@^6.0.1":
   "integrity" "sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA=="
@@ -12226,13 +12219,12 @@
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
 
-"swiper@^6.6.2":
-  "integrity" "sha512-l9ICRsPtK92fF1nzR/r56bNE9A8ufz99yr810+IgQTfnKWVDIE/DD/uQKtIRpbFAIeuesU/J4F1ziIC/jBug7g=="
-  "resolved" "https://registry.npmjs.org/swiper/-/swiper-6.6.2.tgz"
-  "version" "6.6.2"
+"swiper@^9.1.0":
+  "integrity" "sha512-Ck8CywwfUghkbUAHbxTAWyeUAcNrIDNJ6EnKFBGGcHDjeqbh0Jq08RbmD5fMu1a0oOv1eIkUGVkqNJy/asm+yA=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-9.1.0.tgz"
+  "version" "9.1.0"
   dependencies:
-    "dom7" "^3.0.0"
-    "ssr-window" "^3.0.0"
+    "ssr-window" "^4.0.2"
 
 "symbol-tree@^3.2.4":
   "integrity" "sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw=="

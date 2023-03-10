@@ -1,14 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faMagnifyingGlass,
-    faHome,
-    faInfoCircle,
-    faImages,
-    faEnvelope,
-    faBlog,
-    faStore
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faHome, faInfoCircle, faImages, faEnvelope, faBlog, faStore } from "@fortawesome/free-solid-svg-icons";
 import SearchBarHome from "../../searchbarhome/SearchBarHome";
 
 const MainMenu = () => {
@@ -21,14 +13,10 @@ const MainMenu = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/about"}>
-                        About
-                    </NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + "/about"}>About</NavLink>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/gallery"}>
-                        Gallery
-                    </NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + "/gallery"}>Gallery</NavLink>
 
                     {/* <ul className="sub-menu">
                         <li className="sub-menu-item">
@@ -74,9 +62,7 @@ const MainMenu = () => {
                         </ul>
                     </li> */}
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/projects"}>
-                        Projects
-                    </NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + "/projects"}>Projects</NavLink>
                     {/* <ul className="sub-menu"> */}
                     {/* <li className="sub-menu-item">
                             <NavLink
@@ -119,14 +105,10 @@ const MainMenu = () => {
                     {/* </ul> */}
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/team"}>
-                        Team
-                    </NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + "/team"}>Team</NavLink>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/contact"}>
-                        Contact
-                    </NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + "/contact"}>Contact</NavLink>
                 </li>
             </ul>
         </nav>
@@ -163,7 +145,7 @@ export const MenuForSearch = () => {
                         />
                     </NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon
                             icon={faBlog}
@@ -174,8 +156,8 @@ export const MenuForSearch = () => {
                             }}
                         />
                     </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon
                             icon={faStore}
@@ -186,7 +168,7 @@ export const MenuForSearch = () => {
                             }}
                         />
                     </a>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

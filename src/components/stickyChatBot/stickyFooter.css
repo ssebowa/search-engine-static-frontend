@@ -28,7 +28,7 @@
     }
 
     .stickyChatBotContainer {
-        width: 70px;
+        /* width: 70px; */
         height: 85vh;
         padding-top: 3em;
         display: flex;

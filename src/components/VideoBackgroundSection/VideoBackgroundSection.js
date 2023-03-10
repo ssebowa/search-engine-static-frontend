@@ -4,7 +4,7 @@ import "./videobackgroundsection.css";
 import vvideo from "../../assets/video/plant.mp4";
 function VideoBackgroundSection() {
     return (
-        <div className="video-background">
+        <div className="video-background" style={{ height: "90vh" }}>
             <video autoPlay loop muted playsInline>
                 <source src={vvideo} type="video/mp4" />
             </video>

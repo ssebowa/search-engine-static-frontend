@@ -28,10 +28,10 @@ const MobileMenu = ({ show, onClose }) => {
         }
     };
     return (
-        <div className={`offcanvas-modal ${show ? "show" : ""}`}  >
-            <div className="offcanvas-dialog"  >
+        <div className={`offcanvas-modal ${show ? "show" : ""}`}>
+            <div className="offcanvas-dialog">
                 <div className="menu-content">
-                    <div className="offcanvas-header" >
+                    <div className="offcanvas-header">
                         <Logo
                             classOption="offcanvas-logo d-inline-block"
                             image="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
@@ -40,7 +40,7 @@ const MobileMenu = ({ show, onClose }) => {
                     </div>
 
                     <nav id="offcanvasNav" className="offcanvas-menu">
-                        <ul style={{marginLeft: 20}} >
+                        <ul style={{ marginLeft: 20 }}>
                             <li>
                                 <NavLink exact to="/">
                                     Home
@@ -157,12 +157,12 @@ const MobileMenu = ({ show, onClose }) => {
                             <li>
                                 <NavLink to={process.env.PUBLIC_URL + "/contact"}>Contact</NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href="https://blog.ssebowa.org" target="_blank" rel="noopener noreferrer">Blog</a>
                             </li>
                             <li>
                                 <a href="https://store.ssebowa.org" target="_blank" rel="noopener noreferrer">Store</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>

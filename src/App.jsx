@@ -23,8 +23,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faHouse, faCircleInfo, faHistory, faListCheck, faPhone, faPeopleGroup, faImage, faUser, faStore, faBlog, faComment } from "@fortawesome/free-solid-svg-icons";
 
-import "swiper/components/navigation/navigation.scss";
-import "swiper/swiper.scss";
+// import "swiper/components/navigation/navigation.scss";
+// import "swiper/swiper.scss";
 import "./assets/css/vendor/metropolis.css";
 import "./assets/css/vendor/icofont.min.css";
 import "./assets/css/vendor/font-awesome.css";

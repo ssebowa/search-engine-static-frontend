@@ -79,31 +79,30 @@ const NavBarUpdated = () => {
             <AppBar
                 style={{
                     background: "#011627",
+                    padding: "0px",
                 }}
             >
                 <Toolbar
                     sx={{
                         height: "76px",
                         width: "98vw",
+                        padding: "0px",
                     }}
                 >
                     {isMatch ? (
                         <>
-                            <Grid sx={{ placeItems: "center" }} container>
+                            <Grid
+                                sx={{ placeItems: "center" }}
+                                container
+                                style={{ flexDirection: "row-reverse", justifyContent: " space-between", padding: "0px" }}
+                            >
                                 <Grid item xs={2}>
                                     <NavbarDrawer className="bg-white text-white" style={{ color: "white" }} linksArray={linksArrayForDrawer}></NavbarDrawer>
                                 </Grid>
+
                                 <Grid item xs={1} />
-                                <Grid item xs={5} sx={{ p: 4, overflow: "hidden" }}>
-                                    {/* <Link to="/">
-                                        <img
-                                            src="https://res.cloudinary.com/dicgvondb/image/upload/v1674668332/ssebowa/ssebowa.org/search-engine-static-frontend/images/logo/logo_jybeu2.png"
-                                            alt=""
-                                        />
-                                    </Link> */}
-                                </Grid>
-                                <Grid item x={2} />
-                                <Grid className="ps-5" item xs={2} sx={{ ml: "auto" }}>
+
+                                <Grid className="" item xs={2}>
                                     {/* <IconButton className="bg-whiite" onClick={handleSearchBarOpen} aria-label="search">
                                         <SearchIcon />
                                     </IconButton>
@@ -117,9 +116,9 @@ const NavBarUpdated = () => {
                                             <SearchBarForNavbar></SearchBarForNavbar>
                                         </Box>
                                     </Modal> */}
-                                    <Link to="/">
-                                        <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
-                                    </Link>
+                                    {/* <Link to="/">
+                                        <img src="https://i.ibb.co/2SRRBdJ/logo-jybeu2-png.png" alt="" />
+                                    </Link> */}
                                 </Grid>
                             </Grid>
                         </>
@@ -257,7 +256,7 @@ const NavBarUpdated = () => {
                                         </Box>
                                     )} */}
                                     {/* <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer"></a> */}
-                                    <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                    {/* <a href="https://blog.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon
                                             icon={faBlog}
                                             className="pt-1 ps-3 "
@@ -266,10 +265,10 @@ const NavBarUpdated = () => {
                                                 color: "#3FAF04",
                                             }}
                                         ></FontAwesomeIcon>
-                                    </a>
-                                    <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
+                                    </a> */}
+                                    {/* <a href="https://store.ssebowa.org/" target="_blank" rel="noopener noreferrer">
                                         <img style={{ width: "40px" }} src="https://i.ibb.co/mFC48c8/Capture-removebg-preview.png" alt="" />
-                                    </a>
+                                    </a> */}
                                 </Grid>
                             </Grid>
                         </>

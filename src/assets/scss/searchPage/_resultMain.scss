@@ -1,16 +1,17 @@
 .ResultMainConatiner{
-    width: 100%;   
+    width: 100%;
     height: 270px !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     justify-items: center;
     padding: 1em;
     background:#ffffff !important;
     transition: 0.3s ease-in-out;
     border: 3px solid #d4d4d4 !important;
     border-radius: 20px !important;
-   
+  overflow: hidden;
+
    }
    .ResultMainConatiner:hover{
        background:#fff;
@@ -25,16 +26,17 @@
        font-size: 13px !important;
        font-weight: 900 !important;
        // margin-top: 40px;
-       margin-bottom: 10px;
-       overflow-x: hidden;
+       //margin-bottom: 10px;
+       //overflow-x: hidden;
    }
    .ResultMainUpperLink:hover{
        color: rgb(0, 0, 0) !important;
        text-decoration: none !important;
    }
-   
+
    .ResultMainLink{
        font-size: 18px;
+     line-height: 1.4;
        color: rgb(0, 89, 255);
        font-weight: 800 !important;
    }
@@ -48,23 +50,22 @@
        color: #000;
        font-weight: 800 !important;
    }
-   
+
    @media screen and (max-width:700px) {
        .ResultMainConatiner{
-           width: 100%;   
+          max-width: 400px;
+           width: 100%;
            height: 250px;
            display: flex;
            flex-direction: column;
-           padding: 0.5em;
+           padding: 1em;
            background:#fff;
            transition: 0.3s ease-in-out;
            margin-bottom: 0.5em;
        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-       margin-left: 20px;
-       padding-left: 30px;
           }
-         
-   
+
+
        .ResultMainUpperLink {
            font-size: 15px;
        }
@@ -76,5 +77,14 @@
        .ResultMainDescription {
            font-size: 13px;
        }
-   
+
    }
+
+
+@media screen and (max-width:576px) {
+  .ResultMainConatiner {
+    max-width: 350px;
+    margin: 0;
+  }
+
+}

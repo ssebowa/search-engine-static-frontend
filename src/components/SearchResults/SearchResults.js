@@ -22,12 +22,16 @@ import SliderImage from "./SliderImage";
 import "./Carousel.css";
 const styles = {
     container: {
-        height: "210px",
+        height: "150px",
         overflowY: "scroll",
         padding: "16px",
         // width: "450px",
     },
 };
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import { EffectCoverflow } from "swiper";
 
 function SearchResults({ query }) {
     const [search_results, SetSearch_Results] = React.useState([]);
@@ -50,7 +54,7 @@ function SearchResults({ query }) {
 
     const settings = {
         dots: true,
-        dots: true,
+        // dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
@@ -296,6 +300,7 @@ function SearchResults({ query }) {
                         </p>
 
                         <Card
+                            style={{ height: "120px" }}
                             // style={{ width: "480px", marginLeft: "20px" }}
                             sx={{
                                 width: {
@@ -332,10 +337,10 @@ function SearchResults({ query }) {
                                 })}
                             </div> */}
 
-                        {/* <small>Swipe right to see more...</small> */}
+                        {/* <small>Swipe right to see more small> */}
 
                         {/* <Grid container>
-                          
+
                             <Grid md={12} lg={12} sm={12} xs={12}>
                                 {" "}
                                 <div className="mb-5 slider__conatiner">
@@ -346,7 +351,7 @@ function SearchResults({ query }) {
                                                     return <SliderImage key={index} string={string} style={{ borderRadius: "10px" }} />;
                                                 })}
 
-                                                
+
     {ImageResult && (
         <ImageList className="d-flex">
             {ImageResult.map((string, index) => (
@@ -366,7 +371,7 @@ function SearchResults({ query }) {
                             </Grid>
                         </Grid> */}
 
-                        <div className="result-slider img-slider mt-5" style={{ marginY: "10px" }}>
+                        {/*<div className="result-slider img-slider mt-5" style={{ marginY: "10px" }}>
                             <div style={{ margin: "0 -15px" }}>
                                 <Slider {...settings}>
                                     {search_results?.results?.map((item, i) => {
@@ -374,7 +379,52 @@ function SearchResults({ query }) {
                                     })}
                                 </Slider>
                             </div>
-                        </div>
+                        </div>*/}
+
+                        {NewSearch && (
+                            <div className="result-slider mt-5" style={{ marginY: "10px" }}>
+                                <div style={{ margin: "0 -15px" }}>
+                                    <Swiper
+                                        effect={"coverflow"}
+                                        grabCursor={true}
+                                        centeredSlides={true}
+                                        spaceBetween={0}
+                                        slidesPerView={1}
+                                        breakpoints={{
+                                            300: {
+                                                coverflowEffect: {
+                                                    stretch: 100,
+                                                },
+                                            },
+                                            700: {
+                                                slidesPerView: 3,
+                                                coverflowEffect: {
+                                                    stretch: -5,
+                                                },
+                                            },
+                                        }}
+                                        coverflowEffect={{
+                                            rotate: 5,
+                                            stretch: 20.5,
+                                            depth: 150,
+                                            modifier: 3,
+                                            slideShadows: false,
+                                        }}
+                                        pagination={false}
+                                        modules={[EffectCoverflow]}
+                                        className="mySwiper"
+                                    >
+                                        {NewSearch?.results?.map((item, i) => {
+                                            return (
+                                                <SwiperSlide key={i}>
+                                                    <ResultMain key={i} data={item} />
+                                                </SwiperSlide>
+                                            );
+                                        })}
+                                    </Swiper>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -382,7 +432,7 @@ function SearchResults({ query }) {
     } else if (!Results_State) {
         return !Results_Error ? (
             <div className="w-100 d-flex align-items-center justify-content-center" style={{ height: "70vh" }}>
-                <ColorRing
+                {/* <ColorRing
                     visible={true}
                     height="80"
                     width="80"
@@ -390,7 +440,7 @@ function SearchResults({ query }) {
                     wrapperStyle={{}}
                     wrapperClass="blocks-wrapper"
                     colors={["#59e3a7", "#118442", "#181C51", "#59e3a7", "#118442"]}
-                />
+                /> */}
             </div>
         ) : (
             <div className="w-100 d-flex align-items-center justify-content-center flex-column" style={{ height: "70vh" }}>

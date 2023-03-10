@@ -6,7 +6,7 @@ import Logo from "../../assets/images/download.png";
 const Footer = () => {
     return (
         <>
-            <div style={{ marginTop: "9%" }}>
+            <div>
                 <Row style={{ backgroundColor: "#011627", color: "white" }}>
                     <Col className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                         <div style={{ padding: 10, marginTop: 20, marginBottom: 20, paddingLeft: 20 }}>

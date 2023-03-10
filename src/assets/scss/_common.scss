@@ -5,7 +5,7 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Yantramanav', sans-serif;
 
-/*------------------------ 
+/*------------------------
 /* Common Style
  ------------------------*/
 /*-----------------------
@@ -22,6 +22,14 @@
   background: $primary;
   color: $white;
   text-shadow: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
 }
 
 button {
@@ -247,6 +255,10 @@ br {
   }
 }
 
+.swiper-slide {
+  //width: 25rem !important;
+}
+
 @media only screen and (max-width: 600px) {
 
   .coll-imgs{
@@ -261,7 +273,7 @@ br {
   left: 80px;
   bottom: 10px;
    }
-   
+
 .scroll-to-top {
     position: fixed;
     // right: 30px;
@@ -288,13 +300,13 @@ br {
     color: $white;
     transition: all 0.1s ease-in-out;
     overflow: hidden;
-  
+
     &.show {
         visibility: visible;
         opacity: 1;
         bottom: 120px;
     }
-  
+
     i {
         position: absolute;
         top: 50%;
@@ -302,15 +314,15 @@ br {
         color: $white;
         transition: all 0.1s ease-in-out;
     }
-  
+
     .arrow-top {
         transform: translate(-50%, -50%);
     }
-  
+
     .arrow-bottom {
         transform: translate(-50%, 80px);
     }
-  
+
     &:hover {
         background-position: right center;
         .arrow-top {

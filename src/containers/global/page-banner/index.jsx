@@ -10,9 +10,9 @@ const PageBanner = ({ title, excerpt, image, Titlecolor = "#55FE3F", subVariant 
             {/* <img className="banner-shape" src={process.env.PUBLIC_URL + "/images/banner/shape1.png"} alt="shape" /> */}
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12" style={{ position: "relative" }}>
                         <Typography
-                            variant="h1"
+                            variant="h2"
                             align="center"
                             color={Titlecolor}
                             fontFamily="'Playfair Display', serif"
